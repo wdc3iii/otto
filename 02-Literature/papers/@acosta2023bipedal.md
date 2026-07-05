@@ -3,21 +3,21 @@ type: paper
 citekey: acosta2023bipedal
 tags: []
 aliases: []
-created: '2026-07-05'
-modified: '2026-07-05'
+created: 2026-07-05
+modified: 2026-07-05
 authors:
-- Acosta, Brian
-- Posa, Michael
+  - Acosta, Brian
+  - Posa, Michael
 year: 2023
 venue: arXiv:2309.07993 [cs]
 doi: 10.48550/arXiv.2309.07993
-arxiv: '2309.07993'
-url: null
-zotero: null
+arxiv: "2309.07993"
+url:
+zotero:
 status: to-read
 mine: false
 bibkeys:
-- acosta_bipedal_2023
+  - acosta_bipedal_2023
 ---
 
 # Bipedal Walking on Constrained Footholds with MPC Footstep Control
