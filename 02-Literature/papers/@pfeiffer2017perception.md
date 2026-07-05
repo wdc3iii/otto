@@ -19,6 +19,8 @@ url: http://arxiv.org/abs/1609.07910
 zotero: null
 status: to-read
 mine: false
+summary: ai-draft
+pdf: attachments/@pfeiffer2017perception.pdf
 bibkeys:
 - pfeiffer_perception_2017
 ---
@@ -27,13 +29,26 @@ bibkeys:
 
 > [!info] Pfeiffer, Mark; Schaeuble, Michael; Nieto, Juan; Siegwart, Roland; Cadena, Cesar · 2017 · 2017 IEEE International Conference on Robotics and Automation (ICRA)
 
-<!-- SUMMARY-PENDING: ingest-paper will fill a structured summary here -->
+## Summary
+> [!note] AI-drafted from the arXiv abstract — a base to refine.
+**TL;DR** — A supervised, end-to-end neural network maps raw 2D laser scans plus a relative target position directly to steering commands, learning target-oriented navigation from an existing motion planner's demonstrations.
+**Problem** — Classical navigation stacks are modular and hand-engineered; the authors ask whether a single learned model can go from raw perception straight to motion decisions for a ground robot.
+**Method** — A neural network is trained by learning-from-demonstration on expert trajectories generated in simulation by an existing motion planner, mapping raw laser range findings and a goal position to steering commands. The learned policy is then deployed zero-shot on unseen simulated and real environments.
+**Key results** — The learned model transfers directly to previously unseen virtual and real-world obstacle-cluttered environments, safely reaching targets; the authors present extensive qualitative and quantitative evaluation and compare against a grid-based global planner in simulation and on hardware.
+
+## Takeaways
+- One of the first demonstrations that end-to-end learned navigation from raw range data transfers sim-to-real without per-environment retraining.
+- Imitation of a classical planner is the training signal — the policy inherits (and is bounded by) the demonstrator's behavior rather than optimizing a task reward.
+- Reactive/local by construction: raw scans + goal give obstacle avoidance and target-seeking, not long-horizon global planning.
+
+## Relevance to your work
+A representative learning-based end-to-end navigation baseline, cited by [[@csomayshanklin2025dynamically]] to contrast data-driven reactive planners against structured, dynamically feasible planning approaches.
 
 ## Abstract (from bib)
 Learning from demonstration for motion planning is an ongoing research topic. In this paper we present a model that is able to learn the complex mapping from raw 2D-laser range ﬁndings and a target position to the required steering commands for the robot. To our best knowledge, this work presents the ﬁrst approach that learns a target-oriented endto-end navigation model for a robotic platform. The supervised model training is based on expert demonstrations generated in simulation with an existing motion planner. We demonstrate that the learned navigation model is directly transferable to previously unseen virtual and, more interestingly, real-world environments. It can safely navigate the robot through obstaclecluttered environments to reach the provided targets. We present an extensive qu
 
 ## Concepts
-<!-- [[03-Concepts]] links added when read -->
+
 
 ## Source
 - Cited by [[@csomayshanklin2025dynamically]]
