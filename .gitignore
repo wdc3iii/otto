@@ -1,0 +1,18 @@
+# --- Obsidian volatile UI state (churns on every interaction; do NOT track) ---
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/*.json.bak
+
+# Keep the rest of .obsidian/ (plugins, themes, app/appearance/hotkeys config)
+# and .claude/ (skills, settings, scripts) tracked — the vault should be
+# reproducible across machines and agent runs.
+
+# --- Obsidian trash & OS cruft ---
+.trash/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- per-machine plugin state that churns (uncomment if it causes conflicts) ---
+# .obsidian/plugins/obsidian-git/data.json

@@ -1,0 +1,256 @@
+# Second Brain Setup Brief — for Claude Code
+
+> **How to use this file:** Put this file at the root of a new (or empty-ish)
+> Obsidian vault folder, `cd` into that folder, run `claude`, and say:
+> *"Read SECOND-BRAIN-SETUP.md and help me set this up. Start at Phase 0."*
+>
+> Work through it **phase by phase**, stopping at each checkpoint (see the
+> Checkpoint Protocol at the bottom). Do not run the whole thing autonomously.
+
+---
+
+## 0. Who I am / context
+
+- I'm an academic researcher in **robotics — humanoid locomotion & navigation
+  autonomy** (RL-based locomotion policies + classical planning/control on the
+  Unitree G1). Background is heavy in control theory (CLFs, CBFs, MPC, optimal
+  control) and RL for legged systems.
+- I also **teach / TA** graduate nonlinear and optimal control, and I regularly
+  **write papers** (IEEE conferences, arXiv), **prepare talks**, and do **deep
+  literature reviews**.
+- Primary machines: `talos` (ZFS-based Linux workstation) and `amberlab`
+  (Jetson Orin). I'm comfortable with git, the shell, and infra work — don't
+  dumb things down.
+- This vault is my **academic second brain**: reading notes, atomic concept
+  notes, literature maps, paper/talk/course projects, meetings, and ideas.
+
+**Vault name: ** `otto`
+
+---
+
+## 1. Goal
+
+An **AI-native, plain-markdown** knowledge base that you (Claude Code) can read,
+structure, link, and query — with Obsidian as the human-facing graph/browser.
+Priorities, in order:
+
+1. **Reading & synthesis** over generation. I think far more often than I
+   produce artifacts — the highest-value use is you *reading* across my notes
+   and surfacing non-obvious connections, not writing prose for me.
+2. **Low maintenance.** Manual PKM systems die within weeks. The whole point is
+   that the routine (filing, tagging, linking, indexing) is handled by you.
+3. **No lock-in.** Everything stays as plain `.md` on disk, in git.
+
+---
+
+## 2. Phase 0 — Prerequisites & decisions
+
+Before touching files, confirm the environment and get my decisions:
+
+- [ ] Confirm Obsidian is installed and this folder is (or will be) opened as a
+      vault, stored **locally** (not iCloud-only).
+- [ ] Confirm `claude` is running from inside this folder.
+- [ ] Check whether this folder is a git repo. If not, propose
+      `git init` + a sensible `.gitignore` (ignore `.obsidian/workspace*`,
+      OS cruft; **keep** `.obsidian/` config and `.claude/`).
+- [ ] Ask me to confirm the vault name.
+- [ ] Ask whether I want to also pull in the community **`obsidian-skills`**
+      repo by Steph Ango / kepano (the closest thing to a first-party standard
+      for teaching you how to write wikilinks and edit `.md`/`.base`/`.canvas`
+      correctly). If yes, help me install it into `.claude/`.
+
+**CHECKPOINT 0** — summarize the environment state and my choices, then wait.
+
+---
+
+## 3. Phase 1 — Vault skeleton
+
+Create this folder structure (tuned for research, not generic productivity).
+Add a short `index.md` to each top-level folder describing what belongs there.
+
+```
+[VAULT_NAME]/
+├── SECOND-BRAIN-SETUP.md   # this file (can be deleted after setup)
+├── CLAUDE.md               # your standing instructions (Phase 2)
+├── .claude/                # skills, settings — NOT authentic notes
+├── 00-Inbox/               # raw capture, unsorted. Safe zone for you to edit freely.
+├── 01-Projects/            # active outputs with a deadline/definition of done
+│   ├── papers/             #   one folder per paper (drafts, notes, figures)
+│   ├── talks/              #   one folder per talk
+│   └── teaching/           #   per-course materials, problem sets, lectures
+├── 02-Literature/
+│   ├── papers/             # one note per paper, filename = citekey (e.g. ames2019cbf.md)
+│   └── topics/             # Maps of Content (MOCs) / lit-review hubs per subfield
+├── 03-Concepts/            # atomic evergreen notes (one idea each): CLFs, CBFs,
+│                           #   HJB, PPO, teacher-student distillation, LIP, ...
+├── 04-Resources/           # reference material, code snippets, configs, cheatsheets
+├── 05-Archive/             # completed / inactive
+├── Meetings/               # dated meeting notes (advisor, collaborators)
+├── Journal/
+│   ├── daily/              # daily notes
+│   └── sessions/           # YOUR session logs — this is the memory layer
+└── Templates/              # note templates (paper, concept, daily, meeting)
+```
+
+Notes on intent:
+- **`02-Literature/papers/`** = per-source reading notes (bibliographic).
+  **`03-Concepts/`** = distilled, source-independent, atomic notes. Keep these
+  separate: reading notes cite sources; concept notes are my own crystallized
+  understanding, densely `[[wikilinked]]`.
+- **`02-Literature/topics/`** MOCs are the backbone of any lit review — a hub
+  note per subfield that links out to the relevant paper + concept notes.
+
+**CHECKPOINT 1** — show me the tree you created and the folder `index.md`
+stubs, then wait.
+
+---
+
+## 4. Phase 2 — CLAUDE.md
+
+Create a `CLAUDE.md` at the vault root. Write it like you're **onboarding a new
+research assistant on day one** — not like documentation. Use this as the
+skeleton and fill it in with me:
+
+```markdown
+# CLAUDE.md — [VAULT_NAME]
+
+## Who I am
+[2–3 sentences: robotics researcher, humanoid locomotion + navigation autonomy,
+control theory + RL, teaching, paper writing. Pull the relevant bits from
+Section 0 of the setup brief.]
+
+## What this vault is
+My academic second brain. Reading notes, atomic concept notes, literature MOCs,
+and project/talk/course work. Optimize for reading & synthesis over generation.
+
+## Folder map
+[One line per top-level folder describing what lives there and where you should
+write new content. Link to each folder's index.md — "layered discovery".]
+
+## Conventions
+- Filenames: paper notes = citekey (e.g. `olkin2024dtmpc.md`); concept notes =
+  kebab-case concept name.
+- Every paper note links to the concepts it uses; every concept note links to
+  the papers that ground it.
+- Frontmatter on every note: `type`, `tags` (max 3, from existing taxonomy),
+  `created`, and for papers `authors`, `year`, `venue`, `url`/`doi`.
+- Prefer `[[wikilinks]]`. Keep links tight: only link A→B when understanding A
+  genuinely changes how I see B.
+
+## How to behave
+- Default to **thinking mode**: ask me clarifying questions before generating.
+- When ingesting a source, produce an atomic reading note + suggest concept
+  links; don't dump a wall of text.
+- Report what you changed at the end of every session (files created/moved,
+  links added, anything that didn't fit the taxonomy).
+
+## Hard rules (see Guardrails in the setup brief)
+- Never delete notes. Never rewrite the *content* of existing notes without asking.
+- Never rename/move heavily-linked notes at the OS level (breaks wikilinks).
+- Keep your own plans/scratch out of the vault proper (use `.claude/`).
+
+## Maintenance
+- Whenever you create or delete a file, update that folder's `index.md`.
+- At session start, read the two most recent logs in `Journal/sessions/`.
+- At session end, write a new session log (see Phase 3).
+```
+
+**CHECKPOINT 2** — draft the filled-in CLAUDE.md, show it to me, iterate until
+I approve. Expect a couple of rewrites — schema quality drives output quality.
+
+---
+
+## 5. Phase 3 — Memory (session logs) + core skills
+
+You have **no persistent memory** between sessions. We fake it with logs.
+
+1. Create a session-log template in `Templates/session.md` with sections:
+   `## Context (what I was doing)`, `## Changes made`, `## Open threads /
+   next time`, `## Decisions`.
+2. Wire the CLAUDE.md instruction: read the last 1–2 session logs at start,
+   write a new one at end.
+
+Then scaffold these **skills** (use `obsidian-skills` conventions if installed,
+otherwise plain command files under `.claude/`):
+
+- **`daily`** — create today's daily note from the template; carry over unfinished
+  tasks; surface active project priorities from `01-Projects/`.
+- **`capture`** — take a raw dump (paste, link, transcript) from `00-Inbox/`,
+  break it into atomic notes, file them, add frontmatter + wikilinks, report.
+- **`weekly-review`** — read across areas and surface **non-obvious
+  connections and contradictions** in my thinking. This is the payoff workflow.
+
+**CHECKPOINT 3** — show the template + skill files, then wait.
+
+---
+
+## 6. Phase 4 — Research-specific workflows
+
+These are the ones that matter for my actual work. Scaffold them as skills:
+
+- **`ingest-paper`** — given a PDF (I'll drop it in `00-Inbox/`) or an arXiv
+  link: create a reading note in `02-Literature/papers/` named by citekey, with
+  frontmatter (authors/year/venue/doi), a short structured summary (problem,
+  method, result, limitations), and **proposed links** to existing
+  `03-Concepts/` notes (create stub concept notes where they don't exist yet).
+- **`lit-review`** — given a topic, first `grep` the vault for what I already
+  have, *then* search the web for current work, then synthesize into / update a
+  MOC in `02-Literature/topics/`. Contradictions between my notes and new
+  sources are the interesting part — flag them.
+- **`concept`** — help me turn a messy note into an atomic evergreen concept
+  note: single idea, my own words, linked to grounding papers.
+- **`talk-prep`** — given a topic/deadline, pull relevant paper + concept notes
+  into a `01-Projects/talks/<name>/` folder and help me build an outline from my
+  own material (grounded in the vault, not generic).
+
+**CHECKPOINT 4** — show these skills, then wait.
+
+---
+
+## 7. Phase 5 — Remote access (optional, do last)
+
+I want to reach this vault from my phone. Proposed setup — help me stand it up
+and check I'm not missing anything:
+
+- Vault lives in a **private git repo**; `this machine` has a working clone.
+- **Tailscale** for a private network to `this machine`.
+- A terminal app on the phone (e.g. Termius) → `this machine` → `claude` in
+  the vault. Pull latest before, push after.
+
+Flag any pitfalls (merge conflicts from editing on two machines, `.obsidian`
+churn, sync-vs-git-vs-Syncthing tradeoffs).
+
+**CHECKPOINT 5** — outline the plan and the commands before executing.
+
+---
+
+## 8. Guardrails (apply throughout)
+
+1. **Wikilinks are load-bearing and fragile.** You operate at the OS level;
+   Obsidian only auto-relinks on renames done *inside the app*. Renaming or
+   moving a `.md` at the filesystem level **silently breaks every `[[link]]`**
+   pointing at it. So: freely reorganize `00-Inbox/` and new drafts, but
+   **never rename/move a note that shows up heavily in the graph** without
+   asking me first — and if I approve, fix the inbound links too.
+2. **Don't pollute the vault with generated content.** My authentic thinking
+   lives in the vault; your plans, scratch, and memory live in `.claude/` and
+   `Journal/sessions/`.
+3. **Capture before organizing.** Getting things *in* beats perfect filing.
+4. **Never delete notes.** Never rewrite existing note *content* without asking.
+5. **Constrain, don't sprawl.** Max 3 tags/note from the existing taxonomy;
+   tight linking only. If the structure feels inadequate, tell me — propose an
+   improvement rather than silently working around it.
+6. **Everything in git.** Commit at logical checkpoints so mistakes are cheap.
+
+---
+
+## 9. Checkpoint Protocol
+
+- Work through the phases **in order**. At each `CHECKPOINT N`, stop, summarize
+  what you did, and wait.
+- I advance by typing **`go N`** (or give corrections). Don't proceed past a
+  checkpoint without that.
+- If anything in this brief conflicts with what you find on disk, ask rather
+  than guess.
+
+Start at **Phase 0**.
