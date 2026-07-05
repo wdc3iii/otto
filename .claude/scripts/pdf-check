@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+"""pdf-check — list paper notes with no saved PDF at attachments/@<citekey>.pdf.
+These are the ones for the user to obtain. Informational (exit 0)."""
+from pathlib import Path
+REPO = Path(__file__).resolve().parents[2]
+PAPERS = REPO / "02-Literature" / "papers"
+ATT = REPO / "attachments"
+missing, have = [], 0
+for note in sorted(PAPERS.glob("@*.md")):
+    ck = note.stem[1:]
+    if (ATT / f"@{ck}.pdf").exists():
+        have += 1
+    else:
+        missing.append(ck)
+print(f"PDFs present: {have}/{have + len(missing)} · missing: {len(missing)}")
+for ck in missing:
+    print(f"  MISSING  @{ck}")

@@ -24,3 +24,7 @@ desktop.ini
 # Notes generated from them ARE tracked; the source PDFs/zips are not.
 00-Inbox/*.pdf
 00-Inbox/*.zip
+
+# --- Per-paper PDFs (attachments/@citekey.pdf): vault-local, not in git ---
+# Keeps the repo plain-md/lean. Switch to git-LFS if you want PDFs synced (e.g. to phone).
+attachments/

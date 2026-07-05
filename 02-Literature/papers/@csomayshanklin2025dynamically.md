@@ -17,6 +17,7 @@ url: null
 zotero: null
 status: read
 mine: true
+pdf: attachments/@csomayshanklin2025dynamically.pdf
 ---
 
 # Dynamically Feasible Path Planning in Cluttered Environments via Reachable Bezier Polytopes

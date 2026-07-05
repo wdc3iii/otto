@@ -11,6 +11,7 @@ venue:
 doi:
 arxiv:
 url:
+pdf:                 # attachments/@citekey.pdf, or `missing`
 zotero:
 status: to-read      # to-read | reading | read
 mine: false          # true if I am an author

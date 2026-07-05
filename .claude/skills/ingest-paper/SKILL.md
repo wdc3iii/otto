@@ -36,6 +36,13 @@ For each core concept the paper grounds/uses: `grep` `03-Concepts/`; link `[[con
 if it exists, else create a minimal stub (title + one-line + `to-revisit` tag) and link it.
 Add a `[@citekey]` back-reference under that concept's **Grounding**. Report stubs created.
 
+## 5b. Save the PDF
+Download the PDF where legally available → `attachments/@<citekey>.pdf`, and set the
+`pdf:` frontmatter to that path.
+- arXiv: `https://arxiv.org/pdf/<id>` (always). Open-access DOI / landing page: fetch if directly downloadable.
+- Paywalled / not found → set `pdf: missing` and add the citekey to the flagged list (the
+  user will obtain it). Never store a wrong or fabricated PDF.
+
 ## 6. Finish
 Update `02-Literature/index.md` if warranted, run `.claude/scripts/link-check`, and report:
 note created/updated, full-vs-stub, concepts linked/stubbed.

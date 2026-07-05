@@ -14,6 +14,7 @@ url: null
 zotero: null
 status: read
 mine: true
+pdf: attachments/@terrain2026consistent.pdf
 ---
 
 # Terrain Consistent Reference-Guided RL for Humanoid Navigation Autonomy

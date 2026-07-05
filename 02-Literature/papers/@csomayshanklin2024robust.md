@@ -20,6 +20,7 @@ url: null
 zotero: null
 status: read
 mine: true
+pdf: attachments/@csomayshanklin2024robust.pdf
 ---
 
 # Robust Agility via Learned Zero Dynamics Policies

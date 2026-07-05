@@ -14,6 +14,7 @@ url: null
 zotero: null
 status: read
 mine: true
+pdf: attachments/@contract2025theory.pdf
 ---
 
 # A Contract Theory for Layered Control Architectures

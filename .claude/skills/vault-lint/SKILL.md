@@ -19,7 +19,8 @@ Structural hygiene. Report first, fix only with approval, and honor the guardrai
 5. **Index coverage.** Note any file whose folder `index.md` doesn't mention it, where it
    plausibly should (MOCs, key concepts).
 6. **Stubs.** Flag notes with little body (frontmatter only / a title and nothing else).
-7. **Report** a prioritized list. Apply fixes only on approval; for any move/rename use the
+7. **PDFs.** Run `.claude/scripts/pdf-check`; flag paper notes missing `attachments/@citekey.pdf` — the user will obtain them.
+8. **Report** a prioritized list. Apply fixes only on approval; for any move/rename use the
    `obsidian-cli` skill (or rewrite inbound links + re-run `link-check`).
 
 ## Rules

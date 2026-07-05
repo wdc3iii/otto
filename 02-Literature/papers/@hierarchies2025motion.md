@@ -14,6 +14,7 @@ url: null
 zotero: null
 status: read
 mine: true
+pdf: attachments/@hierarchies2025motion.pdf
 ---
 
 # Hierarchies in Motion: From Layered Control Architectures to Perceptive 3D Hopping

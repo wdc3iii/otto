@@ -44,7 +44,7 @@ aliases: []
 created: 2026-07-05
 modified: 2026-07-05
 ```
-Papers add: `citekey, authors (list), year (number), venue, doi, url, arxiv, zotero, status (to-read|reading|read), mine (bool — true if I'm an author)`.
+Papers add: `citekey, authors (list), year (number), venue, doi, url, arxiv, zotero, status (to-read|reading|read), mine (bool), pdf (`attachments/@citekey.pdf` or `missing`)`.
 One key = one type globally; never mix.
 
 **Linking.** Prefer `[[wikilinks]]`. Every paper note links to the concepts it uses;

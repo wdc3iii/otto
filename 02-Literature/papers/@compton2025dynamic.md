@@ -18,6 +18,7 @@ url: null
 zotero: null
 status: read
 mine: true
+pdf: attachments/@compton2025dynamic.pdf
 ---
 
 # Dynamic Tube MPC: Learning Tube Dynamics with Massively Parallel Simulation for Robust Safety in Practice

@@ -19,6 +19,7 @@ url: null
 zotero: null
 status: read
 mine: true
+pdf: attachments/@dai2025walk.pdf
 ---
 
 # Walk the PLANC: Physics-Guided RL for Agile Humanoid Locomotion on Constrained Footholds

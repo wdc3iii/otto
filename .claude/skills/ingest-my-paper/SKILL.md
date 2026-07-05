@@ -10,6 +10,7 @@ guaranteed to enter the vault. Depth-1 only, dedup, idempotent.
 
 ## 1. Ingest the user's paper itself
 Run **ingest-paper** on it. Set `mine: true`. This note is the hub for its citations.
+Save the paper's PDF from `00-Inbox/` to `attachments/@<citekey>.pdf` and set `pdf:`.
 
 ## 2. Extract the reference list — accuracy-first, in this order
 1. **BibTeX `.bib`** the paper used — *best*: exact, offline, carries keys + DOIs + arXiv ids.

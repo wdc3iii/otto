@@ -17,6 +17,7 @@ url: null
 zotero: null
 status: read
 mine: true
+pdf: attachments/@compton2025learning.pdf
 ---
 
 # Learning for Layered Safety-Critical Control with Predictive Control Barrier Functions

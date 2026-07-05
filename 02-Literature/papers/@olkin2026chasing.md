@@ -18,6 +18,7 @@ url: null
 zotero: null
 status: read
 mine: true
+pdf: attachments/@olkin2026chasing.pdf
 ---
 
 # Chasing Autonomy: Dynamic Retargeting and Control Guided RL for Performant and Controllable Humanoid Running

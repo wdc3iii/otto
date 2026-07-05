@@ -19,6 +19,7 @@ url: null
 zotero: null
 status: read
 mine: true
+pdf: attachments/@compton2024constructive.pdf
 ---
 
 # Constructive Nonlinear Control of Underactuated Systems via Zero Dynamics Policies

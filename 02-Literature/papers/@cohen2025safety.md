@@ -19,6 +19,7 @@ url: null
 zotero: null
 status: read
 mine: true
+pdf: attachments/@cohen2025safety.pdf
 ---
 
 # Safety-Critical Controller Synthesis with Reduced-Order Models
