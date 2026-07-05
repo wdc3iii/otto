@@ -1,7 +1,6 @@
 ---
 type: paper
 citekey: wabersich2023data
-bibkey: wabersich2023data
 tags: []
 aliases: []
 created: '2026-07-05'
@@ -22,17 +21,19 @@ url: null
 zotero: null
 status: to-read
 mine: false
+bibkeys:
+- wabersich2023data
 ---
 
 # Data-driven safety filters: Hamilton-jacobi reachability, control barrier functions, and predictive methods for uncertain systems
 
-> [!info] Wabersich, Kim P; Taylor, Andrew J; Choi, Jason J; Sreenath, Koushil; Tomlin, Claire J; Ames, Aaron D; Zeilinger, Melanie N · 2023 · IEEE Control Systems Magazine
+> [!info] Wabersich, Kim P; Taylor, Andrew J; Choi, Jason J; Sreenath, Koushil; Tomlin, Claire J; Ames, Aaron D · 2023 · IEEE Control Systems Magazine
 
-> [!todo] metadata-only stub (harvested from [[@compton2025dynamic]] bibliography) — flesh out from full text when read.
+<!-- SUMMARY-PENDING: ingest-paper will fill a structured summary here -->
 
 ## Concepts
-<!-- [[03-Concepts]] this work grounds/uses -->
+<!-- [[03-Concepts]] links added when read -->
 
 ## Source
-- bibkey (in my LaTeX): `wabersich2023data`
-- Cited by [[@compton2025dynamic]]
+- Cited by [[@compton2025dynamic]], [[@compton2025learning]]
+- bibkeys: `wabersich2023data`

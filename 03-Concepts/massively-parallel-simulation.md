@@ -14,7 +14,7 @@ GPU-parallel physics simulation (thousands of environments at once) to collect t
 
 ## Grounding
 - [[@compton2025dynamic]] — 8192 envs in IsaacGym to learn tube dynamics.
-- [[@isaacgym]] · [[@rudin2021]]
+- [[@makoviychuk2021isaac]] · [[@rudin2021learning]]
 
 ## Related
 - [[dynamic-tube]]

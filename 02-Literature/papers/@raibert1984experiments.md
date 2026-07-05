@@ -1,7 +1,6 @@
 ---
 type: paper
 citekey: raibert1984experiments
-bibkey: raibert1984experiments
 tags: []
 aliases: []
 created: '2026-07-05'
@@ -18,17 +17,20 @@ url: null
 zotero: null
 status: to-read
 mine: false
+bibkeys:
+- raibert1984experiments
+- raibert_experiments_1984
 ---
 
 # Experiments in balance with a 3D one-legged hopping machine
 
 > [!info] Raibert, Marc H; Brown Jr, H Benjamin; Chepponis, Michael · 1984 · The International Journal of Robotics Research
 
-> [!todo] metadata-only stub (harvested from [[@compton2025dynamic]] bibliography) — flesh out from full text when read.
+<!-- SUMMARY-PENDING: ingest-paper will fill a structured summary here -->
 
 ## Concepts
-<!-- [[03-Concepts]] this work grounds/uses -->
+<!-- [[03-Concepts]] links added when read -->
 
 ## Source
-- bibkey (in my LaTeX): `raibert1984experiments`
-- Cited by [[@compton2025dynamic]]
+- Cited by [[@compton2025dynamic]], [[@compton2025learning]], [[@csomayshanklin2024robust]], [[@hierarchies2025motion]]
+- bibkeys: `raibert1984experiments`, `raibert_experiments_1984`

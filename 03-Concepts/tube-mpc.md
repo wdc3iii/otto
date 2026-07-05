@@ -14,7 +14,7 @@ Robust MPC that plans a nominal trajectory and buffers it by an error "tube" so 
 
 ## Grounding
 - [[@compton2025dynamic]] — motivates *dynamic* (action-dependent) tubes over fixed ones.
-- [[@langson2004]] · [[@lopez2019]] · [[@fan2020]]
+- [[@langson2004robust]] · [[@lopez2019dynamic]] · [[@fan2020deep]]
 
 ## Related
 - [[dynamic-tube]] · [[tracking-error-bound]]

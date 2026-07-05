@@ -13,7 +13,7 @@ modified: 2026-07-05
 A guaranteed bound on the error between the full-order system and the reduced-order reference — the "tracking invariant" that makes hierarchical safety arguments go through.
 
 ## Grounding
-- [[@compton2025dynamic]] · [[@csomay-s2022]]
+- [[@compton2025dynamic]] · [[@csomayshanklin2022multi]]
 
 ## Related
 - [[reduced-order-model]] · [[tube-mpc]] · [[control-barrier-function]]

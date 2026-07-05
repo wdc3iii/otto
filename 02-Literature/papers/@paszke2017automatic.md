@@ -1,7 +1,6 @@
 ---
 type: paper
 citekey: paszke2017automatic
-bibkey: paszke2017automatic
 tags: []
 aliases: []
 created: '2026-07-05'
@@ -25,17 +24,19 @@ url: null
 zotero: null
 status: to-read
 mine: false
+bibkeys:
+- paszke2017automatic
 ---
 
 # Automatic differentiation in PyTorch
 
-> [!info] Paszke, Adam; Gross, Sam; Chintala, Soumith; Chanan, Gregory; Yang, Edward; DeVito, Zachary; Lin, Zeming; Desmaison, Alban; Antiga, Luca; Lerer, Adam · 2017 · Neural Information Processing
+> [!info] Paszke, Adam; Gross, Sam; Chintala, Soumith; Chanan, Gregory; Yang, Edward; DeVito, Zachary · 2017 · Neural Information Processing
 
-> [!todo] metadata-only stub (harvested from [[@compton2025dynamic]] bibliography) — flesh out from full text when read.
+<!-- SUMMARY-PENDING: ingest-paper will fill a structured summary here -->
 
 ## Concepts
-<!-- [[03-Concepts]] this work grounds/uses -->
+<!-- [[03-Concepts]] links added when read -->
 
 ## Source
-- bibkey (in my LaTeX): `paszke2017automatic`
-- Cited by [[@compton2025dynamic]]
+- Cited by [[@compton2025dynamic]], [[@compton2025learning]]
+- bibkeys: `paszke2017automatic`

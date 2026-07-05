@@ -14,7 +14,7 @@ A learned, action-dependent error-tube representation: tube width is a function 
 
 ## Grounding
 - [[@compton2025dynamic]] — the contribution: learn tube dynamics from parallel sim.
-- [[@fan2020]] — deep learning tubes for tube MPC (prior art).
+- [[@fan2020deep]] — deep learning tubes for tube MPC (prior art).
 
 ## Related
 - [[tube-mpc]] · [[tracking-error-bound]] · [[massively-parallel-simulation]]

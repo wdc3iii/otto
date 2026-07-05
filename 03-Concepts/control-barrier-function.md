@@ -13,7 +13,7 @@ modified: 2026-07-05
 A function whose forward-invariant super-level set encodes a safety constraint; used to filter or synthesize controllers that keep the system in a safe set.
 
 ## Grounding
-- [[@compton2025dynamic]] · [[@molnar2022]] · [[@cohen-2024]] · [[@wabersich2023data]]
+- [[@compton2025dynamic]] · [[@molnar2022model]] · [[@cohen2024safety]] · [[@wabersich2023data]]
 
 ## Related
 - [[tracking-error-bound]] · [[reduced-order-model]]

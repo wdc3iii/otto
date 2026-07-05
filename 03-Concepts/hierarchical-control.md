@@ -13,7 +13,7 @@ modified: 2026-07-05
 Decomposing control into a planning layer (on a simplified model) and a tracking layer (on the full-order dynamics), coordinated so guarantees compose across time scales.
 
 ## Grounding
-- [[@compton2025dynamic]] · [[@girard2009]] · [[@kurtz2020]] · [[@csomay-s2022]]
+- [[@compton2025dynamic]] · [[@girard2009hierarchical]] · [[@kurtz2020robust]] · [[@csomayshanklin2022multi]]
 
 ## Related
 - [[reduced-order-model]] · [[tracking-error-bound]]

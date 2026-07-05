@@ -1,7 +1,6 @@
 ---
 type: paper
 citekey: huber1992robust
-bibkey: huber1992robust
 tags: []
 aliases: []
 created: '2026-07-05'
@@ -16,17 +15,19 @@ url: null
 zotero: null
 status: to-read
 mine: false
+bibkeys:
+- huber1992robust
 ---
 
 # Robust estimation of a location parameter
 
 > [!info] Huber, Peter J · 1992 · Breakthroughs in statistics: Methodology and distribution
 
-> [!todo] metadata-only stub (harvested from [[@compton2025dynamic]] bibliography) — flesh out from full text when read.
+<!-- SUMMARY-PENDING: ingest-paper will fill a structured summary here -->
 
 ## Concepts
-<!-- [[03-Concepts]] this work grounds/uses -->
+<!-- [[03-Concepts]] links added when read -->
 
 ## Source
-- bibkey (in my LaTeX): `huber1992robust`
 - Cited by [[@compton2025dynamic]]
+- bibkeys: `huber1992robust`
