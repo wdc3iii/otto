@@ -8,15 +8,21 @@ modified: 2026-07-05
 
 # Tube MPC
 
-> [!todo] Concept stub — auto-created while ingesting [[@compton2025dynamic]]. Replace with your own words, then drop the `to-revisit` tag.
+> [!note] AI-drafted base — refine into your own words, then drop `to-revisit`.
 
-Robust MPC that plans a nominal trajectory and buffers it by an error "tube" so the true (perturbed) trajectory stays safe. Classic variants fix the tube to a worst-case width.
+## Definition
+A robust MPC that plans a nominal trajectory and surrounds it with an error **tube** guaranteed to contain the true (disturbed / model-mismatched) trajectory; constraints are tightened by the tube so the realized trajectory stays feasible and safe. Classic formulations fix the tube to a worst-case robust invariant set.
+
+## Intuition / why it matters
+Decouples nominal planning from disturbance rejection: plan for the nominal model, then buffer by the tube. Tube size is the performance-vs-robustness knob — a fixed worst-case tube is safe but overly conservative, which is exactly what a [[dynamic-tube]] addresses.
 
 ## Grounding
-- [[@compton2025dynamic]] — motivates *dynamic* (action-dependent) tubes over fixed ones.
-- [[@langson2004robust]] · [[@lopez2019dynamic]] · [[@fan2020deep]]
+- [[@langson2004robust]] — the original tube-MPC formulation.
+- [[@lopez2019dynamic]] · [[@fan2020deep]] — nonlinear / learned-tube variants.
+- [[@compton2025dynamic]] — your dynamic (action-dependent) tube MPC.
 
 ## Related
 - [[dynamic-tube]] · [[tracking-error-bound]]
 
 ## Open questions
+- Tight, feasible tubes for nonlinear systems without hand-designed invariant sets.

@@ -1,26 +1,27 @@
 ---
 name: concept
-description: Help turn a messy or fleeting note into an atomic evergreen concept note in 03-Concepts/ — a single idea, in the user's own words, linked to the papers that ground it. Use when the user wants to distill or crystallize an idea, "make this a concept note", or refine their understanding of a topic.
+description: Draft or refine an atomic evergreen concept note in 03-Concepts/ — a single idea, grounded in the papers that support it, written as an editable base the user will refine. Use when the user wants to distill/crystallize an idea, "make this a concept note", draft concepts, or refine understanding of a topic.
 ---
 
 # concept
 
-Crystallize one idea into a durable, reusable note. On concept notes you **refine the
-user's words; you do not ghost-write** — the writing is where the learning happens.
+Crystallize one idea into a durable, reusable note. **Draft a solid, correct base** the user
+will edit into their own words — grounded in the linked papers and domain knowledge, marked
+`ai-draft`, with inference flagged and nothing fabricated.
 
 ## Procedure
-1. **Atomic check.** Identify the single idea. If the material holds two ideas, split into
-   two notes and link them.
-2. **Draft in the user's voice.** Work from what the user wrote/said; sharpen phrasing and
-   structure. If their understanding is unclear or has a gap, **ask** — don't invent an
-   explanation to paper over it.
+1. **Atomic check.** One idea per note. If the material holds two ideas, split and link them.
+2. **Draft it.** Write a tight, correct explanation from the grounding papers + domain
+   knowledge: what it is, the intuition, how it connects. If a claim isn't supported, mark it
+   as inference or leave an open question — never fabricate specifics or citations.
 3. **Fill `Templates/concept.md`:** Definition · Intuition/why-it-matters · Grounding · Open
-   questions. Grounding cites real `[@citekey]` notes and links `[[related-concepts]]` only
-   where A genuinely changes how the user sees B.
+   questions. Grounding cites real `[@citekey]` notes; link `[[related-concepts]]` only where
+   A genuinely changes how you see B. Add an `ai-draft` callout so the user knows to review.
 4. **Filename** kebab-case; frontmatter per schema; ≤3 tags from `.claude/taxonomy.md`.
 5. **Back-link.** Add this concept to the **Concepts/Grounding** section of the papers that
    support it, so the paper↔concept links go both ways.
 6. Update `03-Concepts/index.md` if warranted; run `link-check`; report.
 
 ## Rules
-- One idea per note. Own words. No ghost-writing. No invented citations or links.
+- One idea per note. Draft as an editable base (`ai-draft`); ground every claim; no invented
+  citations or links; no fabricated specifics — the user refines into their own voice.

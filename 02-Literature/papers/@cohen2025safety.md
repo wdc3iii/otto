@@ -1,7 +1,7 @@
 ---
 type: paper
 citekey: cohen2025safety
-tags: []
+tags: [control]
 aliases: []
 created: '2026-07-05'
 modified: '2026-07-05'
@@ -19,6 +19,7 @@ url: null
 zotero: null
 status: read
 mine: true
+summary: ai-draft
 pdf: attachments/@cohen2025safety.pdf
 ---
 
@@ -30,10 +31,22 @@ pdf: attachments/@cohen2025safety.pdf
 Reduced-order models (ROMs) provide lower di- Full Order Model Safety-Critical Control mensional representations of complex systems, capturing their of Full Order Model salient features while simplifying control design. Building on previous work, this paper presents an overarching framework for the integration of ROMs and control barrier functions, enabling the use of simplified models to construct safety-critical controllers while providing safety guarantees for complex full- order models. To achieve this, we formalize the connection between full and ROMs by defining projection mappings that <latexit sha1_base64="is3Qj5uhS9oDrRxn/bgvL1iKkYA=">AAAN8XichZdbUxs3FIA36S2loSXtYx+qKZMZOkMZG8ytM51JINxyAYdwC5gy0lq2hXdXG0mLMTvuW39E3zp9zWv70n/Sf9Oza8Ox9xC6MxitvnORzupIRyIOlHWl0r/37n/08Seffvbg87EvHo5/+dXEo68PrE6ML/d9HWhzJLiVgYrkvlMukEexkTwUgTwU7dWMH15IY5WO9lw3lqchb0aqoXzuoOts4rtaXbu0Ji577GdWC7lriUa63puCnumaSH44m5gszZTyh9FGedCY9AZP9ezRw3/ApJ+EMnJ+wK09KZdid5py45QfyN5YLbEy5n6bN+UJNCMeSnua5jPpscfQU2cNbeAvcizvHdZIeWhtNxQgmY3VFlnWeRs7SVxj6TRVUZw4Gfl9R40kYE6zLCysroz0XdCFBveNgrEyv8UN9x0Eb8RLZttpHdiRqaR1adQFBPVidIqpCOE9kh1fhyGP6mmNm2aool5a07E03GmTRaCjXCtQoXIWAtWsTWcSt+jxy//TA4mCnk3EOUzN6YJqOgC/Aimo7IJovhREultkx8iOi2wb2XaRhX7vpHza5z4P0slyUWKvl/5SczrujY09Zis6qLMoCUUe/mExcSWNvnbUSEtFM0JHEnHm5dpcoDvS+JAsLJDOUcMc1TixKhAKAn2EPoF1hHUCh4YqM2jkCG4gbvRg1bLtnb21nxisL1Zz8tKJBlMN1tUJg6QPYPl2OKQNLOoOrGHJRB5FHf2Y
 
 ## Summary
-> [!note] Your paper — add your framing / key contribution in your own words.
+> [!note] AI-drafted from the abstract/intro — a base to refine or replace with your own framing.
+
+**TL;DR** — An overarching framework for **synthesizing safety-critical controllers on reduced-order models** and transferring the safety guarantees to the full-order model via projection maps and simulation functions.
+**Problem** — ROMs simplify control design, but you need formal conditions under which CBF-based safety proven on the ROM actually holds on the complex full-order system.
+**Method** — Define projection mappings relating states/inputs of full and reduced models; use **simulation functions** to establish when safety guarantees transfer ROM→FoM; integrate with control barrier functions.
+**Key results** — Illustrated in **simulation on a drone** and **hardware on the ARCHER 3D hopper**.
+
+## Takeaways
+- Provides the ROM↔FoM safety-transfer theory (projection maps + simulation functions) underpinning the layered-safety line.
+- CBFs synthesized on a simple model, certified on the hard one.
+
+## Where it sits in my work
+The ROM+CBF theory that [[@compton2025learning|predictive CBFs]] robustifies with learning; a safety layer within [[@hierarchies2025motion]].
 
 ## Concepts
-<!-- [[03-Concepts]] links -->
+- [[control-barrier-function]] · [[reduced-order-model]] · [[tracking-error-bound]] · [[hierarchical-control]]
 
 ## References (in otto)
 - [[@abraham1983manifolds]]

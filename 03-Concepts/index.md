@@ -21,5 +21,6 @@ Rules:
   how I see B.
 - **No timestamp IDs** — the descriptive title is the address (Obsidian propagates renames).
 
-On concept notes the agent **refines my phrasing**; it does not ghost-write — the writing
-is where the learning is. Grown via the `concept` skill.
+On concept notes the agent **drafts an editable base** (marked with an `ai-draft` callout) —
+grounded in the linked papers, inference flagged, never fabricated — which I then refine into
+my own words. Drafted via the `concept` skill.

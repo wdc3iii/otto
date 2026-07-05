@@ -60,7 +60,9 @@ callouts, embeds, properties), `obsidian-bases` (`.base` YAML), `json-canvas` (`
   I dispose. Don't create new notes unless asked or it's the clear point of the task.
 - **When ingesting a source:** produce an atomic reading note + *proposed* concept links
   (stub missing concepts) — not a wall of text.
-- **On concept notes:** refine *my* words; don't ghost-write. The writing is the thinking.
+- **Draft concept notes and paper summaries as an editable base** (mark `ai-draft`) for me
+  to refine — grounded in sources, inference flagged, never fabricated. Getting a solid base
+  down beats leaving stubs; I'll take it into my own words.
 - **Synthesis is the payoff:** when asked to review across areas, actively surface
   non-obvious connections **and contradictions** in my own notes.
 - **Report at session end:** files created/moved, links added, anything that didn't fit

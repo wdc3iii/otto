@@ -1,7 +1,7 @@
 ---
 type: paper
 citekey: hierarchies2025motion
-tags: []
+tags: [control, planning, locomotion]
 aliases: []
 created: '2026-07-05'
 modified: '2026-07-05'
@@ -14,6 +14,7 @@ url: null
 zotero: null
 status: read
 mine: true
+summary: ai-draft
 pdf: attachments/@hierarchies2025motion.pdf
 ---
 
@@ -27,10 +28,22 @@ pdf: attachments/@hierarchies2025motion.pdf
 Designing fast and flexible controllers for dynamic systems remains a fundamental challenge in robotics, particularly when balancing robustness, real-time tractability, and adaptabil- ity to complex environments. A common strategy is to decompose the control problem hierarchically, separating planning and feedback across different timescales and layers of abstraction. In this work, we leverage this hierarchical perspective and argue that it enables three key benefits: efficiency, feasibility, and generalizability. We develop constructive controller synthesis techniques for each layer of a three-layer architecture and show that their coordination enables independent design while main- taining system-layer guarantees. This framework is validated experimentally on a 3D hopping robot navigating unstructured outdoor terrain, where we show that hierarchical control enables stable, agile, and adaptive locomotion.
 
 ## Summary
-> [!note] Your paper — add your framing / key contribution in your own words.
+> [!note] AI-drafted from the abstract/intro — a base to refine or replace with your own framing.
+
+**TL;DR** — A journal-scale synthesis arguing that a **three-layer hierarchical control architecture** buys three things — efficiency, feasibility, generalizability — with constructive per-layer synthesis whose coordination preserves system-level guarantees.
+**Problem** — Dynamic systems need controllers balancing robustness, real-time tractability, and adaptability; monolithic designs don't scale across perception/dynamics/contact complexity.
+**Method** — Decompose planning and feedback across timescales/abstraction layers; develop constructive synthesis for each of three layers and show their composition gives independent design + system-layer guarantees.
+**Key results** — Validated on a **3D hopping robot navigating unstructured outdoor terrain** — stable, agile, adaptive locomotion.
+
+## Takeaways
+- Positions your body of work as one coherent layered stack.
+- Independent per-layer design *with* preserved end-to-end guarantees is the central claim.
+
+## Where it sits in my work
+The umbrella paper: the layers instantiate [[@csomayshanklin2025dynamically|Bézier path planning]], [[@compton2025dynamic|DTMPC]], [[@compton2025learning|predictive CBFs]], and the ZDP tracking of [[@csomayshanklin2024robust]]; formalized abstractly in [[@contract2025theory]].
 
 ## Concepts
-<!-- [[03-Concepts]] links -->
+- [[hierarchical-control]] · [[reduced-order-model]] · [[tracking-error-bound]] · [[tube-mpc]]
 
 ## References (in otto)
 - [[@ambrose2022creating]]

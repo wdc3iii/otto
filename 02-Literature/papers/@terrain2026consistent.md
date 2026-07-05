@@ -1,7 +1,7 @@
 ---
 type: paper
 citekey: terrain2026consistent
-tags: []
+tags: [rl, locomotion, navigation]
 aliases: []
 created: '2026-07-05'
 modified: '2026-07-05'
@@ -14,6 +14,7 @@ url: null
 zotero: null
 status: read
 mine: true
+summary: ai-draft
 pdf: attachments/@terrain2026consistent.pdf
 ---
 
@@ -27,10 +28,22 @@ pdf: attachments/@terrain2026consistent.pdf
 We present a method for training reference- guided, perceptive reinforcement learning locomotion policies for humanoid robots in which reference trajectories are mod- ulated in training to be consistent with terrain geometry. Aiming to deploy our method with standard navigation auton- omy infrastructure, we synthesize SE(2)-controllable reference trajectories inside the RL training loop, projecting desired footsteps onto valid footholds and adjusting swing-foot and center-of-mass trajectories to match the terrain. The resulting policy exposes a clean SE(2) velocity interface compatible with standard navigation planners. In simulation, environmentally- conditioned references significantly improve reference tracking performance compared to environment agnostic references. On hardware, we integrate the policy with an MPC + control barrier function planner and demonstrate long-horizon (>70m) closed-loop autonomous navigation on the Unitree G1 through outdoor environments containing rough terrain and consecutive flights of stairs, with all sensing and computation onboard.
 
 ## Summary
-> [!note] Your paper — add your framing / key contribution in your own words.
+> [!note] AI-drafted from the abstract/intro — a base to refine or replace with your own framing.
+
+**TL;DR** — Trains **perceptive, reference-guided RL** locomotion whose reference trajectories are *modulated during training to be consistent with terrain geometry*, exposing a clean SE(2) velocity interface that plugs into standard navigation planners.
+**Problem** — Strong RL locomotion struggles to (a) interface with planner-issued commands and (b) condition on terrain geometry (valid footholds).
+**Method** — Synthesize SE(2)-controllable reference trajectories inside the RL loop using reduced-order models; project desired footsteps onto valid footholds and adjust swing-foot/CoM to match terrain.
+**Key results** — Sim: terrain-conditioned references sharply improve tracking. Hardware: integrated with an **MPC + control-barrier-function planner** for **>70 m** closed-loop autonomous navigation on a **Unitree G1** over rough terrain and stairs, fully onboard.
+
+## Takeaways
+- Shaping references to the terrain *in training* is what makes the policy planner- and perception-compatible.
+- The SE(2) interface is the bridge between low-level RL locomotion and high-level navigation.
+
+## Where it sits in my work
+The navigation-autonomy capstone for the RL-locomotion line: shares the controllable-runner goal of [[@olkin2026chasing]] and pairs a [[control-barrier-function]] planner with [[reduced-order-model|ROM]]-based references.
 
 ## Concepts
-<!-- [[03-Concepts]] links -->
+- [[reduced-order-model]] · [[control-barrier-function]] · _to add:_ reference-guided-rl, navigation-autonomy
 
 ## References (in otto)
 - [[@agha2022nebula]]

@@ -1,7 +1,7 @@
 ---
 type: paper
 citekey: dai2025walk
-tags: []
+tags: [rl, locomotion, control]
 aliases: []
 created: '2026-07-05'
 modified: '2026-07-05'
@@ -19,6 +19,7 @@ url: null
 zotero: null
 status: read
 mine: true
+summary: ai-draft
 pdf: attachments/@dai2025walk.pdf
 ---
 
@@ -30,10 +31,22 @@ pdf: attachments/@dai2025walk.pdf
 Bipedal humanoid robots must precisely coordi- nate balance, timing, and contact decisions when locomoting on constrained footholds such as stepping stones, beams, and planks—even minor errors can lead to catastrophic failure. Classical optimization and control pipelines handle these con- straints well but depend on highly accurate mathematical representations of terrain geometry, making them prone to error when perception is noisy or incomplete. Meanwhile, rein- forcement learning has shown strong resilience to disturbances and modeling errors, yet end-to-end policies rarely discover the precise foothold placement and step sequencing required for discontinuous terrain. These contrasting limitations motivate approaches that guide learning with physics-based structure rather than relying purely on reward shaping. In this work, we introduce a locomotion framework in which a reduced- order stepping planner supplies dynamically consistent motion targets that steer the RL training process via Control Lyapunov Function (CLF) rewards. This combination of structured foot- step planning and data-driven adaptation produces accurate, agile, and hardware-validated stepping-stone locomotion on a humanoid robot, substantially improving reliability compared to conventional model-free reinforcement-learning baselines. The open-source code base is available at https://github. com/Zolkin1/robot_
 
 ## Summary
-> [!note] Your paper — add your framing / key contribution in your own words.
+> [!note] AI-drafted from the abstract/intro — a base to refine or replace with your own framing.
+
+**TL;DR** — **PLANC**: physics-guided RL for humanoid locomotion on *constrained footholds* (stepping stones/beams), where a reduced-order stepping planner supplies dynamically consistent targets that steer RL training via **CLF rewards**.
+**Problem** — Stepping-stone terrain imposes hard contact-location/timing constraints (a misstep = failure); model-based pipelines need accurate terrain models, while end-to-end RL rarely finds precise foothold/step sequencing.
+**Method** — A reduced-order stepping planner (LIP-style) produces dynamically consistent motion targets; a Control-Lyapunov-Function reward guides the RL policy toward them — structured footstep planning + data-driven adaptation.
+**Key results** — Accurate, agile, **hardware-validated stepping-stone locomotion**, substantially more reliable than model-free RL baselines.
+
+## Takeaways
+- Physics-structured guidance (planner + CLF reward) beats pure reward shaping for precise, discontinuous-terrain stepping.
+- Combines the robustness of RL with the precision of model-based footstep planning.
+
+## Where it sits in my work
+Applies the CLF-guided-RL rewards analyzed in [[@olkin2026stability]]; a constrained-terrain sibling of the perceptive nav in [[@terrain2026consistent]].
 
 ## Concepts
-<!-- [[03-Concepts]] links -->
+- [[reduced-order-model]] · [[control-barrier-function]] · _to add:_ control-lyapunov-function, footstep-planning
 
 ## References (in otto)
 - [[@acosta2023bipedal]]

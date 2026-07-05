@@ -1,7 +1,7 @@
 ---
 type: paper
 citekey: compton2024constructive
-tags: []
+tags: [control, locomotion]
 aliases: []
 created: '2026-07-05'
 modified: '2026-07-05'
@@ -19,6 +19,7 @@ url: null
 zotero: null
 status: read
 mine: true
+summary: ai-draft
 pdf: attachments/@compton2024constructive.pdf
 ---
 
@@ -30,10 +31,23 @@ pdf: attachments/@compton2024constructive.pdf
 Stabilizing underactuated systems is an inherently challenging control task due to fundamental limitations on how the control input affects the unactuated dynamics. Decompos- ing the system into actuated (output) and unactuated (zero) coordinates provides useful insight as to how input enters the system dynamics. In this work, we leverage the structure of this decomposition to formalize the idea of Zero Dynamics Policies (ZDPs)—a mapping from the unactuated coordinates to desired Fig. 1: The two conditions required of the zeroing manifold: a) controlled actuated coordinates. Specifically, we show that a ZDP exists in invariance, and b) stable zero dynamics. a neighborhood of the origin, and prove that combining output stabilization with a ZDP results in stability of the full system variables, enabling stable zero dynamics by construction. We state. We detail a constructive method of obtaining ZDPs in prove that stabilizing to the zero dynamics surface defined by a neighborhood of the origin, and propose a learning-based the learned outputs results in stability of the overall system. approach which leverages optimal control to obtain ZDPs with This paper presents a perspective with origins in the much larger regions of attraction. We demonstrate that such a stabilization of non-minimum phase systems [5], [6], [7], paradigm can be used to stabilize the canonical underactuated sys
 
 ## Summary
-> [!note] Your paper — add your framing / key contribution in your own words.
+> [!note] AI-drafted from the abstract/intro — a base to refine or replace with your own framing.
+
+**TL;DR** — Formalizes **Zero Dynamics Policies (ZDPs)**: a map from a system's unactuated (zero) coordinates to *desired* actuated coordinates, which stabilizes underactuated systems without assuming the passive dynamics are already stable.
+**Problem** — In underactuated systems you can't directly shape every DOF; stabilizing them when the zero dynamics aren't a priori stable is hard, and classic output design is guess-and-check.
+**Method** — Decompose into actuated/unactuated coordinates and define a ZDP; prove a ZDP exists in a neighborhood of the origin and that **output-stabilization + ZDP ⇒ full-state stability**. Gives a constructive local method plus a **learning-based** ZDP (via optimal control) that enlarges the region of attraction.
+**Key results** — Stabilizes the canonical cartpole and improves over nominal LQR.
+
+## Takeaways
+- Turns underactuation *structure* into leverage: control design collapses onto the low-dimensional zero coordinates.
+- Learning extends the region of attraction well beyond the constructive local guarantee.
+- Theory foundation for the hardware follow-up.
+
+## Where it sits in my work
+The theory behind [[@csomayshanklin2024robust|Robust Agility via Learned ZDPs]] (ARCHER hardware). Part of your zero-dynamics / underactuated-stabilization line.
 
 ## Concepts
-<!-- [[03-Concepts]] links -->
+- [[reduced-order-model]] (a ZDP is a control-oriented reduction) · _to add:_ zero-dynamics-policy, control-lyapunov-function, hybrid-zero-dynamics
 
 ## References (in otto)
 - [[@ames2014rapidly]]
