@@ -19,3 +19,8 @@ desktop.ini
 
 # --- Claude Code per-machine local settings (permission grants, etc.) ---
 .claude/settings.local.json
+
+# --- Inbox raw source dumps: large binaries, transient staging (full texts live in Zotero) ---
+# Notes generated from them ARE tracked; the source PDFs/zips are not.
+00-Inbox/*.pdf
+00-Inbox/*.zip
