@@ -38,13 +38,13 @@ kebab-case (`control-barrier-functions.md`). Daily = `YYYY-MM-DD.md`. Meetings =
 
 **Frontmatter (every note).** YAML, ISO-8601 dates, `tags`/`aliases` are **lists** (plural):
 ```yaml
-type: concept        # concept|paper|moc|project|daily|meeting|resource|index|home
+type: concept        # concept|paper|moc|project|daily|meeting|resource|index|home|session
 tags: [rl, control]  # ≤3, lowercase, ONLY from .claude/taxonomy.md
 aliases: []
 created: 2026-07-05
 modified: 2026-07-05
 ```
-Papers add: `citekey, authors (list), year (number), venue, doi, url, zotero, status (to-read|reading|read)`.
+Papers add: `citekey, authors (list), year (number), venue, doi, url, arxiv, zotero, status (to-read|reading|read), mine (bool — true if I'm an author)`.
 One key = one type globally; never mix.
 
 **Linking.** Prefer `[[wikilinks]]`. Every paper note links to the concepts it uses;

@@ -16,7 +16,7 @@ import re, sys, yaml
 from pathlib import Path
 
 INDEX_EXCLUDE = {".git", ".obsidian", ".claude", ".trash"}
-SCAN_SKIP_TOP = {"Templates"}
+SCAN_SKIP_TOP = {"Templates", "00-Inbox"}  # raw captures link/ref freely; don't flag
 WIKILINK = re.compile(r"!?\[\[([^\]]+?)\]\]")
 
 

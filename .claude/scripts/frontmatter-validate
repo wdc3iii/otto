@@ -11,7 +11,7 @@ import re, sys, yaml
 from pathlib import Path
 
 EXCLUDE = {".git", ".obsidian", ".claude", ".trash"}
-SKIP_TOP = {"Templates"}
+SKIP_TOP = {"Templates", "00-Inbox"}  # inbox is raw/unstructured by design
 SKIP_FILES = {"CLAUDE.md", "PROJECT-PLAN.md", "README.md"}
 ALLOWED_TYPES = {"concept", "paper", "moc", "project", "daily",
                  "meeting", "resource", "index", "home", "session"}

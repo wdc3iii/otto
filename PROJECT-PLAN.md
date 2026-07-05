@@ -246,6 +246,11 @@ Same phases and **Checkpoint Protocol** as your brief — work in order, stop at
 - **`ingest-paper`** — PDF/arXiv → `@citekey.md` reading note (frontmatter + structured
   summary: problem/method/result/limitations) + proposed `03-Concepts/` links (stub
   missing concepts). Grounded strictly in the source; no invented claims.
+- **`ingest-my-paper`** — ingest one of *my own* papers, then guarantee coverage of what it
+  cites: extract its bibliography (`.bib`/`.bbl` preferred, else PDF references), enqueue each
+  cited work to `00-Inbox/`, run `ingest-paper` on each (depth-1, dedup, mostly stubs). Bootstrap
+  otto by running this over my prior publications. *(Cited-work resolution prefers identifiers
+  from my bib + arXiv/OpenAlex enrichment; Semantic Scholar rate-limits unkeyed — 429.)*
 - **`lit-review`** — grep the vault first, *then* web, then synthesize into / update a
   `04-Maps/` MOC. **Flag contradictions** between your notes and new sources — that's
   the point.
