@@ -1,0 +1,112 @@
+#!/usr/bin/env python3
+"""frontmatter-validate — check note frontmatter against the otto schema.
+
+Usage: frontmatter-validate [VAULT_ROOT]
+Checks: frontmatter present; `type` in the allowed set; `tags` is a YAML list of
+<=3 lowercase tags drawn from .claude/taxonomy.md; `created`/`modified` are ISO dates;
+`aliases` is a list. Skips Templates/ and non-note root docs.
+Exit code 1 if any ERROR-level issues found, else 0.
+"""
+import re, sys, yaml
+from pathlib import Path
+
+EXCLUDE = {".git", ".obsidian", ".claude", ".trash"}
+SKIP_TOP = {"Templates"}
+SKIP_FILES = {"CLAUDE.md", "PROJECT-PLAN.md", "README.md"}
+ALLOWED_TYPES = {"concept", "paper", "moc", "project", "daily",
+                 "meeting", "resource", "index", "home", "session"}
+ISO = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+
+
+def root():
+    if len(sys.argv) > 1:
+        return Path(sys.argv[1]).resolve()
+    return Path(__file__).resolve().parents[2]
+
+
+def load_taxonomy(r):
+    f = r / ".claude" / "taxonomy.md"
+    tags = set()
+    if f.exists():
+        for line in f.read_text(encoding="utf-8").splitlines():
+            m = re.match(r"\s*-\s+`([a-z0-9][a-z0-9-]*)`", line)
+            if m:
+                tags.add(m.group(1))
+    return tags
+
+
+def frontmatter(path):
+    text = path.read_text(encoding="utf-8", errors="ignore")
+    if not text.startswith("---"):
+        return None
+    m = re.match(r"---\n(.*?)\n---", text, flags=re.S)
+    if not m:
+        return None
+    try:
+        return yaml.safe_load(m.group(1)) or {}
+    except Exception as e:
+        return {"__parse_error__": str(e)}
+
+
+def main():
+    r = root()
+    taxonomy = load_taxonomy(r)
+    errors = warnings = checked = 0
+    for p in sorted(r.rglob("*.md")):
+        parts = p.relative_to(r).parts
+        if parts[0] in EXCLUDE or parts[0] in SKIP_TOP:
+            continue
+        if len(parts) == 1 and p.name in SKIP_FILES:
+            continue
+        checked += 1
+        rel = p.relative_to(r).as_posix()
+        issues = []
+        fm = frontmatter(p)
+        if fm is None:
+            issues.append(("ERROR", "no YAML frontmatter"))
+        elif "__parse_error__" in fm:
+            issues.append(("ERROR", f"invalid YAML: {fm['__parse_error__']}"))
+        else:
+            t = fm.get("type")
+            if t is None:
+                issues.append(("ERROR", "missing `type`"))
+            elif t not in ALLOWED_TYPES:
+                issues.append(("ERROR", f"unknown type: {t!r}"))
+
+            tags = fm.get("tags") or []
+            if not isinstance(tags, list):
+                issues.append(("ERROR", "`tags` must be a YAML list"))
+            else:
+                if len(tags) > 3:
+                    issues.append(("ERROR", f"{len(tags)} tags (max 3)"))
+                for tag in tags:
+                    ts = str(tag)
+                    if ts != ts.lower():
+                        issues.append(("WARN", f"tag not lowercase: {ts}"))
+                    if taxonomy and ts.lower() not in taxonomy:
+                        issues.append(("ERROR", f"tag not in taxonomy: {ts}"))
+
+            for k in ("created", "modified"):
+                v = fm.get(k)
+                if v is None:
+                    issues.append(("WARN", f"missing `{k}`"))
+                elif not ISO.match(str(v)):
+                    issues.append(("ERROR", f"`{k}` not ISO date: {v}"))
+
+            al = fm.get("aliases")
+            if al is not None and not isinstance(al, list):
+                issues.append(("WARN", "`aliases` should be a list"))
+
+        for lvl, msg in issues:
+            if lvl == "ERROR":
+                errors += 1
+            else:
+                warnings += 1
+            print(f"  [{lvl}] {rel}: {msg}")
+
+    print(f"\n{checked} notes checked · {errors} error(s) · {warnings} warning(s)")
+    sys.exit(1 if errors else 0)
+
+
+if __name__ == "__main__":
+    main()
