@@ -44,7 +44,8 @@ Reinforcement learning (RL) has become the de facto method for achieving locomot
 The theory for your CLF-guided-RL line — the reward-shaping used in [[@olkin2026chasing|Chasing Autonomy]] and related to CLF rewards in [[@dai2025walk|Walk the PLANC]].
 
 ## Concepts
-- _to add:_ control-lyapunov-function, clf-guided-rl, exponential-stability
+- [[control-lyapunov-function]] · [[rl-for-legged-locomotion]] · _to add:_ exponential-stability
+- Map: [[learning-based-locomotion]]
 
 ## References (in otto)
 - [[@ames2014rapidly]]

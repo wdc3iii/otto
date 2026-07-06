@@ -51,7 +51,8 @@ We present a method for training reference- guided, perceptive reinforcement lea
 The navigation-autonomy capstone for the RL-locomotion line: shares the controllable-runner goal of [[@olkin2026chasing]] and pairs a [[control-barrier-function]] planner with [[reduced-order-model|ROM]]-based references.
 
 ## Concepts
-- [[reduced-order-model]] · [[control-barrier-function]] · _to add:_ reference-guided-rl, navigation-autonomy
+- [[rl-for-legged-locomotion]] · [[control-lyapunov-function]] · [[reduced-order-model]] · [[control-barrier-function]] · _to add:_ reference-guided-rl, navigation-autonomy
+- Map: [[learning-based-locomotion]]
 
 ## References (in otto)
 - [[@agha2022nebula]]

@@ -45,7 +45,8 @@ Humanoid robots have the promise of locomoting like humans, including fast and d
 Applies the CLF-guided-RL stability ideas of [[@olkin2026stability]]; the controllable-locomotion-for-autonomy goal is shared with [[@terrain2026consistent]].
 
 ## Concepts
-- [[massively-parallel-simulation]] · _to add:_ reference-guided-rl, motion-retargeting, control-lyapunov-function
+- [[rl-for-legged-locomotion]] · [[control-lyapunov-function]] · [[massively-parallel-simulation]] · _to add:_ reference-guided-rl, motion-retargeting
+- Map: [[learning-based-locomotion]]
 
 ## References (in otto)
 —

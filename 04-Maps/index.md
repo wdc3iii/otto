@@ -23,4 +23,5 @@ Built / updated by the `lit-review` skill. Contradictions between existing notes
 sources are the interesting part — flag them here.
 
 ## Current maps
+- [[learning-based-locomotion]] — RL / CLF-guided RL for legged locomotion (anchored on [[@terrain2026consistent]]).
 - [[publication-record]] — my publications + first-author list; source of truth for `website-check`.

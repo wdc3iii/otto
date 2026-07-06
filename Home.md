@@ -24,6 +24,7 @@ notes. Do **not** read the whole vault for a general question.
 
 ## Maps of Content
 <!-- Add subfield MOCs here as they emerge, e.g. [[04-Maps/bipedal-locomotion-control]] -->
+- [[learning-based-locomotion]] — RL / CLF-guided RL for legged locomotion
 - [[publication-record]] — my publications + first-author list
 
 ## Active projects

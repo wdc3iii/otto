@@ -46,7 +46,8 @@ Bipedal humanoid robots must precisely coordi- nate balance, timing, and contact
 Applies the CLF-guided-RL rewards analyzed in [[@olkin2026stability]]; a constrained-terrain sibling of the perceptive nav in [[@terrain2026consistent]].
 
 ## Concepts
-- [[reduced-order-model]] · [[control-barrier-function]] · _to add:_ control-lyapunov-function, footstep-planning
+- [[rl-for-legged-locomotion]] · [[control-lyapunov-function]] · [[reduced-order-model]] · [[control-barrier-function]] · _to add:_ footstep-planning
+- Map: [[learning-based-locomotion]]
 
 ## References (in otto)
 - [[@acosta2023bipedal]]
