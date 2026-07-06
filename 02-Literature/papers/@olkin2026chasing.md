@@ -4,7 +4,7 @@ citekey: olkin2026chasing
 tags: [rl, locomotion]
 aliases: []
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-07-06'
 authors:
 - Olkin, Zachary
 - Compton, William D.
@@ -38,16 +38,30 @@ Humanoid robots have the promise of locomoting like humans, including fast and d
 **Method** — Optimization with hard constraints retargets human motion into improved periodic references; ablates reference vs. reward structure, finding a goal-conditioned + control-guided reward on dynamically-optimized human data works best.
 **Key results** — On a **Unitree G1**: running up to **3.3 m/s**, hundreds of meters outdoors; integrated into a full perception+planning autonomy stack for obstacle avoidance while running.
 
+## Autonomy stack — CBF-constrained MPC safety filter
+*(verified from §V-C, not just the abstract)* On top of the frozen running controller sits an
+**MPC layer that generates its velocity commands** for real-time collision avoidance:
+- Real-time **LiDAR** scans build/update a local occupancy map, from which a smooth
+  **[[poisson-safety-function|Poisson safety function]]** is synthesized ([[@bena2025geometry]]).
+- That PSF becomes a **[[control-barrier-function|CBF]] collision-avoidance constraint along the MPC
+  horizon**; the loop (1) characterizes the environment, (2) re-plans, (3) updates the running
+  command. Odometry from FastLIO at 10 Hz — all computation onboard.
+- Sustains **~2 m/s** forward running while dodging detected obstacles outdoors.
+
+This is what makes the running *autonomous* (vs. remote velocity feedforward), and it is the **same
+PSF → CBF-MPC safety-filter-over-a-frozen-LLC pattern** as the safety tier of my
+[[capability-aware-navigation]] project.
+
 ## Takeaways
 - Retargeting-in-the-loop + control-guided rewards beat raw motion playback for controllable speed tracking.
 - Exposes a clean command interface, making the runner usable inside a navigation stack.
 
 ## Where it sits in my work
-Applies the CLF-guided-RL stability ideas of [[@olkin2026stability]]; the controllable-locomotion-for-autonomy goal is shared with [[@terrain2026consistent]].
+Applies the CLF-guided-RL stability ideas of [[@olkin2026stability]]; the controllable-locomotion-for-autonomy goal is shared with [[@terrain2026consistent]]. **Distinct from [[@olkin2025chasing|Chasing Stability]]** (the CLF-RL *running* paper): Chasing Autonomy adds the dynamic human-motion **retargeting** front-end *and* the **CBF-MPC safety-filter autonomy stack** on top of the runner. Part of [[navigation-autonomy]].
 
 ## Concepts
-- [[rl-for-legged-locomotion]] · [[control-lyapunov-function]] · [[massively-parallel-simulation]] · _to add:_ reference-guided-rl, motion-retargeting
-- Map: [[learning-based-locomotion]]
+- [[rl-for-legged-locomotion]] · [[control-lyapunov-function]] · [[poisson-safety-function]] · [[control-barrier-function]] · [[massively-parallel-simulation]] · _to add:_ reference-guided-rl, motion-retargeting
+- Maps: [[learning-based-locomotion]] · [[navigation-autonomy]]
 
 ## References (in otto)
 —
