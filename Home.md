@@ -29,4 +29,5 @@ notes. Do **not** read the whole vault for a general question.
 
 ## Active projects
 <!-- The `daily` skill surfaces these from 01-Projects/. -->
+- [[capability-aware-navigation|Capability-Aware Navigation]] — mid-level nav policy over a frozen CLF-RL LLC on the Unitree G1 (paper, active)
 - [[summer-thoughts-on-autonomy|Summer Thoughts on Autonomy]] — recorded lecture series (3 lectures, ongoing)

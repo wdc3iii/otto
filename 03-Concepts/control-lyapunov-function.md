@@ -20,6 +20,7 @@ The stability dual of a [[control-barrier-function]]: a CBF certifies *never lea
 - [[@olkin2026stability]] — stability theory for CLF-guided RL (the reward = decrease condition).
 - [[@dai2025walk|PLANC]] · [[@li2025clf|CLF-RL]] — CLF rewards guiding locomotion policies.
 - [[@huang2023efficient]] — CLF-reactive planning on undulating terrain.
+- [[capability-awareness]] — repurposing the learned LLC's CLF value $V_t$ as a navigation-level comfort penalty (candidate contribution of [[capability-aware-navigation]]).
 
 ## Related
 - [[control-barrier-function]] (safety sibling) · [[rl-for-legged-locomotion]] · [[reduced-order-model]]

@@ -20,6 +20,7 @@ The safety analogue of a control Lyapunov function: instead of certifying conver
 - [[@compton2025learning]] · [[@cohen2025safety]] — your RoM-CBF synthesis and predictive/learned robustification.
 - [[@molnar2022model]] · [[@cohen2024safety]] · [[@wabersich2023data]] — model-free / ROM CBFs and data-driven safety filters.
 - [[@compton2025dynamic]] — ISSf-CBF safety in the tube-MPC setting.
+- [[@bena2025geometry]] · [[@yang2026safesage]] — perception-driven CBFs synthesized from occupancy via a [[poisson-safety-function]] (MPC+CBF filter; Laplace-modulated for [[social-navigation|semantic/social safety]]).
 
 ## Related
 - [[tracking-error-bound]] · [[reduced-order-model]] · [[tube-mpc]]

@@ -34,6 +34,7 @@ Use a [[control-lyapunov-function]] to *shape the reward*, so the policy is guid
 - Foundations & infra: [[@hwangbo2019learning]] · [[@mittal2025isaac|Isaac Lab]] · [[@schwarke2025rsl|RSL-RL]] — see [[massively-parallel-simulation]].
 - Perceptive/terrain-aware: [[@long2025learning]] · [[@he2025attention]] · [[@zhang2026rpl]] · [[@zhuang2024humanoid]] · [[@wangndbeamdojo]].
 - Reference/imitation: [[@liao2025beyondmimic]] · [[@lee2024integrating]] · [[@bang2024rl]].
+- Navigation policies (RL over a locomotion controller): [[@wang2026guide]] — end-to-end goal-initialized nav; its 50 Hz low-level controller follows [[@long2025learning]]. See [[recurrent-navigation-policy]]: [[@yang2025spatially]] (SRU) · [[@lee2024learning]] (km-scale HRL) · [[@zhang2026focusnav]] (humanoid G1). The [[capability-aware-navigation]] project layers a nav policy over a *frozen* [[control-lyapunov-function|CLF-RL]] locomotion controller.
 - Full literature map: [[learning-based-locomotion]].
 
 ## Related
