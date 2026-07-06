@@ -75,6 +75,7 @@ def strip_noise(text):
 
 
 def norm_target(t):
+    t = t.replace("\\|", "|")                          # table-escaped alias pipe
     t = t.split("|", 1)[0].split("#", 1)[0].strip()
     if t.startswith("./"):
         t = t[2:]

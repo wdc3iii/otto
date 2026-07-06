@@ -24,7 +24,7 @@ notes. Do **not** read the whole vault for a general question.
 
 ## Maps of Content
 <!-- Add subfield MOCs here as they emerge, e.g. [[04-Maps/bipedal-locomotion-control]] -->
-_None yet — created on demand during `lit-review`._
+- [[publication-record]] — my publications + first-author list
 
 ## Active projects
 <!-- The `daily` skill surfaces these from 01-Projects/. -->

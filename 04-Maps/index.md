@@ -21,3 +21,6 @@ Guidance:
 
 Built / updated by the `lit-review` skill. Contradictions between existing notes and new
 sources are the interesting part — flag them here.
+
+## Current maps
+- [[publication-record]] — my publications + first-author list; source of truth for `website-check`.

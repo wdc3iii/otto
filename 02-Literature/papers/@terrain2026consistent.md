@@ -14,6 +14,7 @@ venue: arXiv 2605.15517 (under review; targeting IEEE-RAS Humanoids 2026)
 doi: null
 arxiv: '2605.15517'
 url: https://arxiv.org/abs/2605.15517
+authorship: first
 zotero: null
 status: read
 mine: true

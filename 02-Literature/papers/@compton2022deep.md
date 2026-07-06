@@ -16,6 +16,7 @@ venue: Data Science in Engineering (Conf. Proc. of the Society for Experimental 
 doi: null
 arxiv: null
 url: null
+authorship: first
 zotero: null
 status: read
 mine: true

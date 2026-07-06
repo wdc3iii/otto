@@ -5,7 +5,12 @@ tags: [control, planning]
 aliases: []
 created: '2026-07-05'
 modified: '2026-07-05'
-authors: []
+authors:
+- Mazo Jr., Manuel
+- Compton, William D.
+- Cohen, Max H.
+- Ames, Aaron D.
+authorship: contributing
 year: 2025
 venue: TAC (submitted)
 doi: null
@@ -20,9 +25,10 @@ pdf: attachments/@contract2025theory.pdf
 
 # A Contract Theory for Layered Control Architectures
 
-> [!info] anonymized · 2025 · TAC (submitted) — **my paper**
+> [!info] Manuel Mazo Jr.; William D. Compton; Max H. Cohen; Aaron D. Ames · 2025 · TAC (submitted) — **my paper**
 
-> [!warning] Anonymized PDF — set the real authors (updates the citekey & merges cross-citations).
+> [!note] De-anonymized 2026-07-06 (authors filled from the submission source). Citekey left
+> as `contract2025theory` to preserve inbound links.
 
 ## Abstract
 ion, e.g. chitectures. 1, 1 (July 2026), 13 pages. https://doi.org/10.1145/nnnnnnn. compare ODEs with difference equations or FSMs. After establish- nnnnnnn ing some basic properties of these relations, we introduce a version of system composition that captures both interconnections of sys-

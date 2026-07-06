@@ -5,7 +5,11 @@ tags: [control, planning, locomotion]
 aliases: []
 created: '2026-07-05'
 modified: '2026-07-05'
-authors: []
+authors:
+- Csomay-Shanklin, Noel
+- Compton, William D.
+- Ames, Aaron D.
+authorship: contributing
 year: 2025
 venue: T-RO (submitted)
 doi: null
@@ -20,9 +24,10 @@ pdf: attachments/@hierarchies2025motion.pdf
 
 # Hierarchies in Motion: From Layered Control Architectures to Perceptive 3D Hopping
 
-> [!info] anonymized · 2025 · T-RO (submitted) — **my paper**
+> [!info] Noel Csomay-Shanklin; William D. Compton; Aaron D. Ames · 2025 · T-RO (submitted) — **my paper**
 
-> [!warning] Anonymized PDF — set the real authors (updates the citekey & merges cross-citations).
+> [!note] De-anonymized 2026-07-06 (authors filled from the submission source). Citekey left
+> as `hierarchies2025motion` to preserve inbound links.
 
 ## Abstract
 Designing fast and flexible controllers for dynamic systems remains a fundamental challenge in robotics, particularly when balancing robustness, real-time tractability, and adaptabil- ity to complex environments. A common strategy is to decompose the control problem hierarchically, separating planning and feedback across different timescales and layers of abstraction. In this work, we leverage this hierarchical perspective and argue that it enables three key benefits: efficiency, feasibility, and generalizability. We develop constructive controller synthesis techniques for each layer of a three-layer architecture and show that their coordination enables independent design while main- taining system-layer guarantees. This framework is validated experimentally on a 3D hopping robot navigating unstructured outdoor terrain, where we show that hierarchical control enables stable, agile, and adaptive locomotion.

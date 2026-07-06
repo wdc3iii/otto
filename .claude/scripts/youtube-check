@@ -1,0 +1,78 @@
+#!/usr/bin/env python3
+"""youtube-check — find videos in tracked YouTube playlists not yet ingested into otto.
+
+Discovers tracked playlists by scanning otto notes for a `playlist:` frontmatter field
+(any note — e.g. a lecture-series hub). For each playlist it fetches the public RSS feed and
+reports videos whose id does not yet appear in any otto note's `video:` field. Requires
+network. Informational (exit 0).
+
+Usage: youtube-check
+"""
+import re, sys
+from pathlib import Path
+from urllib.request import urlopen, Request
+
+REPO = Path(__file__).resolve().parents[2]
+SKIP_TOP = {".git", ".claude", "Templates"}
+
+LIST_RE = re.compile(r"[?&]list=([A-Za-z0-9_-]+)")
+PLAYLIST_FIELD = re.compile(r"^playlist:\s*(\S+)", re.M)
+VIDEO_FIELD = re.compile(r"^video:\s*(\S+)", re.M)
+VID_ID = re.compile(r"(?:v=|be/|embed/|list=)?([A-Za-z0-9_-]{11})")
+
+
+def ids_from_url(u):
+    m = re.search(r"(?:youtu\.be/|v=|embed/)([A-Za-z0-9_-]{11})", u)
+    return m.group(1) if m else None
+
+
+# --- scan the vault ---
+playlists, ingested = {}, set()
+for md in REPO.rglob("*.md"):
+    if any(part in SKIP_TOP for part in md.relative_to(REPO).parts):
+        continue
+    text = md.read_text(encoding="utf-8", errors="ignore")
+    for u in PLAYLIST_FIELD.findall(text):
+        m = LIST_RE.search(u)
+        if m:
+            playlists.setdefault(m.group(1), md.relative_to(REPO))
+    for v in VIDEO_FIELD.findall(text):
+        vid = ids_from_url(v)
+        if vid:
+            ingested.add(vid)
+
+if not playlists:
+    print("No tracked playlists found (add a `playlist:` field to a note to track one).")
+    sys.exit(0)
+
+print(f"Tracked playlists: {len(playlists)}   ·   videos already in otto: {len(ingested)}\n")
+
+total_new = 0
+for pid, src in playlists.items():
+    url = f"https://www.youtube.com/feeds/videos.xml?playlist_id={pid}"
+    try:
+        req = Request(url, headers={"User-Agent": "otto-youtube-check"})
+        xml = urlopen(req, timeout=20).read().decode("utf-8", "ignore")
+    except Exception as e:
+        print(f"  !! could not fetch playlist {pid} ({e})")
+        continue
+    ptitle = re.search(r"<title>(.*?)</title>", xml)
+    print(f"■ {ptitle.group(1) if ptitle else pid}  (tracked via {src})")
+    entries = re.findall(r"<entry>(.*?)</entry>", xml, re.S)
+    new_here = 0
+    for e in entries:
+        vid = re.search(r"<yt:videoId>(.*?)</yt:videoId>", e)
+        t = re.search(r"<title>(.*?)</title>", e)
+        pub = re.search(r"<published>(.*?)</published>", e)
+        if not vid:
+            continue
+        if vid.group(1) not in ingested:
+            new_here += 1
+            total_new += 1
+            print(f"    NEW  {pub.group(1)[:10] if pub else '?':10}  {t.group(1) if t else '?'}")
+            print(f"         https://youtu.be/{vid.group(1)}")
+    if not new_here:
+        print("    (up to date)")
+    print()
+
+print(f"{total_new} new video(s) to ingest." if total_new else "All tracked playlists are up to date. ✓")

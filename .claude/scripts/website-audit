@@ -1,0 +1,116 @@
+#!/usr/bin/env python3
+"""website-audit — compare first-author publications in otto against the personal website.
+
+Reports which of the user's FIRST-AUTHOR papers (frontmatter `authorship: first` or
+`co-first`) have a page on the Jekyll website, and which are missing. Informational (exit 0).
+
+Usage: website-audit [WEBSITE_REPO]
+  WEBSITE_REPO defaults to ../website (sibling of the otto repo).
+
+Matching is by arXiv id (primary) then normalized title (fallback), scanning each website
+post's frontmatter + body. A "paper" post is one with `category: paper`.
+"""
+import re, sys
+from pathlib import Path
+
+REPO = Path(__file__).resolve().parents[2]
+PAPERS = REPO / "02-Literature" / "papers"
+WEBSITE = Path(sys.argv[1]).expanduser() if len(sys.argv) > 1 else REPO.parent / "website"
+
+ARXIV_RE = re.compile(r"arxiv\.org/(?:abs|pdf)/(\d{4}\.\d{4,5})", re.I)
+
+
+def frontmatter(text):
+    """Return (fm_dict, body). Tiny YAML-ish parser; falls back to PyYAML if present."""
+    if not text.startswith("---"):
+        return {}, text
+    end = text.find("\n---", 3)
+    if end == -1:
+        return {}, text
+    block, body = text[3:end], text[end + 4:]
+    try:
+        import yaml
+        return (yaml.safe_load(block) or {}), body
+    except Exception:
+        fm = {}
+        for line in block.splitlines():
+            m = re.match(r"^([A-Za-z0-9_]+):\s*(.*)$", line)
+            if m:
+                fm[m.group(1)] = m.group(2).strip().strip("'\"")
+        return fm, body
+
+
+def norm_title(s):
+    return re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
+
+
+def title_match(a, b):
+    ta, tb = set(norm_title(a).split()), set(norm_title(b).split())
+    if not ta or not tb:
+        return False
+    inter = len(ta & tb)
+    return inter / min(len(ta), len(tb)) >= 0.7
+
+
+# --- otto: gather first-author papers ---
+mine = []
+for note in sorted(PAPERS.glob("@*.md")):
+    fm, body = frontmatter(note.read_text(encoding="utf-8"))
+    if str(fm.get("mine")).lower() != "true":
+        continue
+    authorship = str(fm.get("authorship", "")).lower()
+    if authorship not in ("first", "co-first"):
+        continue
+    h1 = next((l[2:].strip() for l in body.splitlines() if l.startswith("# ")), note.stem)
+    mine.append({
+        "citekey": note.stem[1:], "title": h1, "year": fm.get("year"),
+        "venue": fm.get("venue"), "arxiv": str(fm.get("arxiv") or "").strip(),
+        "authorship": authorship,
+    })
+
+# --- website: gather paper posts ---
+posts = []
+if WEBSITE.is_dir():
+    for p in sorted((WEBSITE / "_posts").glob("*.*")):
+        if p.suffix.lower() not in (".md", ".markdown"):
+            continue
+        fm, body = frontmatter(p.read_text(encoding="utf-8"))
+        if str(fm.get("category", "")).lower() != "paper":
+            continue
+        arxivs = set(ARXIV_RE.findall(body)) | ({str(fm["arxiv"])} if fm.get("arxiv") else set())
+        posts.append({"title": fm.get("title", p.stem), "permalink": fm.get("permalink", ""),
+                      "arxivs": arxivs})
+else:
+    print(f"!! website repo not found at {WEBSITE} — pass the path as an argument.")
+    sys.exit(0)
+
+
+def find_post(paper):
+    for post in posts:
+        if paper["arxiv"] and paper["arxiv"] in post["arxivs"]:
+            return post
+        if title_match(paper["title"], post["title"]):
+            return post
+    return None
+
+
+print(f"otto first-author papers: {len(mine)}   ·   website paper pages: {len(posts)}")
+print(f"website repo: {WEBSITE}\n")
+missing = []
+for pap in mine:
+    post = find_post(pap)
+    tag = "first" if pap["authorship"] == "first" else "co-first"
+    if post:
+        print(f"  ✓ ON SITE   [{tag:8}] {pap['title']}  ({post['permalink'] or 'page'})")
+    else:
+        missing.append(pap)
+        print(f"  ✗ MISSING   [{tag:8}] {pap['title']}  ({pap['venue']}, {pap['year']})")
+
+print()
+if missing:
+    print(f"{len(missing)} first-author paper(s) not on the website — candidates to add:")
+    for pap in missing:
+        arx = f"arxiv:{pap['arxiv']}" if pap["arxiv"] else "no arXiv on file"
+        print(f"    @{pap['citekey']}  ({arx})")
+else:
+    print("All first-author papers are on the website. ✓")

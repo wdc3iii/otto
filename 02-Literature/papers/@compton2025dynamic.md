@@ -13,8 +13,9 @@ authors:
 year: 2025
 venue: ICRA 2025
 doi: null
-arxiv: null
-url: null
+arxiv: '2411.15350'
+url: https://arxiv.org/abs/2411.15350
+authorship: first
 zotero: null
 status: read
 mine: true

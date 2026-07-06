@@ -12,8 +12,9 @@ authors:
 year: 2025
 venue: L4DC 2025 (PMLR 283)
 doi: null
-arxiv: null
-url: null
+arxiv: '2412.04658'
+url: https://arxiv.org/abs/2412.04658
+authorship: first
 zotero: null
 status: read
 mine: true

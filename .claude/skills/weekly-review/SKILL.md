@@ -22,7 +22,12 @@ already see. This is synthesis, not summarization, and not generation.
 3. **Report** (do not silently edit the vault). For each finding: what it is, the specific
    notes involved (as `[[links]]`), and a concrete proposed action (e.g. "add
    `[[control-barrier-functions]]` ↔ `[[@ames2019cbf]]`", "these two notes disagree on X").
-4. **Act only on approval.** If the user greenlights edits, make them, then run
+4. **Outward presence (quick pass).** Check that public-facing surfaces reflect recent work:
+   - `website-check` — first-author papers missing from the personal website (`../website`).
+   - `youtube-check` — new videos in tracked playlists (e.g. the lecture series) to ingest.
+   - `linkedin-check` — profile updates worth making (low-key checklist).
+   Report these alongside the synthesis findings.
+5. **Act only on approval.** If the user greenlights edits, make them, then run
    `link-check` and report results.
 
 ## Rules

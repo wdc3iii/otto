@@ -16,3 +16,6 @@ Not source-anchored like [[02-Literature/index|Literature]] and not a distilled 
 [[03-Concepts/index|Concepts]] — this is the "useful to have on hand" bucket. Guard
 against it becoming a graveyard: if a resource turns into understanding, promote it to a
 concept and link back.
+
+## Current resources
+- [[linkedin]] — LinkedIn profile mirror + pending updates; tracked by `linkedin-check`.

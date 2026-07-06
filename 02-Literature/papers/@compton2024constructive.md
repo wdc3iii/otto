@@ -14,8 +14,9 @@ authors:
 year: 2024
 venue: CDC 2024
 doi: null
-arxiv: null
-url: null
+arxiv: '2408.14749'
+url: https://arxiv.org/abs/2408.14749
+authorship: first
 zotero: null
 status: read
 mine: true
