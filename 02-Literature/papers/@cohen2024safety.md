@@ -29,6 +29,7 @@ bibkeys:
 # Safety-critical control for autonomous systems: Control barrier functions via reduced-order models
 
 > [!info] Cohen, Max H; Molnar, Tamas G; Ames, Aaron D · 2024 · Annual Reviews in Control
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

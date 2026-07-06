@@ -25,6 +25,7 @@ pdf: attachments/@compton2025learning.pdf
 # Learning for Layered Safety-Critical Control with Predictive Control Barrier Functions
 
 > [!info] Compton, William D.; Cohen, Max H.; Ames, Aaron D. · 2025 · L4DC 2025 (PMLR 283) — **my paper**
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Abstract
 Safety filters leveraging control barrier functions (CBFs) are highly effective for enforcing safe behavior on complex systems. It is often easier to synthesize CBFs for a Reduced order Model (RoM), and track the resulting safe behavior on the Full order Model (FoM)—yet gaps between the RoM and FoM can result in safety violations. This paper introduces predictive CBFs to ad- dress this gap by leveraging rollouts of the FoM to define a predictive robustness term added to the RoM CBF condition. Theoretically, we prove that this guarantees safety in a layered control imple- mentation. Practically, we learn the predictive robustness term through massive parallel simulation with domain randomization. We demonstrate in simulation that this yields safe FoM behavior with minimal conservatism, and experimentally realize predictive CBFs on a 3D hopping robot.

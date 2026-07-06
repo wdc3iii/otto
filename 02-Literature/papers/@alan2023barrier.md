@@ -28,6 +28,7 @@ bibkeys:
 # Control Barrier Functions and Input-to-State Safety with Application to Automated Vehicles
 
 > [!info] A. Alan; A. J. Taylor; C. R. He; A. D. Ames; G. Orosz · 2023 · TCST
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the abstract — a base to refine.

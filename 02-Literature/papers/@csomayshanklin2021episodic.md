@@ -28,6 +28,7 @@ bibkeys:
 # Episodic learning for safe bipedal locomotion with control barrier functions and projection-to-state safety
 
 > [!info] Csomay-Shanklin, Noel; Cosner, Ryan K; Dai, Min; Taylor, Andrew J; Ames, Aaron D · 2021 · Learning for Dynamics and Control
+> [!info]- otto authors: [[aaron-ames]] · [[noel-csomay-shanklin]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

@@ -25,6 +25,7 @@ bibkeys:
 # 3D Underactuated Bipedal Walking via H-LIP Based Gait Synthesis and Stepping Stabilization
 
 > [!info] Xiong, Xiaobin; Ames, Aaron · n.d. · —
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

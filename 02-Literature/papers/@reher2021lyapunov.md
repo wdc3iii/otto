@@ -25,6 +25,7 @@ bibkeys:
 # Control lyapunov functions for compliant hybrid zero dynamic walking
 
 > [!info] Reher, Jenna; Ames, Aaron D · 2021 · preprint arXiv:2107.04241
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

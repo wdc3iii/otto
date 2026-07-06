@@ -27,6 +27,7 @@ bibkeys:
 # Torque Saturation in Bipedal Robotic Walking Through Control Lyapunov Function-Based Quadratic Programs
 
 > [!info] Galloway, Kevin; Sreenath, Koushil; Ames, Aaron D.; Grizzle, Jessy W. · 2015 · IEEE Access
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the abstract — a base to refine.

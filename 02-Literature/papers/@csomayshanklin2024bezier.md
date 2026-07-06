@@ -25,6 +25,7 @@ bibkeys:
 # Bezier Reachable Polytopes: Efficient Certificates for Robust Motion Planning with Layered Architectures
 
 > [!info] Noel Csomay-Shanklin; Aaron D. Ames · 2024 · arXiv:2411.13506
+> [!info]- otto authors: [[aaron-ames]] · [[noel-csomay-shanklin]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

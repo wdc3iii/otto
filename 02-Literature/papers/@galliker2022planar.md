@@ -30,6 +30,7 @@ bibkeys:
 # Planar bipedal locomotion with nonlinear model predictive control: Online gait generation using whole-body dynamics
 
 > [!info] Galliker, Manuel Y; Csomay-Shanklin, Noel; Grandia, Ruben; Taylor, Andrew J; Farshidian, Farbod; Hutter, Marco · 2022 · 2022 IEEE-RAS 21st International Conference on Humanoid Robots (Humanoids)
+> [!info]- otto authors: [[aaron-ames]] · [[marco-hutter]] · [[noel-csomay-shanklin]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

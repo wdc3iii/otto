@@ -25,6 +25,7 @@ mine: false
 # Path-conditioned Reinforcement Learning-based Local Planning for Long-Range Navigation
 
 > [!info] Haro, Richter, Yang, Cadena, Hutter (ETH RSL) · 2026 · arXiv
+> [!info]- otto authors: [[fan-yang]] · [[marco-hutter]]
 
 ## TL;DR
 An RL local-navigation policy that *conditions* on a coarse global reference path as **contextual guidance** rather than a hard constraint to follow. Because the reward is purely goal-reaching (no path-following term), the policy learns to opportunistically exploit good path info and ignore bad path info — big efficiency gains when the path is good, no degradation when the path is noisy, wrong, or absent.

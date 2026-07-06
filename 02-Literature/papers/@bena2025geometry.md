@@ -24,6 +24,7 @@ mine: false
 ---
 
 # Geometry-Aware Predictive Safety Filters on Humanoids: From Poisson Safety Functions to CBF Constrained MPC
+> [!info]- otto authors: [[aaron-ames]] · [[ryan-bena]]
 
 ## TL;DR
 Turns raw perception occupancy into a control barrier function by solving Poisson's equation over free space (a Dirichlet BVP), then extends that construction two ways — a moving-boundary version for dynamic obstacles and a configuration-space lifting that adds orientation DOFs — and enforces it inside an MPC+CBF predictive safety filter. Demonstrated in real time on a Unitree G1 humanoid and Go2 quadruped, letting the robot *reorient* its asymmetric body to squeeze through gaps rather than treating itself as a conservative disk.

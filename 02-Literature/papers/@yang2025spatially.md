@@ -26,6 +26,7 @@ mine: false
 # Spatially-Enhanced Recurrent Memory for Long-Range Mapless Navigation via End-to-End Reinforcement Learning
 
 > [!info] Fan Yang, Per Frivik, David Hoeller, Chen Wang, Cesar Cadena, Marco Hutter · 2025 · IJRR
+> [!info]- otto authors: [[fan-yang]] · [[marco-hutter]]
 
 ## TL;DR
 End-to-end RL navigation implicitly does "mapping" inside an RNN's hidden state, but standard recurrent units (LSTM, GRU, S4, Mamba) can memorize *temporal* sequences yet fail at *spatial* memorization — registering egocentric observations taken from continuously changing viewpoints into a coherent frame. The paper adds a lightweight, implicit spatial-transformation operation to LSTM/GRU (the **Spatially-Enhanced Recurrent Unit, SRU**), wraps it in an attention-based policy over a pretrained depth encoder, and trains long-range mapless navigation end-to-end with PPO from a single forward-facing stereo depth camera.

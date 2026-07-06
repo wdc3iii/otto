@@ -29,6 +29,7 @@ bibkeys:
 # Perceptive locomotion through nonlinear model-predictive control
 
 > [!info] Grandia, Ruben; Jenelten, Fabian; Yang, Shaohui; Farshidian, Farbod; Hutter, Marco · 2023 · IEEE Transactions on Robotics
+> [!info]- otto authors: [[marco-hutter]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

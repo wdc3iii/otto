@@ -29,6 +29,7 @@ bibkeys:
 # Multi-Rate Planning and Control of Uncertain Nonlinear Systems: Model Predictive Control and Control Lyapunov Functions
 
 > [!info] Noel Csomay-Shanklin; Andrew J. Taylor; Ugo Rosolia; Aaron D. Ames · 2022 · Proceedings of the IEEE Control and Decisions Conference
+> [!info]- otto authors: [[aaron-ames]] · [[noel-csomay-shanklin]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

@@ -28,6 +28,7 @@ bibkeys:
 # Dtc: Deep tracking control
 
 > [!info] Jenelten, Fabian; He, Junzhe; Farshidian, Farbod; Hutter, Marco · 2024 · Science Robotics
+> [!info]- otto authors: [[marco-hutter]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

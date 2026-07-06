@@ -28,6 +28,7 @@ bibkeys:
 # Rapidly exponentially stabilizing control lyapunov functions and hybrid zero dynamics
 
 > [!info] Ames, Aaron D; Galloway, Kevin; Sreenath, Koushil; Grizzle, Jessy W · 2014 · IEEE TAC
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the abstract — a base to refine.

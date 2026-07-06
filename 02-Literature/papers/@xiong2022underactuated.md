@@ -25,6 +25,7 @@ bibkeys:
 # 3-D Underactuated Bipedal Walking via H-LIP Based Gait Synthesis and Stepping Stabilization
 
 > [!info] Xiong, Xiaobin; Ames, Aaron · 2022 · IEEE Transactions on Robotics
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the abstract — a base to refine.

@@ -30,6 +30,7 @@ bibkeys:
 # Learning robust perceptive locomotion for quadrupedal robots in the wild
 
 > [!info] Miki, Takahiro; Lee, Joonho; Hwangbo, Jemin; Wellhausen, Lorenz; Koltun, Vladlen; Hutter, Marco · 2022 · Science Robotics
+> [!info]- otto authors: [[marco-hutter]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

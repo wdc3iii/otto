@@ -27,6 +27,7 @@ bibkeys:
 # Models, feedback control, and open problems of 3D bipedal robotic walking
 
 > [!info] Grizzle, Jessy W.; Chevallereau, Christine; Sinnet, Ryan W.; Ames, Aaron D. · 2014 · Automatica
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the abstract — a base to refine.

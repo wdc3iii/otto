@@ -26,6 +26,7 @@ bibkeys:
 # Safe certificate-based maneuvers for teams of quadrotors using differential flatness
 
 > [!info] Wang, Li; Ames, Aaron D; Egerstedt, Magnus · 2017 · 2017 IEEE International Conference on Robotics and Automation (ICRA)
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

@@ -25,6 +25,7 @@ mine: false
 # GNM: A General Navigation Model to Drive Any Robot
 
 > [!info] Shah, Sridhar, Bhorkar, Hirose, Levine (UC Berkeley / Toyota Motor North America) · 2023 · ICRA 2023
+> [!info]- otto authors: [[sergey-levine]]
 
 ## TL;DR
 A single goal-conditioned visual navigation policy — an "omnipolicy" — trained on pooled trajectory data from many structurally different ground robots generalizes zero-shot to new robots (including an underactuated quadrotor) and new environments, and beats any policy trained on a single-robot dataset. The core claim is empirical: modest design choices (temporal context + a standardized action space) let heterogeneous cross-robot data be shared productively.

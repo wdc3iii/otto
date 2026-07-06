@@ -27,6 +27,7 @@ bibkeys:
 # 3D dynamic walking with underactuated humanoid robots: A direct collocation framework for optimizing hybrid zero dynamics
 
 > [!info] Hereid, Ayonga; Cousineau, Eric A.; Hubicki, Christian M.; Ames, Aaron D. · 2016 · 2016 IEEE International Conference on Robotics and Automation (ICRA)
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the abstract — a base to refine.

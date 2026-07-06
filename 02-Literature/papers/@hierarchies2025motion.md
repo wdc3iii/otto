@@ -25,6 +25,7 @@ pdf: attachments/@hierarchies2025motion.pdf
 # Hierarchies in Motion: From Layered Control Architectures to Perceptive 3D Hopping
 
 > [!info] Noel Csomay-Shanklin; William D. Compton; Aaron D. Ames · 2025 · T-RO (submitted) — **my paper**
+> [!info]- otto authors: [[aaron-ames]] · [[noel-csomay-shanklin]]
 
 > [!note] De-anonymized 2026-07-06 (authors filled from the submission source). Citekey left
 > as `hierarchies2025motion` to preserve inbound links.

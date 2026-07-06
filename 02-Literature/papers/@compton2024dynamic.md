@@ -27,6 +27,7 @@ bibkeys:
 # Dynamic Tube MPC: Learning Tube Dynamics with Massively Parallel Simulation for Robust Safety in Practice
 
 > [!info] Compton, William D; Csomay-Shanklin, Noel; Johnson, Cole; Ames, Aaron D · 2024 · arXiv preprint arXiv:2411.15350
+> [!info]- otto authors: [[aaron-ames]] · [[noel-csomay-shanklin]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

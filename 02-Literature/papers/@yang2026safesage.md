@@ -27,6 +27,7 @@ mine: false
 # Safe-SAGE: Social-Semantic Adaptive Guidance for Safe Engagement through Laplace-Modulated Poisson Safety Functions
 
 > [!info] Yang, Bena, Wilkinson, Bahati, Navarro Brenes, Cosner, Ames · 2026 · IROS 2026
+> [!info]- otto authors: [[aaron-ames]] · [[ryan-bena]]
 
 ## TL;DR
 Geometric safety filters (CBFs, HJ reachability) are *semantically blind* — a human and a chair of equal volume produce identical avoidance behavior. Safe-SAGE injects class-level semantics into the safety layer by shaping a **Laplace guidance field** with class-dependent repulsion and a tangential passing bias, then feeding it as the forcing term of a **Poisson safety function**. The result: safety margins that grow faster near humans than near walls, plus socially-compliant passing side, all while retaining forward-invariance guarantees. Runs on Go2 and G1 hardware.

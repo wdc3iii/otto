@@ -27,6 +27,7 @@ bibkeys:
 # Layered control systems operating on multiple clocks
 
 > [!info] Incer, Inigo; Csomay-Shanklin, Noel; Ames, Aaron D; Murray, Richard M · 2024 · IEEE Control Systems Letters
+> [!info]- otto authors: [[aaron-ames]] · [[noel-csomay-shanklin]]
 
 ## Summary
 > [!note] AI-drafted from the abstract — a base to refine.

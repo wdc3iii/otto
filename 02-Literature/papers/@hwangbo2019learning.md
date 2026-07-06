@@ -30,6 +30,7 @@ bibkeys:
 # Learning agile and dynamic motor skills for legged robots
 
 > [!info] J. Hwangbo; J. Lee; A. Dosovitskiy; D. Bellicoso; V. Tsounis; V. Koltun · 2019 · Science Robotics
+> [!info]- otto authors: [[marco-hutter]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

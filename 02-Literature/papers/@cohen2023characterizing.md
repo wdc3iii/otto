@@ -27,6 +27,7 @@ bibkeys:
 # Characterizing Smooth Safety Filters via the Implicit Function Theorem
 
 > [!info] M. H. Cohen; P. Ong; G. Bahati; A. D. Ames · 2023 · LCSS
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

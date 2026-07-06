@@ -25,6 +25,7 @@ pdf: attachments/@compton2025dynamic.pdf
 # Dynamic Tube MPC: Learning Tube Dynamics with Massively Parallel Simulation for Robust Safety in Practice
 
 > [!info] Compton, William D.; Csomay-Shanklin, Noel; Johnson, Cole; Ames, Aaron D. · 2025 · ICRA 2025 — **my paper**
+> [!info]- otto authors: [[aaron-ames]] · [[noel-csomay-shanklin]]
 
 ## TL;DR
 Learns an *action-dependent* error tube (how tracking error depends on the planning

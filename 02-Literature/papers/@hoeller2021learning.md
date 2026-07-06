@@ -24,6 +24,7 @@ mine: false
 # Learning a State Representation and Navigation in Cluttered and Dynamic Environments
 
 > [!info] Hoeller, Wellhausen, Farshidian, Hutter · 2021 · IEEE RA-L
+> [!info]- otto authors: [[marco-hutter]]
 
 ## TL;DR
 A two-stage learned local-navigation pipeline for a quadruped (ANYmal): an unsupervised state-representation module (VAE + LSTM) compresses a stream of noisy depth frames + camera trajectory into a compact latent belief state, and a small MLP policy trained with RL in simulation consumes that latent to reach a goal while avoiding static and dynamic obstacles — no explicit map. Decoupling representation from control makes the RL stage extremely sample-efficient (fully trained in simulation in ~12 minutes) and the learned latent is what bridges the reality gap for zero-extra-tuning sim-to-real.

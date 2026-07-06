@@ -29,6 +29,7 @@ bibkeys:
 # Generative modeling of residuals for real-time risk-sensitive safety with discrete-time control barrier functions
 
 > [!info] Cosner, Ryan K; Sadalski, Igor; Woo, Jana K; Culbertson, Preston; Ames, Aaron D · 2024 · 2024 IEEE International Conference on Robotics and Automation (ICRA)
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

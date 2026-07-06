@@ -26,6 +26,7 @@ bibkeys:
 # Towards a Theory of Control Architecture: A quantitative framework for layered multi-rate control
 
 > [!info] Matni, Nikolai; Ames, Aaron D.; Doyle, John C. · 2024 · arXiv:2401.15185 [cs, eess, math]
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

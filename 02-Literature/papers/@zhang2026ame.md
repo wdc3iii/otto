@@ -27,6 +27,7 @@ bibkeys:
 # AME-2: Agile and Generalized Legged Locomotion via Attention-Based Neural Map Encoding
 
 > [!info] Zhang, Chong; Klemm, Victor; Yang, Fan; Hutter, Marco · 2026 · arXiv preprint arXiv:2601.08485
+> [!info]- otto authors: [[fan-yang]] · [[marco-hutter]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

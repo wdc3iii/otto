@@ -29,6 +29,7 @@ bibkeys:
 # Nonlinear Model Predictive Control of a 3D Hopping Robot: Leveraging Lie Group Integrators for Dynamically Stable Behaviors
 
 > [!info] Csomay-Shanklin, Noel; Dorobantu, Victor D; Ames, Aaron D · 2023 · 2023 IEEE (ICRA)
+> [!info]- otto authors: [[aaron-ames]] · [[noel-csomay-shanklin]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

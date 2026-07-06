@@ -26,6 +26,7 @@ bibkeys:
 # Optimal safe controller synthesis: A density function approach
 
 > [!info] Chen, Yuxiao; Ahmadi, Mohamadreza; Ames, Aaron D · 2020 · 2020 American Control Conference (ACC)
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

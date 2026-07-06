@@ -27,6 +27,7 @@ bibkeys:
 # Backup control barrier functions: Formulation and comparative study
 
 > [!info] Chen, Yuxiao; Jankovic, Mrdjan; Santillo, Mario; Ames, Aaron D · 2021 · 2021 60th IEEE Conference on Decision and Control (CDC)
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the abstract — a base to refine.

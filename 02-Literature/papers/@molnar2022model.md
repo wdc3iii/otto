@@ -29,6 +29,7 @@ bibkeys:
 # Model-Free Safety-Critical Control for Robotic Systems
 
 > [!info] Molnar, Tamas G.; Cosner, Ryan K.; Singletary, Andrew W.; Ubellacker, Wyatt; Ames, Aaron D. · 2022 · IEEE Robotics Automation Letters
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

@@ -28,6 +28,7 @@ bibkeys:
 # Interactive multi-modal motion planning with branch model predictive control
 
 > [!info] Chen, Yuxiao; Rosolia, Ugo; Ubellacker, Wyatt; Csomay-Shanklin, Noel; Ames, Aaron D. · 2022 · IEEE Robotics and Automation Letters
+> [!info]- otto authors: [[aaron-ames]] · [[noel-csomay-shanklin]]
 
 ## Summary
 > [!note] AI-drafted from the abstract — a base to refine.

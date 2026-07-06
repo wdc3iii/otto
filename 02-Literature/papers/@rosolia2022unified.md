@@ -27,6 +27,7 @@ bibkeys:
 # Unified multirate control: From low-level actuation to high-level planning
 
 > [!info] Rosolia, Ugo; Singletary, Andrew; Ames, Aaron D. · 2022 · IEEE Transactions on Automatic Control
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

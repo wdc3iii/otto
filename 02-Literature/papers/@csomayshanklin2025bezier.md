@@ -25,6 +25,7 @@ bibkeys:
 # Bezier reachable polytopes: Efficient certificates for robust motion planning with layered architectures
 
 > [!info] Csomay-Shanklin, Noel; Ames, Aaron D · 2025 · 2025 American Control Conference (ACC)
+> [!info]- otto authors: [[aaron-ames]] · [[noel-csomay-shanklin]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

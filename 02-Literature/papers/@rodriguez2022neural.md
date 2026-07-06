@@ -28,6 +28,7 @@ bibkeys:
 # Neural Gaits: Learning Bipedal Locomotion via Control Barrier Functions and Zero Dynamics Policies
 
 > [!info] Rodriguez, Ivan Dario Jimenez; Csomay-Shanklin, Noel; Yue, Yisong; Ames, Aaron D. · 2022 · Proceedings of The 4th Annual L4DC
+> [!info]- otto authors: [[aaron-ames]] · [[noel-csomay-shanklin]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

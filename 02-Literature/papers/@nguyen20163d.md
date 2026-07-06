@@ -28,6 +28,7 @@ bibkeys:
 # 3D dynamic walking on stepping stones with control barrier functions
 
 > [!info] Nguyen, Quan; Hereid, Ayonga; Grizzle, Jessy W.; Ames, Aaron D.; Sreenath, Koushil · 2016 · 2016 IEEE 55th Conference on Decision and Control (CDC)
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the abstract — a base to refine.

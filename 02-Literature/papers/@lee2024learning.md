@@ -26,6 +26,7 @@ mine: false
 # Learning Robust Autonomous Navigation and Locomotion for Wheeled-Legged Robots
 
 > [!info] Lee, Bjelonic, Reske, Wellhausen, Miki, Hutter · 2024 · Science Robotics (Vol 9, Issue 89)
+> [!info]- otto authors: [[marco-hutter]]
 
 ## TL;DR
 A fully integrated autonomy stack for a wheeled-legged quadruped (Swiss-Mile / ANYmal-on-wheels) built as **two RL policies stacked in a hierarchical RL framework**: a locomotion controller (LLC, 50 Hz) that fluidly blends walking and driving over rough terrain, and a mobility-aware navigation controller (HLC, 10 Hz) that issues velocity targets for local planning + path following. Validated with km-scale autonomous delivery missions in Zurich and Seville.

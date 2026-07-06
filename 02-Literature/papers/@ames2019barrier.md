@@ -29,6 +29,7 @@ bibkeys:
 # Control barrier functions: Theory and applications
 
 > [!info] Ames, A. D.; Coogan, S.; Egerstedt, M.; Notomista, G.; Sreenath, K.; Tabuada, P. · 2019 · European Control Conference (ECC)
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the abstract — a base to refine.

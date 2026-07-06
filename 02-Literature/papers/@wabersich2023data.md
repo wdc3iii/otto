@@ -30,6 +30,7 @@ bibkeys:
 # Data-driven safety filters: Hamilton-jacobi reachability, control barrier functions, and predictive methods for uncertain systems
 
 > [!info] Wabersich, Kim P; Taylor, Andrew J; Choi, Jason J; Sreenath, Koushil; Tomlin, Claire J; Ames, Aaron D · 2023 · IEEE Control Systems Magazine
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the abstract — a base to refine.

@@ -27,6 +27,7 @@ bibkeys:
 # A control barrier perspective on episodic learning via projection-to-state safety
 
 > [!info] Taylor, Andrew J; Singletary, Andrew; Yue, Yisong; Ames, Aaron D · 2020 · IEEE Control Systems Letters
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

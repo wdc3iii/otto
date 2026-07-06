@@ -24,6 +24,7 @@ mine: false
 # NoMaD: Goal Masked Diffusion Policies for Navigation and Exploration
 
 > [!info] Sridhar, Shah, Glossop, Levine (UC Berkeley) · 2024 · ICRA 2024
+> [!info]- otto authors: [[sergey-levine]]
 
 ## TL;DR
 A single navigation policy that does *both* goal-directed navigation and undirected exploration, by attaching a diffusion action head to the ViNT visual-navigation Transformer and using a binary "goal mask" to toggle whether the network attends to the goal image. One network, two behaviors: mask the goal and it explores; provide the goal and it homes in.

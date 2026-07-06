@@ -24,6 +24,7 @@ bibkeys:
 # Learning for Layered Safety-Critical Control with Predictive Control Barrier Functions
 
 > [!info] Compton, William D; Cohen, Max H; Ames, Aaron D · 2024 · Github
+> [!info]- otto authors: [[aaron-ames]]
 
 <!-- SUMMARY-PENDING: ingest-paper will fill a structured summary here -->
 

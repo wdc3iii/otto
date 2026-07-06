@@ -29,6 +29,7 @@ bibkeys:
 # Passive dynamic balancing and walking in actuated environments
 
 > [!info] Reher, Jenna; Csomay-Shanklin, Noel; Christensen, David L.; Bristow, Bobby; Ames, Aaron D.; Smoot, Lanny · 2020 · 2020 IEEE International Conference on Robotics and Automation (ICRA)
+> [!info]- otto authors: [[aaron-ames]] · [[noel-csomay-shanklin]]
 
 ## Summary
 > [!note] AI-drafted from the abstract — a base to refine.

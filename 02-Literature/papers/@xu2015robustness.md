@@ -27,6 +27,7 @@ bibkeys:
 # Robustness of control barrier functions for safety critical control
 
 > [!info] Xu, Xiangru; Tabuada, Paulo; Grizzle, Jessy W; Ames, Aaron D · 2015 · IFAC-PapersOnLine
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

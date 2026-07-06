@@ -25,6 +25,7 @@ pdf: attachments/@terrain2026consistent.pdf
 # Terrain Consistent Reference-Guided RL for Humanoid Navigation Autonomy
 
 > [!info] William D. Compton; Zachary Olkin; Aaron D. Ames · 2026 · arXiv 2605.15517 (under review) — **my paper**
+> [!info]- otto authors: [[aaron-ames]] · [[zachary-olkin]]
 
 **Links:** [arXiv](https://arxiv.org/abs/2605.15517) · [video](https://youtu.be/rTWgR_VxL5Y) · website: `/papers/terrain-consistent-rl/`
 

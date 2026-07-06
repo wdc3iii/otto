@@ -26,6 +26,7 @@ bibkeys:
 # Dynamically Feasible Path Planning in Cluttered Environments via Reachable Bezier Polytopes
 
 > [!info] Noel Csomay-Shanklin; William D. Compton; Aaron D. Ames · 2024 · —
+> [!info]- otto authors: [[aaron-ames]] · [[noel-csomay-shanklin]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

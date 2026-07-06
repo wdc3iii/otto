@@ -27,6 +27,7 @@ mine: false
 # ViNT: A Foundation Model for Visual Navigation
 
 > [!info] Shah, Sridhar, Dashora, Stachowicz, Black, Hirose, Levine (UC Berkeley) · 2023 · CoRL 2023 (oral)
+> [!info]- otto authors: [[sergey-levine]]
 
 ## TL;DR
 ViNT is a 31M-parameter Transformer trained as a *foundation model* for image-goal

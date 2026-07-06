@@ -28,6 +28,7 @@ bibkeys:
 # CLF-RL: Control Lyapunov Function Guided Reinforcement Learning
 
 > [!info] Li, Kejun; Olkin, Zachary; Yue, Yisong; Ames, Aaron D. · 2026 · IEEE Robotics and Automation Letters
+> [!info]- otto authors: [[aaron-ames]] · [[zachary-olkin]]
 
 ## Summary
 > [!note] AI-drafted from the abstract — a base to refine.

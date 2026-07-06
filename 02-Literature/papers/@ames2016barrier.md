@@ -27,6 +27,7 @@ bibkeys:
 # Control barrier function based quadratic programs for safety critical systems
 
 > [!info] Ames, Aaron D; Xu, Xiangru; Grizzle, Jessy W; Tabuada, Paulo · 2016 · IEEE Transactions on Automatic Control
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the abstract — a base to refine.

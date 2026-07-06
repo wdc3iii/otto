@@ -26,6 +26,7 @@ bibkeys:
 # A Quantitative Framework for Layered Multirate Control: Toward a Theory of Control Architecture
 
 > [!info] Matni, Nikolai; Ames, Aaron D; Doyle, John C · 2024 · IEEE Control Systems Magazine
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the abstract — a base to refine.

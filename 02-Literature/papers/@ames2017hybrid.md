@@ -25,6 +25,7 @@ bibkeys:
 # Hybrid zero dynamics control of legged robots
 
 > [!info] Ames, Aaron D; Poulakakis, Ioannis · 2017 · Bioinspired Legged Locomotion: Models, Concepts, Control and Applications
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the chapter introduction — a base to refine.

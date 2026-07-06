@@ -26,6 +26,7 @@ bibkeys:
 # Bipedal Walking on Constrained Footholds: Momentum Regulation via Vertical COM Control
 
 > [!info] Dai, Min; Xiong, Xiaobin; Ames, Aaron · 2022 · 2022 International Conference on Robotics and Automation (ICRA)
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the abstract — a base to refine.

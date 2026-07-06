@@ -28,6 +28,7 @@ bibkeys:
 # High-Dimensional Continuous Control Using Generalized Advantage Estimation
 
 > [!info] John Schulman; Philipp Moritz; Sergey Levine; Michael Jordan; Pieter Abbeel · 2016 · Procaeedings of ICLR
+> [!info]- otto authors: [[sergey-levine]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

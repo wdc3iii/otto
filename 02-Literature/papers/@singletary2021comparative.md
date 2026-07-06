@@ -29,6 +29,7 @@ bibkeys:
 # Comparative analysis of control barrier functions and artificial potential fields for obstacle avoidance
 
 > [!info] Singletary, Andrew; Klingebiel, Karl; Bourne, Joseph; Browning, Andrew; Tokumaru, Phil; Ames, Aaron · 2021 · 2021 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

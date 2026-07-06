@@ -28,6 +28,7 @@ pdf: attachments/@csomayshanklin2024robust.pdf
 # Robust Agility via Learned Zero Dynamics Policies
 
 > [!info] Csomay-Shanklin, Noel; Compton, William D.; Rodriguez, Ivan D. J.; Ambrose, Eric R.; Yue, Yisong; Ames, Aaron D. · 2024 · IROS 2024 — **my paper**
+> [!info]- otto authors: [[aaron-ames]] · [[noel-csomay-shanklin]]
 
 > [!important] **Co-first authorship** — the first three listed authors (Csomay-Shanklin,
 > **Compton**, Rodriguez) are co-first. Counts as a first-author publication (`authorship: co-first`).

@@ -61,6 +61,10 @@ IEEE conference (Olkin/Bena/Ames; TII support), early-stage. Standing reviewer-f
 ## Concepts
 **Thesis:** [[capability-awareness]]. **Mid-tier:** [[recurrent-navigation-policy]] · [[path-conditioned-rl]] · [[traversability-estimation]]. **Safety:** [[poisson-safety-function]] · [[social-navigation]] · [[control-barrier-function]]. **LLC:** [[control-lyapunov-function]] · [[rl-for-legged-locomotion]] · [[hierarchical-control]]. **Nav lineage:** [[mapless-navigation]] · [[topological-navigation]] · [[sim-to-real-transfer]].
 
+## People
+**Group (AMBER Lab):** [[aaron-ames]] (PI) · [[zachary-olkin]] (LLC / $V_t$) · [[ryan-bena]] (safety filter) · [[noel-csomay-shanklin]] (layered control). Target-pub byline: Olkin / Bena / Ames.
+**External:** [[fan-yang]] (SRU anchor) · [[marco-hutter]] (RSL nav lineage) · [[sergey-levine]] (topological nav).
+
 ## Codebase
 `legged_locomotion_rl` (talos). Two editable packages on Isaac Lab + `rsl_rl`:
 `source/legged_locomotion_rl/` (LIP/CLF locomotion — teacher→distill→finetune) and

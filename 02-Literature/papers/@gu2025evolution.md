@@ -33,6 +33,7 @@ bibkeys:
 # Evolution of Humanoid Locomotion Control
 
 > [!info] Gu, Yan; Shi, Guanya; Shi, Fan; Chang, I-Chia; Wang, Yen-Jen; Cheng, Qilong · 2025 · —
+> [!info]- otto authors: [[aaron-ames]] · [[zachary-olkin]]
 
 <!-- SUMMARY-PENDING: ingest-paper will fill a structured summary here -->
 

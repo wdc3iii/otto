@@ -28,6 +28,7 @@ bibkeys:
 # RSL-RL: A Learning Library for Robotics Research
 
 > [!info] Schwarke, Clemens; Mittal, Mayank; Rudin, Nikita; Hoeller, David; Hutter, Marco · 2025 · arXiv preprint arXiv:2509.10771
+> [!info]- otto authors: [[marco-hutter]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

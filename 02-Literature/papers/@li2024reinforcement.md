@@ -30,6 +30,7 @@ bibkeys:
 # Reinforcement learning for versatile, dynamic, and robust bipedal locomotion control
 
 > [!info] Li, Zhongyu; Peng, Xue Bin; Abbeel, Pieter; Levine, Sergey; Berseth, Glen; Sreenath, Koushil · 2024 · arXiv preprint arXiv:2401.16889
+> [!info]- otto authors: [[sergey-levine]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

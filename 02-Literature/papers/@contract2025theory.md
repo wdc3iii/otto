@@ -26,6 +26,7 @@ pdf: attachments/@contract2025theory.pdf
 # A Contract Theory for Layered Control Architectures
 
 > [!info] Manuel Mazo Jr.; William D. Compton; Max H. Cohen; Aaron D. Ames · 2025 · TAC (submitted) — **my paper**
+> [!info]- otto authors: [[aaron-ames]]
 
 > [!note] De-anonymized 2026-07-06 (authors filled from the submission source). Citekey left
 > as `contract2025theory` to preserve inbound links.

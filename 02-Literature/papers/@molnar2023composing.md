@@ -25,6 +25,7 @@ bibkeys:
 # Composing Control Barrier Functions for Complex Safety Specifications
 
 > [!info] T. G. Molnar; A. D. Ames · 2023 · LCSS
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

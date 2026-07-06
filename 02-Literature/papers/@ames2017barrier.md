@@ -27,6 +27,7 @@ bibkeys:
 # Control barrier function based quadratic programs for safety critical systems
 
 > [!info] A. D. Ames; X. Xu; J. W. Grizzle; P. Tabuada · 2017 · TAC
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the abstract — a base to refine.

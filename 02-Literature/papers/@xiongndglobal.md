@@ -26,6 +26,7 @@ bibkeys:
 # Global Position Control on Underactuated Bipedal Robots: Step-to-step Dynamics Approximation for Step Planning
 
 > [!info] Xiong, Xiaobin; Reher, Jenna; Ames, Aaron · n.d. · —
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

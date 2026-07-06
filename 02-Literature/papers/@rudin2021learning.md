@@ -27,6 +27,7 @@ bibkeys:
 # Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning
 
 > [!info] Nikita Rudin; David Hoeller; Philipp Reist; Marco Hutter · 2021 · Conference on Robot Learning (CoRL)
+> [!info]- otto authors: [[marco-hutter]]
 
 > [!note] AI-drafted from the arXiv abstract (not full text) — a base to edit. Flip `summary: ai-draft` → `reviewed` once you've checked it.
 

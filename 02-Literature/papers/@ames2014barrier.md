@@ -26,6 +26,7 @@ bibkeys:
 # Control barrier function based quadratic programs with application to adaptive cruise control
 
 > [!info] Ames, Aaron D; Grizzle, Jessy W; Tabuada, Paulo · 2014 · 53rd IEEE conference on decision and control
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the abstract — a base to refine.

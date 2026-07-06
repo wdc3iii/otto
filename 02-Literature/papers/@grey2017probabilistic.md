@@ -26,6 +26,7 @@ bibkeys:
 # Probabilistic Completeness of Randomized Possibility Graphs Applied to Bipedal Walking in Semi-unstructured Environments
 
 > [!info] Grey, Michael X.; Ames, Aaron D.; Liu, C. Karen · 2017 · arXiv
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

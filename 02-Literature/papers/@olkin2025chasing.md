@@ -27,6 +27,7 @@ bibkeys:
 # Chasing Stability: Humanoid Running via Control Lyapunov Function Guided Reinforcement Learning
 
 > [!info] Olkin, Zachary; Li, Kejun; Compton, William D.; Ames, Aaron D. · 2025 · arXiv
+> [!info]- otto authors: [[aaron-ames]] · [[zachary-olkin]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

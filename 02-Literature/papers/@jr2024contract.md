@@ -27,6 +27,7 @@ bibkeys:
 # A Contract Theory for Layered Control Architectures
 
 > [!info] Manuel Mazo Jr.; Will Compton; Max H. Cohen; Aaron D. Ames · 2024 · —
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

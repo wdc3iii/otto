@@ -24,6 +24,7 @@ mine: false
 # Learned Perceptive Forward Dynamics Model for Safe and Platform-aware Robotic Navigation
 
 > [!info] Roth, Frey, Cadena, Hutter (ETH Zurich / NVIDIA / MPI-IS) · 2025 · RSS
+> [!info]- otto authors: [[marco-hutter]]
 
 ## TL;DR
 A learned, perception-conditioned **Forward Dynamics Model (FDM)** predicts a legged robot's future SE(2) poses *and* per-step failure risk over a 5 s horizon, given a velocity-command sequence, a height scan, and proprioceptive history. Dropped into a zero-shot **MPPI** planner, it replaces hand-tuned traversability cost-maps with a learned, platform-specific dynamics-plus-risk model — so the planner only needs a trivial goal-distance + risk cost, no environment-specific cost engineering.

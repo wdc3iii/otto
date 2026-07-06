@@ -25,6 +25,7 @@ bibkeys:
 # Safety-Critical Control with Bounded Inputs via Reduced Order Models
 
 > [!info] T. G. Molnar; A. D. Ames · 2023 · ACC
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

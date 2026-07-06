@@ -30,6 +30,7 @@ bibkeys:
 # Attention-based map encoding for learning generalized legged locomotion
 
 > [!info] He, Junzhe; Zhang, Chong; Jenelten, Fabian; Grandia, Ruben; B\"acher, Moritz; Hutter, Marco · 2025 · Science Robotics
+> [!info]- otto authors: [[marco-hutter]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.

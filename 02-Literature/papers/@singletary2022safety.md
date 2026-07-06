@@ -28,6 +28,7 @@ bibkeys:
 # Safety-critical manipulation for collision-free food preparation
 
 > [!info] Singletary, Andrew; Guffey, William; Molnar, Tamas G; Sinnet, Ryan; Ames, Aaron D · 2022 · IEEE Robotics and Automation Letters
+> [!info]- otto authors: [[aaron-ames]]
 
 ## Summary
 > [!note] AI-drafted from the arXiv abstract — a base to refine.
