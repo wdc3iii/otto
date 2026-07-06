@@ -16,7 +16,7 @@ with agreements/contrasts surfaced), links to the papers they authored in
 talks, posts, startups).
 
 People are cross-cutting entities — link them from papers, MOCs, and meetings. Drafted/updated
-by the `person` skill. Not a rolodex: add someone when their work genuinely intersects mine.
+by the `add-person` skill. Not a rolodex: add someone when their work genuinely intersects mine.
 
 ## Pages
 - [[marco-hutter]] — ETH Zurich (RSL); legged locomotion, massively-parallel RL, perceptive locomotion.

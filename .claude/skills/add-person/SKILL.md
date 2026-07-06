@@ -1,9 +1,9 @@
 ---
-name: person
-description: Draft or update a person page (type: person) in People/ for a researcher or collaborator — a grounded bio, their contributions to the field, what's relevant to otto's focus areas (with agreements/contrasts to the user's own line), links to the papers they authored in otto, and their non-paper presence (site, talks, posts). Use when the user wants to add/track a person, "make a page for <name>", or profile a researcher.
+name: add-person
+description: Draft or update a person page (type: person) in People/ for a researcher or collaborator — a grounded bio, their contributions to the field, what's relevant to otto's focus areas (with agreements/contrasts to the user's own line), links to the papers they authored in otto, and their non-paper presence (site, talks, posts). Use when the user says "add a person", "make a page for <name>", or wants to profile/track a researcher.
 ---
 
-# person
+# add-person
 
 Create or refresh a `People/<kebab-name>.md` entity page (`type: person`). Research-grounded,
 links-heavy, synthesis-forward. Draft it as an editable base (mark with an `ai-draft` callout);
@@ -33,3 +33,4 @@ never fabricate a bio.
 - **"Relevance to otto" is why the page exists** — connect to my concepts/papers and be specific
   about agreement/contrast, not a generic CV.
 - Not a rolodex: add someone when their work genuinely intersects mine.
+- Pairs with `quiz-me` (quiz yourself on a person you just added) and `ingest-discussion`.

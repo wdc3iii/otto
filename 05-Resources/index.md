@@ -19,3 +19,4 @@ concept and link back.
 
 ## Current resources
 - [[linkedin]] — LinkedIn profile mirror + pending updates; tracked by `linkedin-check`.
+- [[review-queue]] — ranked brush-up list of topics to review; maintained by `quiz-me`.
