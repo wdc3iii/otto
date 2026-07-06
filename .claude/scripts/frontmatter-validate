@@ -14,7 +14,7 @@ EXCLUDE = {".git", ".obsidian", ".claude", ".trash"}
 SKIP_TOP = {"Templates", "00-Inbox"}  # inbox is raw/unstructured by design
 SKIP_FILES = {"CLAUDE.md", "PROJECT-PLAN.md", "README.md"}
 ALLOWED_TYPES = {"concept", "paper", "moc", "project", "daily",
-                 "meeting", "resource", "index", "home", "session"}
+                 "meeting", "resource", "index", "home", "session", "person"}
 ISO = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 

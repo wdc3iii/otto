@@ -27,24 +27,26 @@ non-obvious connections and contradictions — not writing prose for me. The rou
 - `04-Maps/` → [[04-Maps/index]] — MOCs / lit-review hubs (link concepts **and** papers)
 - `05-Resources/` → [[05-Resources/index]] — reference material, snippets, configs
 - `06-Archive/` → [[06-Archive/index]] — completed / inactive
+- `People/` → [[People/index]] — one page per researcher/collaborator (`type: person`): bio, contributions, their otto papers + non-paper links
 - `Meetings/` → [[Meetings/index]] · `Journal/{daily,sessions}/` → [[Journal/index]] · `Templates/` → [[Templates/index]]
 - `.claude/` — skills, scripts, `taxonomy.md`, your settings. **Not authentic notes** — your workspace.
 
 ## Conventions
 **Filenames.** Papers = `@citekey.md` (Better BibTeX key, e.g. `@ames2019cbf.md`) —
 `[@citekey]` renders as a citation, `[[@citekey]]` links internally. Concepts & MOCs =
-kebab-case (`control-barrier-functions.md`). Daily = `YYYY-MM-DD.md`. Meetings =
-`YYYY-MM-DD-<topic>.md`. Sessions = `YYYY-MM-DD-HHMM.md`.
+kebab-case (`control-barrier-functions.md`). People = kebab-case (`marco-hutter.md`). Daily
+= `YYYY-MM-DD.md`. Meetings = `YYYY-MM-DD-<topic>.md`. Sessions = `YYYY-MM-DD-HHMM.md`.
 
 **Frontmatter (every note).** YAML, ISO-8601 dates, `tags`/`aliases` are **lists** (plural):
 ```yaml
-type: concept        # concept|paper|moc|project|daily|meeting|resource|index|home|session
+type: concept        # concept|paper|moc|project|daily|meeting|resource|index|home|session|person
 tags: [rl, control]  # ≤3, lowercase, ONLY from .claude/taxonomy.md
 aliases: []
 created: 2026-07-05
 modified: 2026-07-05
 ```
 Papers add: `citekey, authors (list), year (number), venue, doi, url, arxiv, zotero, status (to-read|reading|read), mine (bool), pdf (`attachments/@citekey.pdf` or `missing`)`.
+People add: `affiliation, role, homepage, scholar` (+ optional `orcid, github, twitter`); the body links their `@citekey` papers in otto and any non-paper presence (site, talks, posts).
 One key = one type globally; never mix.
 
 **Linking.** Prefer `[[wikilinks]]`. Every paper note links to the concepts it uses;
