@@ -56,6 +56,7 @@ Classical navigation stacks assess traversability with hand-designed heuristics 
 - No social norms / dynamic multi-agent scenarios. Future: RGB input, adaptive timesteps, uncertainty via model ensembles.
 
 ## Concepts
+- [[forward-dynamics-model]] — this paper *is* the reference FDM: predicts future pose + failure risk, optimized against by [[sampling-based-optimization|MPPI]].
 - [[traversability-estimation]] — a learned forward-dynamics model *is* the traversability/feasibility predictor. · [[capability-awareness]] — model-predictive route to respecting the learned platform's capability.
 - [[mapless-navigation]] — replaces explicit cost-map / traversability-map construction with a learned predictive model queried directly by the planner.
 - [[sim-to-real-transfer]] — hybrid synthetic + real training; synthetic-only model transfers zero-shot, fine-tuning closes the residual gap.

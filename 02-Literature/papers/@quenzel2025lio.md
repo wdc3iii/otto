@@ -45,7 +45,7 @@ State estimation / odometry is upstream infrastructure for navigation autonomy; 
 Autonomous robotic systems heavily rely on environment knowledge to safely navigate. For search & rescue, a flying robot requires robust real-time perception, enabled by complementary sensors. IMU data constrains acceleration and rotation, whereas LiDAR measures accurate distances around the robot. Building upon the LiDAR odometry MARS, our LiDAR-inertial odometry (LIO) jointly aligns multi-resolution surfel maps with a Gaussian mixture model (GMM) using a continuous-time B-spline trajectory. Our new scan window uses non-uniform temporal knot placement to ensure continuity over the whole trajectory without additional scan delay. Moreover, we accelerate essential covariance and GMM computations with Kronecker sums and products by a factor of 3.3. An unscented transform de-skews surfels, while a splitting into intra-scan segments facilitates motion compensation during spline optimization. Complementary soft constraints on relative poses and preintegrated IMU pseudo-measurements further improve robustness and accuracy. Extensive evaluation showcases the state-of-the-art quality of our LIO-MARS w.r.t. recent LIO systems on various handheld, ground and aerial vehicle-based datasets.
 
 ## Concepts
-<!-- [[03-Concepts]] links added when read -->
+- [[state-estimation]] — continuous-time LiDAR-inertial odometry.
 
 ## Source
 - bibkeys: `quenzelLIOMARSNonuniformContinuoustime2025`

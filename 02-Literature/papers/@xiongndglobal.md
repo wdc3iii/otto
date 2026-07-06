@@ -51,7 +51,7 @@ This is the H-LIP + MPC step-planning layer for global navigation of underactuat
 Global position control for underactuated bipedal walking is a challenging problem due to the lack of actuation on the feet of the robots. In this paper, we apply the Hybrid-Linear Inverted Pendulum (H-LIP) based stepping on 3D underactuated bipedal robots for global position control. The step-to-step (S2S) dynamics of the H-LIP walking approximates the actual S2S dynamics of the walking of the robot, where the step size is considered as the input. Thus the feedback controller based on the H-LIP approximately controls the robot to behave like the H-LIP, the differences between which stay in an error invariant set. Model Predictive Control (MPC) is applied to the H-LIP for global position control in 3D. The H-LIP stepping then generates desired step sizes for the robot to track. Moreover, t
 
 ## Concepts
-[[reduced-order-model]] · [[tracking-error-bound]] · [[hierarchical-control]]
+[[step-to-step-dynamics]] · [[reduced-order-model]] · [[tracking-error-bound]] · [[hierarchical-control]]
 
 ## Source
 - Cited by [[@terrain2026consistent]]

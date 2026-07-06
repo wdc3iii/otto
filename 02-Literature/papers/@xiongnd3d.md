@@ -50,7 +50,7 @@ The H-LIP is a canonical reduced-order model for underactuated bipedal locomotio
 In this paper, we holistically present a Hybrid-Linear Inverted Pendulum (H-LIP) based approach for synthesizing and stabilizing 3D foot-underactuated bipedal walking, with an emphasis on thorough hardware realization. The H-LIP is proposed to capture the essential components of the underactuated and actuated part of the robotic walking. The robot walking gait is then directly synthesized based on the H-LIP. We comprehensively characterize the periodic orbits of the H-LIP and provably derive the stepping stabilization via its step-to-step (S2S) dynamics, which is then utilized to approximate the S2S dynamics of the horizontal state of the center of mass (COM) of the robotic walking. The approximation facilities a H-LIP based stepping controller to provide desired step sizes to stabilize th
 
 ## Concepts
-[[reduced-order-model]] · [[tracking-error-bound]]
+[[step-to-step-dynamics]] · [[reduced-order-model]] · [[tracking-error-bound]]
 
 ## Source
 - Cited by [[@terrain2026consistent]]

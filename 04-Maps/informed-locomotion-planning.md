@@ -21,7 +21,7 @@ risk model — instead of assuming the plan is tracked perfectly.
 > and [[navigation-autonomy]] MOCs (see *Sibling maps* below).
 
 ## Concepts
-[[tube-mpc]] · [[dynamic-tube]] · [[tracking-error-bound]] · [[reduced-order-model]] · [[capability-awareness]] · [[traversability-estimation]] · [[hierarchical-control]]
+[[tube-mpc]] · [[dynamic-tube]] · [[tracking-error-bound]] · [[forward-dynamics-model]] · [[sampling-based-optimization]] · [[reduced-order-model]] · [[capability-awareness]] · [[traversability-estimation]] · [[hierarchical-control]]
 
 ## The axis
 
@@ -68,10 +68,10 @@ notes frame exactly this — should capability-awareness be a **hard forward-inv
 - [[learning-based-locomotion]] — the prior taxonomy's *LeggedLocomotion* tree (RoM / MPC / RL).
 - [[navigation-autonomy]] — the prior taxonomy's *LocomotionAutonomy* tree (SLAM / high-level planning); [[@terrain2026consistent]] hinges the stack.
 
-## Proposed new concepts (surfaced during ingestion — not yet created)
-Flagged for your approval rather than added silently (otto grows its concept set deliberately):
-- **forward-dynamics-model** — learned predictor of achievable motion + failure risk; the FDM node from the old taxonomy, central to my humanoid project. Grounds [[@roth2025learned]], [[@kim2022forward]], [[@gibson2023multi]], [[@lee2023terrain]], [[@pokhrel2024cahsor]].
-- **step-to-step-dynamics / H-LIP** — discrete foot-placement→next-step map for underactuated bipedal walking; currently folded under [[reduced-order-model]]. Grounds [[@xiong2019orbit]], [[@dai2021bipedal]], [[@dai2023data]].
-- **contact-implicit-mpc** — whole-body NMPC with contact timing/location optimized, not prespecified; the opposite end of my MPC spectrum from tube/ROM. Grounds [[@neunert2018whole]].
-- **sampling-based-optimization (MPPI)** — sampling planners paired with learned models/costs; recurs across the FDM family and [[@tracy2025trajectory]].
-- **state-estimation / LiDAR-inertial odometry** — the estimation layer feeding perceptive planning; grounds [[@nubert2025holistic]], [[@quenzel2025lio]].
+## Concepts created from this ingestion
+These atomic notes were drafted to hold the ideas the ingestion surfaced (all `ai-draft`, `to-revisit` — refine into your own words):
+- [[forward-dynamics-model]] — learned predictor of achievable motion + failure risk; the FDM node from the old taxonomy, central to my humanoid project. Grounds [[@roth2025learned]], [[@kim2022forward]], [[@gibson2023multi]], [[@lee2023terrain]], [[@pokhrel2024cahsor]], [[@beyer2024risk]].
+- [[step-to-step-dynamics]] — discrete foot-placement→next-step map (H-LIP) for underactuated bipedal walking; specialized [[reduced-order-model]]. Grounds [[@xiong2019orbit]], [[@xiongnd3d]], [[@xiongndglobal]], [[@dai2021bipedal]], [[@dai2023data]].
+- [[contact-implicit-mpc]] — whole-body NMPC with contact timing/location optimized, not prespecified; the opposite end of my MPC spectrum from tube/ROM. Grounds [[@neunert2018whole]].
+- [[sampling-based-optimization]] — sampling planners (MPPI) paired with learned models/costs; recurs across the FDM family and [[@tracy2025trajectory]].
+- [[state-estimation]] — the LiDAR-inertial odometry / localization layer feeding perceptive planning; grounds [[@nubert2025holistic]], [[@quenzel2025lio]].

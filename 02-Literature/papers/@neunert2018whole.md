@@ -51,7 +51,7 @@ Squarely in your classical control line: a whole-body contact-implicit NMPC form
 In this work we present a whole-body Nonlinear Model Predictive Control approach for Rigid Body Systems subject to contacts. We use a full dynamic system model which also includes explicit contact dynamics. Therefore, contact locations, sequences and timings are not prespecified but optimized by the solver. Yet, thorough numerical and software engineering allows for running the nonlinear Optimal Control solver at rates up to 190 Hz on a quadruped for a time horizon of half a second. This outperforms the state of the art by at least one order of magnitude. Hardware experiments in form of periodic and non-periodic tasks are applied to two quadrupeds with different actuation systems. The obtained results underline the performance, transferability and robustness of the approach.
 
 ## Concepts
-<!-- [[03-Concepts]] links added when read -->
+- [[contact-implicit-mpc]] — whole-body NMPC optimizing through contact.
 
 ## Source
 - bibkeys: `neunertWholeBodyNonlinearModel2018`
