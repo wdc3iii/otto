@@ -28,4 +28,4 @@ _None yet — created on demand during `lit-review`._
 
 ## Active projects
 <!-- The `daily` skill surfaces these from 01-Projects/. -->
-_None yet._
+- [[summer-thoughts-on-autonomy|Summer Thoughts on Autonomy]] — recorded lecture series (3 lectures, ongoing)

@@ -5,12 +5,15 @@ tags: [rl, locomotion, navigation]
 aliases: []
 created: '2026-07-05'
 modified: '2026-07-05'
-authors: []
+authors:
+- Compton, William D.
+- Olkin, Zachary
+- Ames, Aaron D.
 year: 2026
-venue: (under review)
+venue: arXiv 2605.15517 (under review; targeting IEEE-RAS Humanoids 2026)
 doi: null
-arxiv: null
-url: null
+arxiv: '2605.15517'
+url: https://arxiv.org/abs/2605.15517
 zotero: null
 status: read
 mine: true
@@ -20,9 +23,13 @@ pdf: attachments/@terrain2026consistent.pdf
 
 # Terrain Consistent Reference-Guided RL for Humanoid Navigation Autonomy
 
-> [!info] anonymized · 2026 · (under review) — **my paper**
+> [!info] William D. Compton; Zachary Olkin; Aaron D. Ames · 2026 · arXiv 2605.15517 (under review) — **my paper**
 
-> [!warning] Anonymized PDF — set the real authors (updates the citekey & merges cross-citations).
+**Links:** [arXiv](https://arxiv.org/abs/2605.15517) · [video](https://youtu.be/rTWgR_VxL5Y) · website: `/papers/terrain-consistent-rl/`
+
+> [!note] De-anonymized 2026-07-06 from the public arXiv posting. Citekey left as
+> `terrain2026consistent` to preserve inbound links — say the word to normalize it to
+> `@compton2026terrain` (I'll rewrite links + verify with `link-check`).
 
 ## Abstract
 We present a method for training reference- guided, perceptive reinforcement learning locomotion policies for humanoid robots in which reference trajectories are mod- ulated in training to be consistent with terrain geometry. Aiming to deploy our method with standard navigation auton- omy infrastructure, we synthesize SE(2)-controllable reference trajectories inside the RL training loop, projecting desired footsteps onto valid footholds and adjusting swing-foot and center-of-mass trajectories to match the terrain. The resulting policy exposes a clean SE(2) velocity interface compatible with standard navigation planners. In simulation, environmentally- conditioned references significantly improve reference tracking performance compared to environment agnostic references. On hardware, we integrate the policy with an MPC + control barrier function planner and demonstrate long-horizon (>70m) closed-loop autonomous navigation on the Unitree G1 through outdoor environments containing rough terrain and consecutive flights of stairs, with all sensing and computation onboard.
