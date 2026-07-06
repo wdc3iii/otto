@@ -70,7 +70,7 @@ The navigation-autonomy capstone for the RL-locomotion line: shares the controll
 - [[@jenelten2024dtc]]
 - [[@lee2024asap]]
 - [[@lee2024integrating]]
-- [[@li2026clf]]
+- [[@li2025clf]]
 - [[@liao2025beyondmimic]]
 - [[@lin2021long]]
 - [[@liu2025opt2skill]]

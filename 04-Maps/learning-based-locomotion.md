@@ -30,7 +30,7 @@ certifiable, planner-compatible locomotion.
 - [[@mittal2025isaac|Isaac Lab]] · [[@schwarke2025rsl|RSL-RL]] — the GPU sim + RL library the pipeline runs on ([[massively-parallel-simulation]]).
 
 **Structure-guided RL** — ROM / CLF guidance instead of pure reward shaping.
-- [[@li2025clf|CLF-RL]] — CLF-guided RL (external; note: also keyed `@li2026clf` — duplicate to merge).
+- [[@li2025clf|CLF-RL]] — CLF-guided RL (external).
 - [[@su2025lipm|LIPM-guided RL]] — LIP reference guides a perceptive bipedal policy.
 - [[@lee2024integrating]] · [[@bang2024rl]] — model-based footstep planning fused with model-free RL.
 
@@ -46,8 +46,7 @@ certifiable, planner-compatible locomotion.
 **Classical ROM stepping (context CLF-RL builds on)** — the reduced models the references come from.
 - [[@xiongnd3d|H-LIP]] · [[@xiongndglobal]] — see [[reduced-order-model]].
 
-## Adjacent maps (to build)
-The terrain paper also cites a **navigation-autonomy** stack (LiDAR-inertial odometry, traversability,
-planning: `@xu2021fast`, `@xu2022fast`, `@compton2026lio`, `@dixit2024step`, `@lin2021long`,
-`@lee2024asap`, `@cheng2024navila`, `@yoon2025state`) — those belong in a future
-`navigation-autonomy` MOC, not here. See the full list in [[@terrain2026consistent]].
+## Sibling map
+[[navigation-autonomy]] (built 2026-07-06) holds the navigation, perception, and safety clusters —
+mapless/topological/social nav, traversability, and the PSF safety stack. [[@terrain2026consistent]]
+is the hinge between the two maps.

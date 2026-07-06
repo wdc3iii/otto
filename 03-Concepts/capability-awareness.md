@@ -16,6 +16,13 @@ A navigation layer that respects the **learned low-level controller's emergent c
 ## The mechanism under investigation
 Repurpose the LLC's own CLF Lyapunov value $V_t=\eta^\top P\eta$ (from [[@li2025clf|CLF-RL]] training) as a real-time **comfort signal**: penalize the nav policy for commands that drive the LLC into high-$V$, out-of-distribution regimes. See [[control-lyapunov-function]].
 
+## The ROM–reality gap: correct vs. bypass
+The premise — an analytical ROM misrepresents the real (learned) system — is the *same* one my
+earlier work answers by **correcting** the ROM instead of bypassing it. Three answers to one gap:
+- **Correct with a learned tube:** bound the tracking error around the ROM plan — [[dynamic-tube]], [[@compton2025dynamic|DTMPC]]. See [[tracking-error-bound]].
+- **Correct with a learned margin:** robustify the ROM-CBF for the full model — [[@compton2025learning|predictive CBFs]].
+- **Bypass the ROM (this thesis):** discard the analytical model; use the learned LLC's own CLF value $V_t$ as the feasibility certificate.
+
 ## Distinguish from adjacent ideas
 - **FocusNav's SASG** ([[@zhang2026focusnav]]) gates *perception* on a heuristic stability metric — this proposal penalizes *commands* on the LLC's *certified* Lyapunov value. Same intuition, different object, different guarantees.
 - **Learned forward-dynamics models** ([[@roth2025learned]]) learn a capability/traversability model to plan against — a model-predictive route to the same "know what the platform can do" goal, vs. this reward-regularizer route.

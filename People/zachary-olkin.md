@@ -27,7 +27,7 @@ personal site; specific dates/awards not verified — treat as inferred where un
 ## Contributions to the field
 His central line is **CLF-guided reinforcement learning (CLF-RL)** for humanoid locomotion —
 injecting model-based structure into RL rather than scaling data alone:
-- **CLF-RL reward shaping** ([[@li2025clf]], [[@li2026clf]]): embed a [[control-lyapunov-function]]
+- **CLF-RL reward shaping** ([[@li2025clf]], [[@li2025clf]]): embed a [[control-lyapunov-function]]
   and optimized reference trajectories into the RL reward during *training only*, yielding a
   lightweight deployable policy. Reported ~34% lower cost of transport and ~75% lower position
   error vs. pure RL on the Unitree G1.
@@ -71,7 +71,7 @@ _Papers in the vault he (co-)authored:_
   - [[@olkin2026chasing]] — Chasing Autonomy: Dynamic Retargeting and Control-Guided RL for Humanoid Running (IROS 2026)
   - [[@olkin2026stability]] — Stability of CLF-Guided RL (CDC 2026)
 - **Co-author (CLF-RL, w/ Kejun Li):**
-  - [[@li2025clf]] · [[@li2026clf]] — CLF-RL: Control Lyapunov Function Guided Reinforcement Learning (arXiv 2508.09354 → RA-L 2026)
+  - [[@li2025clf]] · [[@li2025clf]] — CLF-RL: Control Lyapunov Function Guided Reinforcement Learning (arXiv 2508.09354 → RA-L 2026)
 - **Co-author (my work):**
   - [[@terrain2026consistent]] — Terrain-Consistent Reference-Guided RL for Humanoid Navigation Autonomy (Compton, Olkin, Ames)
 - **Other:**

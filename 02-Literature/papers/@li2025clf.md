@@ -11,8 +11,8 @@ authors:
 - Yue, Yisong
 - Ames, Aaron D.
 year: 2025
-venue: arXiv:2508.09354 [cs]
-doi: 10.48550/arXiv.2508.09354
+venue: RA-L 2026 (arXiv:2508.09354 [cs])
+doi: 10.1109/LRA.2026.3653329
 arxiv: '2508.09354'
 url: https://arxiv.org/abs/2508.09354
 summary: ai-draft
@@ -22,11 +22,13 @@ status: to-read
 mine: false
 bibkeys:
 - li_clf-rl_2025
+- li2026clf
+- li_clf-rl_2026
 ---
 
 # CLF-RL: Control Lyapunov Function Guided Reinforcement Learning
 
-> [!info] Li, Kejun; Olkin, Zachary; Yue, Yisong; Ames, Aaron D. · 2025 · arXiv:2508.09354 [cs]
+> [!info] Li, Kejun; Olkin, Zachary; Yue, Yisong; Ames, Aaron D. · 2025 · RA-L 2026 (arXiv:2508.09354)
 > [!info]- otto authors: [[aaron-ames]] · [[zachary-olkin]]
 
 ## Summary
@@ -51,7 +53,8 @@ A control/RL/locomotion researcher cites this for the CLF-as-reward-shaping idea
 [[reduced-order-model]] [[tracking-error-bound]]
 
 ## Source
-- Cited by [[@dai2025walk]]
-- bibkeys: `li_clf-rl_2025`
+- Cited by [[@dai2025walk]], [[@olkin2026stability]], [[@terrain2026consistent]]
+- Merged 2026-07-06 from the duplicate `@li2026clf` (RA-L version of record); arXiv preprint + RA-L are one paper.
+- bibkeys: `li_clf-rl_2025`, `li2026clf`, `li_clf-rl_2026`
 - arXiv: https://arxiv.org/abs/2508.09354
 - DOI: https://doi.org/10.48550/arXiv.2508.09354

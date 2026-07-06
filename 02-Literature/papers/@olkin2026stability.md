@@ -54,7 +54,7 @@ The theory for your CLF-guided-RL line — the reward-shaping used in [[@olkin20
 - [[@galloway2015torque]]
 - [[@gu2025evolution]]
 - [[@kajita20013d]]
-- [[@li2026clf]]
+- [[@li2025clf]]
 - [[@liao2025beyondmimic]]
 - [[@olkin2025chasing]]
 - [[@olkin2026chasing]]

@@ -55,7 +55,7 @@ program, and nearly every foundational concept note here traces back to his work
   safety layer; my layered-safety work ([[@compton2025learning]]) and predictive/geometry-aware
   filters ([[@bena2025geometry]]) build directly on it.
 - **[[control-lyapunov-function]]** — RES-CLFs ([@ames2014rapidly]) are the stability certificate that
-  my group turns into an RL reward: **CLF-guided RL** ([[@li2026clf]], [[@olkin2026stability]],
+  my group turns into an RL reward: **CLF-guided RL** ([[@li2025clf]], [[@olkin2026stability]],
   [[@olkin2026chasing]], [[@dai2025walk]]) is exactly "CLF structure → learned policy → certifiable
   stability."
 - **[[reduced-order-model]]** / **[[dynamic-tube]]** / **[[tube-mpc]]** — ROM-based safety and
@@ -84,7 +84,7 @@ _Papers already in the vault he (co-)authored (~68 notes; some are arXiv/publish
 - **Reduced-order gait synthesis (H-LIP):** [[@xiong2022underactuated]] · [[@xiongnd3d]] · [[@xiongndglobal]]
 - **Layered / multi-rate control & contract theory:** [[@csomayshanklin2022multi]] · [[@rosolia2022unified]] · [[@incer2024layered]] · [[@matni2024theory]] · [[@matni2024quantitative]] · [[@contract2025theory]] · [[@jr2024contract]] · [[@mazojr2024contract]]
 - **ROM / reachable-polytope planning & tube-MPC:** [[@csomayshanklin2023nonlinear]] · [[@csomayshanklin2024bezier]] · [[@csomayshanklin2025bezier]] · [[@csomayshanklin2024dynamically]] · [[@csomayshanklin2025dynamically]] · [[@csomayshanklin2024robust]] (Robust Agility / ZDP) · [[@galliker2022planar]] · [[@hierarchies2025motion]]
-- **Learning + control structure (the otto line):** [[@csomayshanklin2021episodic]] · [[@compton2024dynamic]] · [[@compton2025dynamic]] · [[@compton2024learning]] · [[@compton2025learning]] · [[@compton2024constructive]] · [[@dai2025walk]] · [[@li2025clf]] · [[@li2026clf]] · [[@olkin2025chasing]] · [[@olkin2026chasing]] · [[@olkin2026stability]]
+- **Learning + control structure (the otto line):** [[@csomayshanklin2021episodic]] · [[@compton2024dynamic]] · [[@compton2025dynamic]] · [[@compton2024learning]] · [[@compton2025learning]] · [[@compton2024constructive]] · [[@dai2025walk]] · [[@li2025clf]] · [[@li2025clf]] · [[@olkin2025chasing]] · [[@olkin2026chasing]] · [[@olkin2026stability]]
 - **Humanoid navigation / perceptive safety (newest):** [[@terrain2026consistent]] · [[@yang2026safesage]] (Poisson) · [[@bena2025geometry]] (Poisson → CBF-MPC) · [[@gu2025evolution]] (survey)
 
 ## Elsewhere (non-paper)

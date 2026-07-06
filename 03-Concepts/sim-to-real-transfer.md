@@ -20,5 +20,7 @@ Sim gives billions of cheap transitions; the whole bet of RL-for-robots rides on
 - [[@wang2026guide]] — zero-shot deployment of an end-to-end nav policy (in-lab mazes + outdoor grass/vegetation), privileged sim state used only to *supervise* an auxiliary predictor at train time.
 - [[@yang2025spatially]] — depth encoder pretrained as a VAE on large-scale synthetic depth (TartanAir) *for* sim-to-real robustness (latent distribution covers real data). · [[@lee2024learning]] · [[@hoeller2021learning]] · [[@roth2025learned]] · [[@zhang2026focusnav]] — sim-trained legged nav deployed on hardware.
 
+- Locomotion side (same bet, via domain randomization): [[massively-parallel-simulation]] powers [[@compton2025dynamic|DTMPC]], [[@compton2025learning|predictive CBFs]], [[@dai2025walk|PLANC]], and [[@terrain2026consistent]] — all sim-trained and transferred by domain randomization.
+
 ## See also
-- [[rl-for-legged-locomotion]] · [[mapless-navigation]] · [[recurrent-navigation-policy]]
+- [[rl-for-legged-locomotion]] · [[massively-parallel-simulation]] · [[mapless-navigation]] · [[recurrent-navigation-policy]]
