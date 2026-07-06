@@ -1,6 +1,6 @@
 ---
 name: weekly-review
-description: Read across the vault and surface NON-OBVIOUS connections and CONTRADICTIONS in the user's thinking — the payoff synthesis workflow. Use when the user asks for a weekly review, a synthesis pass, "what connects", "what's inconsistent in my notes", or wants cross-note insight. Produces a report; does not create or edit permanent notes without approval.
+description: Read across the vault and surface NON-OBVIOUS connections and CONTRADICTIONS in the user's thinking — the payoff synthesis workflow. Use when the user asks for a weekly review, a synthesis pass, "what connects", "what's inconsistent in my notes", or wants cross-note insight. Also runs the presence checks (website/youtube/linkedin) and surfaces the top brush-up items from the `quiz-me` review queue. Produces a report; does not create or edit permanent notes without approval.
 ---
 
 # weekly-review
@@ -27,7 +27,10 @@ already see. This is synthesis, not summarization, and not generation.
    - `youtube-check` — new videos in tracked playlists (e.g. the lecture series) to ingest.
    - `linkedin-check` — profile updates worth making (low-key checklist).
    Report these alongside the synthesis findings.
-5. **Act only on approval.** If the user greenlights edits, make them, then run
+5. **Knowledge currency.** Surface the top of `05-Resources/review-queue.md` (weakest-first —
+   the 🔴/🟡 topics, plus any 🟢 gone stale since it was last quizzed). Offer to `quiz-me` on the
+   top few so they don't drift; notes added this week with no quiz history are candidates too.
+6. **Act only on approval.** If the user greenlights edits, make them, then run
    `link-check` and report results.
 
 ## Rules
