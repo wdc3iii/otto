@@ -4,7 +4,7 @@ citekey: fan2020deep
 tags: [control, rl]
 aliases: []
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-07-06'
 authors:
 - David D Fan
 - Ali-akbar Agha-mohammadi
@@ -21,6 +21,7 @@ summary: ai-draft
 mine: false
 bibkeys:
 - Fan2020
+- fanDeepLearningTubes2020
 ---
 
 # Deep Learning Tubes for Tube MPC

@@ -4,7 +4,7 @@ citekey: rudin2021learning
 tags: [rl, locomotion]
 aliases: []
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-07-06'
 authors:
 - Nikita Rudin
 - David Hoeller
@@ -22,6 +22,7 @@ summary: ai-draft
 mine: false
 bibkeys:
 - Rudin2021
+- rudinLearningWalkMinutes2022
 ---
 
 # Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning

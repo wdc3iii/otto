@@ -48,6 +48,10 @@ bibkeys:
 ## Relevance to your work
 Directly relevant to perception-conditioned humanoid locomotion over complex 3D terrain — a LiDAR/voxel perception approach complementary to the terrain-consistent navigation of [[@terrain2026consistent]].
 
+## Reading notes (imported from prior literature vault)
+> [!quote] Your own notes from reading the paper — authoritative, not AI-drafted.
+- Ref: https://github.com/agent-3154/simple-raycaster — a better raycaster implementation than the one in IsaacLab.
+
 ## Abstract (from bib)
 Robust humanoid locomotion requires accurate and globally consistent perception of the surrounding 3D environment. However, existing perception modules, mainly based on depth images or elevation maps, offer only partial and locally flattened views of the environment, failing to capture the full 3D structure. This paper presents Gallant, a voxel-grid-based framework for humanoid locomotion and local navigation in 3D constrained terrains. It leverages voxelized LiDAR data as a lightweight and structured perceptual representation, and employs a z-grouped 2D CNN to map this representation to the control policy, enabling fully end-to-end optimization. A high-fidelity LiDAR simulation that dynamically generates realistic observations is developed to support scalable, LiDAR-based training and ens
 

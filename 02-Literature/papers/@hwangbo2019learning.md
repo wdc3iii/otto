@@ -4,7 +4,7 @@ citekey: hwangbo2019learning
 tags: []
 aliases: []
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-07-06'
 authors:
 - J. Hwangbo
 - J. Lee
@@ -25,6 +25,7 @@ summary: ai-draft
 pdf: attachments/@hwangbo2019learning.pdf
 bibkeys:
 - HutterScience19
+- hwangboLearningAgileDynamic2019
 ---
 
 # Learning agile and dynamic motor skills for legged robots

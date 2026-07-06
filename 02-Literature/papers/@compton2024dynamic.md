@@ -4,7 +4,7 @@ citekey: compton2024dynamic
 tags: []
 aliases: []
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-07-06'
 authors:
 - Compton, William D
 - Csomay-Shanklin, Noel
@@ -22,6 +22,7 @@ summary: ai-draft
 pdf: attachments/@compton2024dynamic.pdf
 bibkeys:
 - compton2025dynamic
+- comptonDynamicTubeMPC2024
 ---
 
 # Dynamic Tube MPC: Learning Tube Dynamics with Massively Parallel Simulation for Robust Safety in Practice

@@ -4,7 +4,7 @@ citekey: grandia2023perceptive
 tags: []
 aliases: []
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-07-06'
 authors:
 - Grandia, Ruben
 - Jenelten, Fabian
@@ -24,6 +24,7 @@ pdf: attachments/@grandia2023perceptive.pdf
 bibkeys:
 - grandia2023perceptive
 - grandia_perceptive_2023
+- grandiaPerceptiveLocomotionNonlinear2022
 ---
 
 # Perceptive locomotion through nonlinear model-predictive control

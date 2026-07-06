@@ -4,7 +4,7 @@ citekey: liu2025opt2skill
 tags: []
 aliases: []
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-07-06'
 authors:
 - Liu, Fukang
 - Gu, Zhaoyuan
@@ -29,6 +29,7 @@ summary: ai-draft
 pdf: attachments/@liu2025opt2skill.pdf
 bibkeys:
 - liu2025opt2skill
+- liuOpt2SkillImitatingDynamicallyfeasible2025
 ---
 
 # Opt2skill: Imitating dynamically-feasible whole-body trajectories for versatile humanoid loco-manipulation

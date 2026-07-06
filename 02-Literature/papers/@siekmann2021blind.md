@@ -4,7 +4,7 @@ citekey: siekmann2021blind
 tags: []
 aliases: []
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-07-06'
 authors:
 - Siekmann, Jonah
 - Green, Kevin
@@ -23,6 +23,7 @@ status: to-read
 mine: false
 bibkeys:
 - siekmann2021blind
+- siekmannBlindBipedalStair2021
 ---
 
 # Blind bipedal stair traversal via sim-to-real reinforcement learning

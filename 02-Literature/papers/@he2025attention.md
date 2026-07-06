@@ -4,7 +4,7 @@ citekey: he2025attention
 tags: []
 aliases: []
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-07-06'
 authors:
 - He, Junzhe
 - Zhang, Chong
@@ -25,6 +25,7 @@ pdf: attachments/@he2025attention.pdf
 bibkeys:
 - he2025attention
 - he_attention-based_2025
+- heAttentionbasedMapEncoding2025
 ---
 
 # Attention-based map encoding for learning generalized legged locomotion

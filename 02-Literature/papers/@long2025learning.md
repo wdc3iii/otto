@@ -4,7 +4,7 @@ citekey: long2025learning
 tags: []
 aliases: []
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-07-06'
 authors:
 - Long, Junfeng
 - Ren, Junli
@@ -25,6 +25,7 @@ summary: ai-draft
 pdf: attachments/@long2025learning.pdf
 bibkeys:
 - long2025learning
+- longLearningHumanoidLocomotion2024
 ---
 
 # Learning humanoid locomotion with perceptive internal model

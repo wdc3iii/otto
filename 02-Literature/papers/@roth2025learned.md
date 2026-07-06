@@ -4,7 +4,7 @@ citekey: roth2025learned
 tags: [navigation, planning, method]
 aliases: [FDM, Forward Dynamics Model]
 created: 2026-07-06
-modified: 2026-07-06
+modified: '2026-07-06'
 authors:
   - Pascal Roth
   - Jonas Frey
@@ -19,6 +19,8 @@ pdf: attachments/@roth2025learned.pdf
 zotero:
 status: read
 mine: false
+bibkeys:
+- rothLearnedPerceptiveForward2025
 ---
 
 # Learned Perceptive Forward Dynamics Model for Safe and Platform-aware Robotic Navigation
@@ -68,6 +70,8 @@ The conceptual overlap with my **capability-awareness** thesis is strong but the
 Also note the failure head vs. a [[control-barrier-function]] safety filter: both encode "don't enter unsafe states," but the FDM's risk is a *learned soft probability* used as a soft MPPI cost, not a hard forward-invariance constraint. Something to compare when I think about whether capability-awareness should be a hard constraint or a learned cost.
 
 Code + models public: https://github.com/leggedrobotics/fdm — usable as a baseline / starting point for a G1 FDM.
+
+**Extensions I want to try (from earlier reading notes):** this is the basis of what I'm trying to do on the humanoid. Concrete extensions: (1) use **latent** rather than explicit encodings of the environment; (2) **incorporate history**, so performance improves when I revisit the same area; (3) **handle uncertainty more directly** — conservative behavior when the perception is uncertain.
 
 ## Source
 arXiv:2504.19322 (v2, 29 Apr 2025) · https://arxiv.org/abs/2504.19322 · To appear RSS 2025. PDF: `attachments/@roth2025learned.pdf`.

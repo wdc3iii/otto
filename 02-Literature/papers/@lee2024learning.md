@@ -4,7 +4,7 @@ citekey: lee2024learning
 tags: [navigation, locomotion, rl]
 aliases: []
 created: 2026-07-06
-modified: 2026-07-06
+modified: '2026-07-06'
 authors:
   - Joonho Lee
   - Marko Bjelonic
@@ -21,6 +21,8 @@ pdf: attachments/@lee2024learning.pdf
 zotero:
 status: read
 mine: false
+bibkeys:
+- leeLearningRobustAutonomous2024
 ---
 
 # Learning Robust Autonomous Navigation and Locomotion for Wheeled-Legged Robots

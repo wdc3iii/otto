@@ -4,7 +4,7 @@ citekey: miki2022learning
 tags: []
 aliases: []
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-07-06'
 authors:
 - Miki, Takahiro
 - Lee, Joonho
@@ -25,6 +25,7 @@ pdf: attachments/@miki2022learning.pdf
 bibkeys:
 - miki2022learning
 - miki_learning_2022
+- mikiLearningRobustPerceptive2022
 ---
 
 # Learning robust perceptive locomotion for quadrupedal robots in the wild

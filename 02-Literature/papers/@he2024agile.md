@@ -4,7 +4,7 @@ citekey: he2024agile
 tags: []
 aliases: []
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-07-06'
 authors:
 - He, Tairan
 - Zhang, Chong
@@ -24,6 +24,7 @@ summary: ai-draft
 pdf: attachments/@he2024agile.pdf
 bibkeys:
 - he2024agile
+- heAgileSafeLearning2024
 ---
 
 # Agile but safe: Learning collision-free high-speed legged locomotion

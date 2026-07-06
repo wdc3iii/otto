@@ -25,4 +25,5 @@ sources are the interesting part — flag them here.
 ## Current maps
 - [[learning-based-locomotion]] — RL / CLF-guided RL for legged locomotion (anchored on [[@terrain2026consistent]]).
 - [[navigation-autonomy]] — humanoid navigation stack (mapless/topological/social nav, safety filters); anchored on [[capability-aware-navigation]].
+- [[informed-locomotion-planning]] — planning under model mismatch (tube-based vs learned-FDM); the retired literature-vault's *LocomotionPlanning* tree, anchored on [[@compton2024dynamic]].
 - [[publication-record]] — my publications + first-author list; source of truth for `website-check`.

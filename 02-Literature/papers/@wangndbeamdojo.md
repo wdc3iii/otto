@@ -46,6 +46,13 @@ bibkeys:
 ## Relevance to your work
 A learning-based counterpart to model-based foothold-constrained locomotion; cited by [[@terrain2026consistent]] as prior art on perceptive humanoid locomotion over sparse footholds requiring consistent terrain estimation.
 
+## Reading notes (imported from prior literature vault)
+> [!quote] Your own notes from reading the paper — authoritative, not AI-drafted.
+- 2-stage curriculum: in stage 1 the robot walks on near-flat terrain but is fed a heightmap/rewards corresponding to the sparse terrain; after training to convergence, stage 2 puts the robot on the sparse-foothold terrain for fine-tuning. ~10k iterations per stage.
+- An elevation map is built from the onboard LiDAR, updated at 10 Hz, using FAST-LIO for precise odometry, then the ANYbotics `elevation_mapping` library (despite it being on ROS1 and containing an ANYmal-specific kinematics package) to generate the heightmap.
+- Authors note the perception module is the main performance constraint; the paper does not treat height variations (like stairs).
+- **My take:** the curriculum is interesting but not very general. A good example of a group getting height-mapping to work — but on an outdated codebase.
+
 ## Abstract (from bib)
 Traversing risky terrains with sparse footholds poses a significant challenge for humanoid robots, requiring precise foot placements and stable locomotion. Existing learning-based approaches often struggle on such complex terrains due to sparse foothold rewards and inefficient learning processes. To address these challenges, we introduce BeamDojo, a reinforcement learning (RL) framework designed for enabling agile humanoid locomotion on sparse footholds. BeamDojo begins by introducing a sampling-based foothold reward tailored for polygonal feet, along with a double critic to balancing the learning process between dense locomotion rewards and sparse foothold rewards. To encourage sufficient trial-and-error exploration, BeamDojo incorporates a two-stage RL approach: the first stage relaxes t
 

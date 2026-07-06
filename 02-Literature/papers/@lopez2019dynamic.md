@@ -4,7 +4,7 @@ citekey: lopez2019dynamic
 tags: []
 aliases: []
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-07-06'
 authors:
 - Lopez, Brett T
 - Slotine, Jean-Jacques E
@@ -21,6 +21,7 @@ status: to-read
 mine: false
 bibkeys:
 - Lopez2019
+- lopezDynamicTubeMPC2019
 ---
 
 # Dynamic tube MPC for nonlinear systems

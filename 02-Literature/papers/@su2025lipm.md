@@ -4,7 +4,7 @@ citekey: su2025lipm
 tags: []
 aliases: []
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-07-06'
 authors:
 - Su, Haokai
 - Luo, Haoxiang
@@ -24,6 +24,7 @@ status: to-read
 mine: false
 bibkeys:
 - su2025lipm
+- suLIPMGuidedReinforcementLearning2025
 ---
 
 # LIPM-Guided Reinforcement Learning for Stable and Perceptive Locomotion in Bipedal Robots
@@ -44,6 +45,13 @@ bibkeys:
 
 ## Relevance to your work
 Directly relevant to perceptive humanoid locomotion (cited by [[@terrain2026consistent]]): it shows how a reduced-order template like the LIPM can guide learned policies toward provable-ish balance behavior and a stable sensing viewpoint.
+
+## Reading notes (imported from prior literature vault)
+> [!quote] Your own notes from reading the paper — authoritative, not AI-drafted.
+- Teacher-student paradigm to train a terrain-aware locomotion policy with references shaped by the LIP model.
+- LIP references: CoM tracking error, height error, roll/pitch velocity penalty. **No foot references.**
+- Teacher policy trained with groundtruth information (fairly dense heightmap + privileged info: linear velocity, joint torque, feet contact force, external forces). Student policy has a heightmap predictor and a privileged predictor, trained by supervised learning to predict the heightmap and privileged info, which are then fed into the student policy during training. The heightmap predictor takes depth images via CNN + a history of proprioception via MLP, fed into a GRU.
+- **My take:** the heightmap strategy is interesting — curious whether the heightmap predictor could be trained not as an encoder/decoder but just as an encoder-to-latent for RL; or pretrained as encoder/decoder, then continued in RL.
 
 ## Concepts
 [[reduced-order-model]]

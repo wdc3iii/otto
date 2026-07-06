@@ -4,7 +4,7 @@ citekey: fridovichkeil2018planning
 tags: []
 aliases: []
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-07-06'
 authors:
 - Fridovich-Keil, David
 - Herbert, Sylvia L
@@ -23,6 +23,7 @@ summary: ai-draft
 pdf: attachments/@fridovichkeil2018planning.pdf
 bibkeys:
 - fridovich-keil_planning_2018
+- fridovich-keilPlanningFastSlow2018
 ---
 
 # Planning, fast and slow: A framework for adaptive real-time safe trajectory planning

@@ -4,7 +4,7 @@ citekey: zhuang2024humanoid
 tags: []
 aliases: []
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-07-06'
 authors:
 - Zhuang, Ziwen
 - Yao, Shenzhe
@@ -21,6 +21,7 @@ summary: ai-draft
 pdf: attachments/@zhuang2024humanoid.pdf
 bibkeys:
 - zhuang2024humanoid
+- zhuangHumanoidParkourLearning2024
 ---
 
 # Humanoid parkour learning

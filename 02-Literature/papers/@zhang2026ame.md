@@ -4,7 +4,7 @@ citekey: zhang2026ame
 tags: []
 aliases: []
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-07-06'
 authors:
 - Zhang, Chong
 - Klemm, Victor
@@ -22,6 +22,7 @@ summary: ai-draft
 pdf: attachments/@zhang2026ame.pdf
 bibkeys:
 - zhang2026ame
+- zhangAME2AgileGeneralized2026
 ---
 
 # AME-2: Agile and Generalized Legged Locomotion via Attention-Based Neural Map Encoding
