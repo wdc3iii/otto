@@ -4,7 +4,7 @@ tags: [navigation, rl, control]
 aliases: [Capability-Aware Navigation, Capability-Aware Navigation RL, CAN]
 status: active
 created: 2026-07-06
-modified: 2026-07-06
+modified: 2026-07-07
 repo: /home/wcompton/repos/legged_locomotion_rl
 target: IEEE conference (Olkin/Bena/Ames; TII support)
 ---
@@ -52,11 +52,17 @@ IEEE conference (Olkin/Bena/Ames; TII support), early-stage. Standing reviewer-f
 - **Contribution 3** states the empirical result without the principled argument (analytical locomotion models cannot represent the learned controller's emergent capability boundary).
 
 ## Literature map
-**In-group locomotion stack (LLC):** [[@li2025clf]] · [[@olkin2025chasing]] · [[@terrain2026consistent]]
-**In-group safety stack:** [[@bena2025geometry]] · [[@yang2026safesage]]
-**External navigation lineage:** [[@yang2025spatially]] (SRU, anchor) · [[@lee2024learning]] (HRL template) · [[@zhang2026focusnav]] (G1 competitor) · [[@hoeller2021learning]] (VAE+LSTM predecessor) · [[@roth2025learned]] (FDM+MPPI alt) · [[@haro2026path]] (path-conditioned) · [[@wang2026guide]] (goal-initialized mapless nav — adjacent)
-**Method / architecture:** [[@wijmans2019ddppo]] (recurrent PPO) · [[@vora2020pointpainting]] (camera→LiDAR fusion)
-**Topological direction (Berkeley/Levine):** [[@shah2023gnm|GNM]] · [[@shah2023vint|ViNT]] · [[@sridhar2024nomad|NoMaD]] → [[topological-navigation]]; candidate novelty = capability-annotated edges (walkable/runnable/stairs) + OSM campus prior.
+> [!info] The full external navigation lineage (RSL mapless-nav/HRL, Berkeley/Levine topological,
+> G1 competitors, method refs) is grouped in the **[[navigation-autonomy]]** MOC — the single source,
+> so the project note and the map don't drift. The **in-group** stack this project builds on is
+> detailed in §Layered architecture above: [[@li2025clf]] · [[@olkin2025chasing]] ·
+> [[@terrain2026consistent]] (LLC) and [[@bena2025geometry]] · [[@yang2026safesage]] (safety).
+
+Project-specific anchors — the pieces that drive *my* design decisions (see the MOC for the rest):
+- [[@yang2025spatially|SRU]] — mid-level nav-policy **architecture** anchor.
+- [[@lee2024learning]] — the HLC-over-frozen-LLC **template** ($\gamma$, multi-goal episodes).
+- [[@zhang2026focusnav|FocusNav]] — the direct **G1 competitor**; reframe contribution 1 around multi-skill / agile-gait nav (its SASG gates *perception*; my $V_t$-comfort penalizes *commands*).
+- [[@shah2023gnm|GNM]] · [[@shah2023vint|ViNT]] · [[@sridhar2024nomad|NoMaD]] → [[topological-navigation]] — the topological direction; candidate novelty = **capability-annotated edges** (walkable/runnable/stairs) + OSM campus prior.
 
 ## Concepts
 **Thesis:** [[capability-awareness]]. **Mid-tier:** [[recurrent-navigation-policy]] · [[path-conditioned-rl]] · [[traversability-estimation]]. **Safety:** [[poisson-safety-function]] · [[social-navigation]] · [[control-barrier-function]]. **LLC:** [[control-lyapunov-function]] · [[rl-for-legged-locomotion]] · [[hierarchical-control]]. **Nav lineage:** [[mapless-navigation]] · [[topological-navigation]] · [[sim-to-real-transfer]].
