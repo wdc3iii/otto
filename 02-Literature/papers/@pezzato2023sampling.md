@@ -4,7 +4,7 @@ citekey: pezzato2023sampling
 tags: []
 aliases: []
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-07-07'
 authors:
 - Pezzato, Corrado
 - Salmi, Chadi
@@ -49,7 +49,7 @@ bibkeys:
 This is the sampling-MPC counterpart to your GPU-parallel-simulation approach: it uses massively parallel rollouts to sidestep analytic dynamics for contact-rich whole-body control, a directly relevant baseline/tooling reference for [[@compton2025dynamic]].
 
 ## Concepts
-[[massively-parallel-simulation]]
+[[massively-parallel-simulation]] · [[sampling-based-optimization]] — an MPPI controller whose forward model is GPU-parallel physics rollouts; a canonical sampling-based MPC instance.
 
 ## Source
 - Cited by [[@compton2025dynamic]]

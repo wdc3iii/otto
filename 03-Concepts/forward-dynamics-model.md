@@ -3,7 +3,7 @@ type: concept
 tags: [navigation, planning, to-revisit]
 aliases: [forward dynamics model, FDM, learned forward dynamics, learned dynamics model]
 created: 2026-07-06
-modified: 2026-07-06
+modified: 2026-07-07
 ---
 
 # Forward-dynamics model (FDM)
@@ -23,6 +23,7 @@ The FDM is the **learned** answer to the [[reduced-order-model|RoM↔FoM gap]]: 
 - [[@lee2023terrain]] — learned terrain-aware kinodynamic model for planning.
 - [[@pokhrel2024cahsor]] — competence-aware learned 6-DoF model that respects platform limits.
 - [[@beyer2024risk]] — learned riskmaps for risk-predictive off-road planning.
+- [[@kahn2020badgr]] — BADGR: self-supervised learned model of navigation outcomes (collision/bumpiness/position), planned against; the affordance-over-geometry FDM precedent.
 
 ## Related
 [[capability-awareness]] · [[traversability-estimation]] · [[sampling-based-optimization]] · [[tube-mpc]] · [[reduced-order-model]] · [[informed-locomotion-planning]]

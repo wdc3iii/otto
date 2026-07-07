@@ -4,7 +4,7 @@ citekey: gibson2023multi
 tags: [control, method, planning]
 aliases: []
 created: '2026-07-06'
-modified: '2026-07-06'
+modified: '2026-07-07'
 authors:
 - Gibson, Jason
 - Vlahov, Bogdan
@@ -50,6 +50,7 @@ Modeling dynamics is often the first step to making a vehicle autonomous. While 
 
 ## Concepts
 - [[forward-dynamics-model]] — a multi-step learned dynamics model feeding trajectory selection.
+- [[sampling-based-optimization]] — the multi-step model is explicitly designed to stay scalable for sampling-based (MPPI) control, predicting millions of trajectories in real time.
 
 ## Source
 - bibkeys: `gibsonMultistepDynamicsModeling2023`

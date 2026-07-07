@@ -3,7 +3,7 @@ type: concept
 tags: [control, locomotion, to-revisit]
 aliases: [step-to-step dynamics, S2S, H-LIP, hybrid-LIP, step-to-step]
 created: 2026-07-06
-modified: 2026-07-06
+modified: 2026-07-07
 ---
 
 # Step-to-step (S2S) dynamics
@@ -22,9 +22,12 @@ S2S is the [[reduced-order-model]] specialized to *stepping*: the planning varia
 - [[@xiongndglobal]] — global-position control through the H-LIP stepping abstraction.
 - [[@dai2021bipedal]] — bipedal walking on constrained footholds via momentum / step control.
 - [[@dai2023data]] — data-driven adaptation of the S2S map for robust bipedal locomotion.
+- [[@xiong2022underactuated]] — the H-LIP gait-synthesis + stepping-stabilization paper (S2S dynamics → provable stepping control on Cassie); the anchor of the H-LIP line.
+- [[@dai2022bipedal]] — per-step (discrete-impact) angular-momentum regulation on constrained footholds via an underactuated-LIP model.
+- [[@khadiv2020walking]] — selects next-step location **and** timing per control cycle with a viability guarantee (LIP-based).
 
 ## Related
-[[reduced-order-model]] · [[hierarchical-control]] · [[tracking-error-bound]]
+[[reduced-order-model]] · [[hierarchical-control]] · [[tracking-error-bound]] · [[contact-implicit-mpc]] — the *opposite pole* of contact handling: S2S **prescribes** the contact sequence/timing (periodic orbit) and chooses only foot *placement* on a linear reduced model, whereas contact-implicit MPC lets the optimizer **discover** contact timing/location on the full model.
 
 ## Open questions
 - How does S2S stepping compose with a learned [[forward-dynamics-model]] at the navigation layer — plan footholds on S2S, plan routes on the FDM?

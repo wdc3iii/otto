@@ -4,7 +4,7 @@ citekey: kahn2020badgr
 tags: [navigation, rl, method]
 aliases: []
 created: '2026-07-06'
-modified: '2026-07-06'
+modified: '2026-07-07'
 authors:
 - Kahn, Gregory
 - Abbeel, Pieter
@@ -48,6 +48,7 @@ Mobile robot navigation is typically regarded as a geometric problem, in which t
 ## Concepts
 - [[traversability-estimation]]
 - [[capability-awareness]]
+- [[forward-dynamics-model]] — learns a self-supervised predictive model of navigation outcomes (collision, bumpiness, position) from real off-policy data and plans against it: the FDM pattern (learned predictor of platform behavior) in a wheeled setting.
 
 ## Source
 - bibkeys: `kahnBADGRAutonomousSelfSupervised2020`

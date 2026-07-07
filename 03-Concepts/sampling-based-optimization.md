@@ -3,7 +3,7 @@ type: concept
 tags: [planning, control, to-revisit]
 aliases: [sampling-based optimization, MPPI, sampling-based MPC, sampling-based trajectory optimization, derivative-free optimization]
 created: 2026-07-06
-modified: 2026-07-06
+modified: 2026-07-07
 ---
 
 # Sampling-based optimization (MPPI)
@@ -19,6 +19,9 @@ It is the planner that pairs naturally with a learned [[forward-dynamics-model]]
 ## Grounding
 - [[@tracy2025trajectory]] — the Trajectory Bundle Method: derivative-free trajectory optimization over sampled rollouts (unifying sequential-convex / sampling ideas).
 - [[@roth2025learned]] — MPPI optimizes velocity commands against the learned FDM + risk threshold.
+- [[@pezzato2023sampling]] — "Sampling-based MPC": an MPPI controller using a GPU-parallel physics simulator directly as its model.
+- [[@williams2001robust]] — the MPPI-robustness paper: fuses sampling-based MPC with linearization inside a robust tube.
+- [[@gibson2023multi]] — a multi-step learned dynamics model built to stay scalable for sampling-based (MPPI) control.
 
 ## Related
 [[forward-dynamics-model]] · [[tube-mpc]] · [[informed-locomotion-planning]]

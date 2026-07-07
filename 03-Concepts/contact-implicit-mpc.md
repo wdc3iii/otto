@@ -3,7 +3,7 @@ type: concept
 tags: [control, planning, to-revisit]
 aliases: [contact-implicit MPC, whole-body NMPC, contact-implicit optimization]
 created: 2026-07-06
-modified: 2026-07-06
+modified: 2026-07-07
 ---
 
 # Contact-implicit MPC
@@ -20,7 +20,7 @@ This sits at the opposite end of my MPC spectrum from [[reduced-order-model|redu
 - [[@neunert2018whole]] — whole-body nonlinear MPC through contact for legged robots.
 
 ## Related
-[[reduced-order-model]] · [[tube-mpc]] · [[hierarchical-control]]
+[[reduced-order-model]] · [[tube-mpc]] · [[hierarchical-control]] · [[step-to-step-dynamics]] — the *opposite pole* on "how much contact reasoning lives in the planner": S2S/H-LIP **prescribes** a fixed contact sequence on a reduced model and chooses only foot placement; contact-implicit MPC **discovers** contact timing/location on the full model. Together they bracket the spectrum.
 
 ## Open questions
 - Where is the real-time frontier — how much contact-implicit reasoning is affordable online on the G1 vs. offloaded to an offline/reference layer?

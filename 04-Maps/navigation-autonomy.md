@@ -3,7 +3,7 @@ type: moc
 tags: [moc, navigation]
 aliases: [Navigation autonomy, navigation MOC, humanoid navigation]
 created: 2026-07-06
-modified: 2026-07-06
+modified: 2026-07-07
 ---
 
 # Navigation Autonomy
@@ -15,7 +15,7 @@ a *frozen* learned locomotion controller, a mid-level nav policy that commands i
 geometry/semantics-aware safety filter.
 
 ## Concepts
-[[mapless-navigation]] · [[topological-navigation]] · [[social-navigation]] · [[traversability-estimation]] · [[recurrent-navigation-policy]] · [[path-conditioned-rl]] · [[capability-awareness]] · [[poisson-safety-function]] · [[control-barrier-function]] · [[sim-to-real-transfer]]
+[[mapless-navigation]] · [[topological-navigation]] · [[social-navigation]] · [[traversability-estimation]] · [[recurrent-navigation-policy]] · [[path-conditioned-rl]] · [[capability-awareness]] · [[poisson-safety-function]] · [[control-barrier-function]] · [[sim-to-real-transfer]] · [[hierarchical-control]] · [[control-lyapunov-function]] · [[forward-dynamics-model]]
 
 ## The three-tier stack (my project)
 1. **Low-level controller (frozen CLF-RL):** [[@li2025clf|CLF-RL]] · [[@olkin2025chasing|Chasing Stability (running)]] · [[@olkin2026chasing|Chasing Autonomy]] · [[@terrain2026consistent|terrain-aware]]. See [[rl-for-legged-locomotion]], [[control-lyapunov-function]], [[hierarchical-control]].
@@ -24,6 +24,13 @@ geometry/semantics-aware safety filter.
 
 ## The central tension
 [[capability-awareness]] argues an analytical ROM can't represent a *learned* controller's feasible-command manifold — the same ROM–reality gap that [[dynamic-tube|DTMPC]] and [[@compton2025learning|predictive CBFs]] answer by *correcting* the ROM. **Correct-the-ROM vs. bypass-it-with $V_t$** is the through-line linking this map to [[learning-based-locomotion]].
+
+> [!note] Open question (weekly-review 2026-07-07, ai-draft) — safety has quietly downgraded from
+> *provable* to *empirical* as the work moved ARCHER→G1: the hopper line **proved** RoM→FoM safety
+> ([[@cohen2025safety]], [[@compton2025learning]]), whereas the G1 stack wraps a CBF *collision* filter
+> around a learned policy with **unbounded tracking error** ([[@terrain2026consistent]], [[@olkin2026chasing]]).
+> Recover the guarantee on the learned policy, or consciously accept empirical safety? Full treatment
+> in [[capability-awareness]] §Open tensions.
 
 ## External lineage, grouped
 **ETH/RSL — mapless nav & HRL over a locomotion controller** ([[fan-yang]], [[marco-hutter]])

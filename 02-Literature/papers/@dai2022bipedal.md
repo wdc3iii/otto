@@ -4,7 +4,7 @@ citekey: dai2022bipedal
 tags: []
 aliases: []
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-07-07'
 authors:
 - Dai, Min
 - Xiong, Xiaobin
@@ -47,7 +47,7 @@ A model-based, momentum-regulating template for foothold-constrained walking, ci
 This paper presents an online walking synthesis methodology to enable dynamic and stable walking on constrained footholds for underactuated bipedal robots. Our approach modulates the change of angular momentum about the foot-ground contact pivot at discrete impact using pre-impact vertical center of mass (COM) velocity. To this end, we utilize the underactuated Linear Inverted Pendulum (LIP) model for approximating the underactuated walking dynamics to provide the desired post-impact angular momentum for each step. Desired outputs are constructed via online optimization combined with closed-form polynomials and tracked via a quadratic program (QP) based controller. This method is demonstrated on two robots, AMBER and 3D Cassie, for which stable walking behaviors with constrained footholds 
 
 ## Concepts
-[[reduced-order-model]]
+[[reduced-order-model]] · [[step-to-step-dynamics]] — per-step (discrete-impact) momentum regulation on constrained footholds via an underactuated-LIP model.
 
 ## Source
 - Cited by [[@dai2025walk]]

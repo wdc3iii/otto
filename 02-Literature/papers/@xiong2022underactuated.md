@@ -4,7 +4,7 @@ citekey: xiong2022underactuated
 tags: []
 aliases: []
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-07-07'
 authors:
 - Xiong, Xiaobin
 - Ames, Aaron
@@ -46,7 +46,7 @@ Foundational reduced-order-model + step-to-step approach for underactuated legge
 In this article, we holistically present a hybrid-linear inverted pendulum (H-LIP) based approach for synthesizing and stabilizing 3-D foot-underactuated bipedal walking, with an emphasis on thorough hardware realization. The H-LIP is proposed to capture the essential components of the underactuated and actuated part of the robotic walking. The robot walking gait is then directly synthesized based on the H-LIP. We comprehensively characterize the periodic orbits of the H-LIP and provably derive the stepping stabilization via its step-to-step (S2S) dynamics, which is then utilized to approximate the S2S dynamics of the horizontal state of the center of mass of the robotic walking. The approximation facilities a H-LIP based stepping controller to provide desired step sizes to stabilize the r
 
 ## Concepts
-[[reduced-order-model]] [[tracking-error-bound]]
+[[reduced-order-model]] · [[tracking-error-bound]] · [[step-to-step-dynamics]] — H-LIP step-to-step dynamics and stepping stabilization are the core method (the H-LIP orbit/S2S lineage).
 
 ## Source
 - Cited by [[@dai2025walk]]

@@ -3,7 +3,7 @@ type: moc
 tags: [moc, planning, control]
 aliases: [Informed locomotion planning, Planning under model mismatch, Naive vs informed planning]
 created: 2026-07-06
-modified: 2026-07-06
+modified: 2026-07-07
 ---
 
 # Informed Locomotion Planning (planning under model mismatch)
@@ -52,6 +52,14 @@ extension notes in [[@roth2025learned]].
 - [[@beyer2024risk|Risk-Predictive Planning]] — learned riskmaps for off-road autonomy.
 - [[@meng2023terrainnet|TerrainNet]] · [[@patel2024roadrunner|RoadRunner M&M]] — learned terrain/traversability models the planner consumes ([[traversability-estimation]]).
 
+### Robust learned tracker (absorb the gap, don't bound it)
+A third answer to model mismatch the imported taxonomy lacked: don't *bound* the gap (tube) or
+*predict* it (FDM) — **train a tracker robust enough that the residual gap doesn't matter**, and let
+a foresighted planner / safety-filter ride on top. This is where my *current* G1 line actually sits.
+- [[@jenelten2024dtc|DTC]] — MPC supplies foresight while an RL layer compensates for model mismatch; the canonical "optimizer + robust learned tracker" split.
+- [[@terrain2026consistent|Terrain-Consistent RL (mine)]] — an RL policy tracks terrain-consistent references under a CBF-MPC planner: a learned tracker + safety-filter planner, *not* a tube.
+- [[@olkin2026chasing|Chasing Autonomy]] — RL runner under a PSF→CBF-MPC safety filter over a frozen controller; same pattern.
+
 ### Abstraction / uncertainty-aware planning
 - [[@jiang2023abstraction|Abstraction-Based Planning]] — uncertainty-aware legged planning over an abstracted model.
 - [[@wang2024history|History-Aware Planning]] — memory across visits to reduce risk; resonates with extension (2) in my [[@roth2025learned]] notes.
@@ -63,6 +71,18 @@ you can bound), while the **FDM** route gives a *learned soft risk* (captures un
 terrain, but only as good as its training distribution and has no guarantee). My [[@roth2025learned]]
 notes frame exactly this — should capability-awareness be a **hard forward-invariance constraint**
 (CBF/tube) or a **learned cost** (FDM risk head)? This MOC is where that argument should mature.
+
+> [!note] Reframing (weekly-review 2026-07-07, ai-draft) — the "certified vs. learned-soft" split
+> above is overdrawn. My own [[@compton2025dynamic|DTMPC]] tube is an **α = 0.9 quantile** bound —
+> *learned and statistical, with no hard guarantee* — so it sits **with** the FDM family, not
+> opposite it. The honest axis is **what is bounded**: DTMPC bounds *tracking error around a
+> reference* (structured); the FDM bounds *task failure / achievable pose* (end-to-end); the
+> robust-tracker route *absorbs* the gap. The genuinely **certified** members belong in their own
+> row: [[@cohen2025safety|simulation-function safety]], [[@compton2025learning|predictive-robustness CBFs]]
+> ("we *prove* this guarantees safety"), and [[@herbert2017fastrack|FaSTrack]] (reachability bound).
+> And note the trajectory of my own work: it **migrated from bound-the-gap (ARCHER / DTMPC) to
+> learn-a-robust-tracker (G1)** — this map's original framing filed my current work as "tube" when
+> it's really the robust-tracker family above. Related open question in [[capability-awareness]].
 
 ## Sibling maps
 - [[learning-based-locomotion]] — the prior taxonomy's *LeggedLocomotion* tree (RoM / MPC / RL).

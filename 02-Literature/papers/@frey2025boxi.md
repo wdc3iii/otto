@@ -4,7 +4,7 @@ citekey: frey2025boxi
 tags: [hardware, navigation]
 aliases: []
 created: '2026-07-06'
-modified: '2026-07-06'
+modified: '2026-07-07'
 authors:
 - Frey, Jonas
 - Tuna, Turcan
@@ -53,7 +53,7 @@ Tangential to the control/RL core, but a practical reference if building or spec
 Achieving robust autonomy in mobile robots operating in complex and unstructured environments requires a multimodal sensor suite capable of capturing diverse and complementary information. However, designing such a sensor suite involves multiple critical design decisions, such as sensor selection, component placement, thermal and power limitations, compute requirements, networking, synchronization, and calibration. While the importance of these key aspects is widely recognized, they are often overlooked in academia or retained as proprietary knowledge within large corporations. To improve this situation, we present Boxi, a tightly integrated sensor payload that enables robust autonomy of robots in the wild. This paper discusses the impact of payload design decisions made to optimize algorithmic performance for downstream tasks, specifically focusing on state estimation and mapping. Boxi is equipped with a variety of sensors: two LiDARs, 10 RGB cameras including high-dynamic range, global shutter, and rolling shutter models, an RGB-D camera, 7 inertial measurement units (IMUs) of varying precision, and a dual antenna RTK GNSS system. Our analysis shows that time synchronization, calibration, and sensor modality have a crucial impact on the state estimation performance. We frame this analysis in the context of cost considerations and environment-specific challenges. We also present a mobile sensor suite `cookbook` to serve as a comprehensive guideline, highlighting generalizable key design considerations and lessons learned during the development of Boxi. Finally, we demonstrate the versatility of Boxi being used in a variety of applications in real-world scenarios, contributing to robust autonomy. More details and code: https://github.com/leggedrobotics/grand_tour_box
 
 ## Concepts
-<!-- [[03-Concepts]] links added when read -->
+- [[state-estimation]] — analyzes how sensor-payload design (synchronization, calibration, modality) determines downstream state-estimation and mapping performance.
 
 ## Source
 - bibkeys: `freyBoxiDesignDecisions2025`

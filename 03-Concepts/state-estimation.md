@@ -3,7 +3,7 @@ type: concept
 tags: [navigation, method, to-revisit]
 aliases: [state estimation, LiDAR-inertial odometry, LIO, localization, sensor fusion]
 created: 2026-07-06
-modified: 2026-07-06
+modified: 2026-07-07
 ---
 
 # State estimation (LiDAR-inertial odometry / localization)
@@ -19,6 +19,8 @@ Perceptive planning is only as good as the frame it runs in: a learned [[forward
 ## Grounding
 - [[@nubert2025holistic]] — Holistic Fusion: task- and setup-agnostic robot localization/state estimation.
 - [[@quenzel2025lio]] — LIO-MARS: non-uniform continuous-time trajectories for LiDAR-inertial odometry.
+- [[@ji2022concurrent]] — a learned proprioceptive estimator (base velocity, foot height, contact probability) trained concurrently with the RL policy — estimation coupled to what the controller needs.
+- [[@frey2025boxi]] — sensor-payload design (sync, calibration, modality) as a first-class determinant of downstream state-estimation/mapping performance.
 
 ## Related
 [[mapless-navigation]] · [[traversability-estimation]] · [[forward-dynamics-model]]

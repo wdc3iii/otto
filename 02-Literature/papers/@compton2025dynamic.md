@@ -4,7 +4,7 @@ citekey: compton2025dynamic
 tags: []
 aliases: []
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-07-07'
 authors:
 - Compton, William D.
 - Csomay-Shanklin, Noel
@@ -71,6 +71,11 @@ easier to track than others.
 ## Concepts
 - [[reduced-order-model]] · [[tube-mpc]] · [[dynamic-tube]] · [[tracking-error-bound]]
 - [[control-barrier-function]] · [[hierarchical-control]] · [[massively-parallel-simulation]]
+
+## Related in otto
+> [!note] ai-draft (weekly-review 2026-07-07) — proposed connection, refine/keep as you like.
+
+- [[@roth2025learned]] — **the two poles of one idea.** Both *learn the deployed platform's behavior from massively parallel simulation, then plan against it.* DTMPC quantile-regresses the **tracking error** around a reference (→ gradient MPC); Roth's FDM regresses future **SE(2) pose + failure risk** (→ sampling MPPI). They also share the *identical* limitation, stated in near-identical words — DTMPC: *"training trajectories are random, not MPC solutions"*; Roth: *"only as good as its training distribution."* DTMPC even proposes the fix the FDM line lacks: *collect training data with a parallelizable planner in the loop* (a closed-loop/DAgger idea directly transplantable to an FDM). See [[forward-dynamics-model]].
 
 ## My notes
 > [!note] (your space) — how this connects to your other work (ZDPs [[@compton2024constructive]],

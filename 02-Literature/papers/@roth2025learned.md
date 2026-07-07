@@ -4,7 +4,7 @@ citekey: roth2025learned
 tags: [navigation, planning, method]
 aliases: [FDM, Forward Dynamics Model]
 created: 2026-07-06
-modified: '2026-07-06'
+modified: '2026-07-07'
 authors:
   - Pascal Roth
   - Jonas Frey
@@ -62,6 +62,11 @@ Classical navigation stacks assess traversability with hand-designed heuristics 
 - [[sim-to-real-transfer]] — hybrid synthetic + real training; synthetic-only model transfers zero-shot, fine-tuning closes the residual gap.
 - [[hierarchical-control]] — mid-level (MPPI planner + FDM) sitting above a low-level RL locomotion policy; the FDM explicitly models that lower layer.
 - [[rl-for-legged-locomotion]] — the FDM is trained conditioned on a specific deployed RL locomotion policy, learning its emergent dynamics rather than rigid-body physics.
+
+## Related in otto
+> [!note] ai-draft (weekly-review 2026-07-07) — proposed connection, refine/keep as you like.
+
+- [[@compton2025dynamic]] — **the tube-side dual of this FDM.** Both learn the deployed platform's behavior from massively parallel sim and plan against it; DTMPC bounds *tracking error around a reference* (→ gradient MPC), this FDM bounds *achievable pose + failure* (→ MPPI). Shared Achilles' heel: the train/deploy distribution shift both notes flag. DTMPC's "planner-in-the-loop data collection" is a fix worth porting to a G1 FDM.
 
 ## My notes
 Directly relevant to my capability-aware G1 navigation project as an **alternative mid-level formulation**: instead of a recurrent-RL nav policy that emits commands, Roth et al. keep a classical sampling-based planner (MPPI) and learn only a *forward dynamics + risk model*. The planner stays interpretable and reward-editable; the learning is quarantined into "what can this platform do and where will it fail."

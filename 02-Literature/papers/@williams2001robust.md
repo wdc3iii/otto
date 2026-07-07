@@ -4,7 +4,7 @@ citekey: williams2001robust
 tags: []
 aliases: []
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-07-07'
 authors:
 - Grady Williams
 - Brian Goldfain
@@ -53,7 +53,7 @@ A reference point for robust MPC when the cost is non-smooth: the tube construct
 We present an algorithmic framework for stochastic model predictive control that is able to optimize non-linear systems with cost functions that have sparse, discontinuous gradient information. The proposed framework combines the benefits of sampling-based model predictive control with linearization-based trajectory optimization methods. The resulting algorithm consists of a novel utilization of Tube-based model predictive control. We demonstrate robust algorithmic performance on a variety of simulated tasks, and on a real-world fast autonomous driving task.
 
 ## Concepts
-[[tube-mpc]]
+[[tube-mpc]] · [[sampling-based-optimization]] — the MPPI-robustness paper: fuses sampling-based MPC with linearization inside a tube.
 
 ## Source
 - Cited by [[@compton2025dynamic]]

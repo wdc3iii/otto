@@ -4,7 +4,7 @@ citekey: khadiv2020walking
 tags: []
 aliases: []
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-07-07'
 authors:
 - Khadiv, Majid
 - Herzog, Alexander
@@ -47,7 +47,7 @@ A reduced-order, viability-based step timing/location adaptation scheme directly
 Step adjustment can improve the gait robustness of biped robots; however, the adaptation of step timing is often neglected as it gives rise to nonconvex problems when optimized over several footsteps. In this article, we argue that it is not necessary to optimize walking over several steps to ensure gait viability and show that it is sufficient to merely select the next step timing and location. Using this insight, we propose a novel walking pattern generator that optimally selects step location and timing at every control cycle. Our approach is computationally simple compared to standard approaches in the literature, yet guarantees that any viable state will remain viable in the future. We propose a swing foot adaptation strategy and integrate the pattern generator with an inverse dynamic
 
 ## Concepts
-[[reduced-order-model]]
+[[reduced-order-model]] · [[step-to-step-dynamics]] — selects next-step location **and** timing per control cycle with a viability guarantee (LIP-based); foot placement/timing is the S2S control abstraction.
 
 ## Source
 - Cited by [[@dai2025walk]]
