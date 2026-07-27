@@ -20,11 +20,18 @@ desktop.ini
 # --- Claude Code per-machine local settings (permission grants, etc.) ---
 .claude/settings.local.json
 
-# --- Inbox raw source dumps: large binaries, transient staging (full texts live in Zotero) ---
-# Notes generated from them ARE tracked; the source PDFs/zips are not.
-00-Inbox/*.pdf
+# --- Inbox raw source dumps ---
+# Source PDFs are tracked via git-LFS (see .gitattributes); the .zip/.tex bundles
+# they came from are not — they're transient staging and the PDF is the artifact.
 00-Inbox/*.zip
 
-# --- Per-paper PDFs (attachments/@citekey.pdf): vault-local, not in git ---
-# Keeps the repo plain-md/lean. Switch to git-LFS if you want PDFs synced (e.g. to phone).
-attachments/
+# --- PDFs (attachments/@citekey.pdf + 00-Inbox/*.pdf) are tracked via git-LFS ---
+# See .gitattributes. To keep a device lean, clone with LFS smudge disabled so you
+# get ~130-byte pointers instead of ~2.5 GB of PDFs:
+#     git lfs install --skip-smudge          # once per device, global
+#     git clone git@github.com:wdc3iii/otto.git
+#     cd otto && git config lfs.fetchexclude "*"
+# then fetch on demand:
+#     git lfs pull --include="attachments/@ames2019cbf.pdf"
+# NOTE: on a skip-smudge device the pointer files will NOT open in Obsidian until
+# you pull them. Obsidian mobile's git plugin does not support LFS at all.
