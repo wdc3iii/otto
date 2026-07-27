@@ -1,7 +1,7 @@
 ---
 type: paper
 citekey: ha2018world
-tags: []
+tags: [rl, generative]
 aliases: []
 created: '2026-07-26'
 modified: '2026-07-26'

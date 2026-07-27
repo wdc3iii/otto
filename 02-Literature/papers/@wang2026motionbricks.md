@@ -1,7 +1,7 @@
 ---
 type: paper
 citekey: wang2026motionbricks
-tags: []
+tags: [generative, imitation]
 aliases: []
 created: '2026-07-26'
 modified: '2026-07-26'

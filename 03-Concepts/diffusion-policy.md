@@ -1,6 +1,6 @@
 ---
 type: concept
-tags: [method, to-revisit]
+tags: [generative, imitation, to-revisit]
 aliases: [Diffusion policy, action diffusion]
 created: 2026-07-26
 modified: 2026-07-26

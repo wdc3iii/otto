@@ -1,7 +1,7 @@
 ---
 type: paper
 citekey: peng2018deepmimic
-tags: [rl]
+tags: [rl, imitation]
 aliases: []
 created: '2026-07-26'
 modified: '2026-07-26'

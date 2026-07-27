@@ -1,7 +1,7 @@
 ---
 type: paper
 citekey: brohan2022rt1
-tags: []
+tags: [foundation-model]
 aliases: []
 created: '2026-07-26'
 modified: '2026-07-26'

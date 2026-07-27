@@ -1,6 +1,6 @@
 ---
 type: concept
-tags: [method, to-revisit]
+tags: [foundation-model, to-revisit]
 aliases: [Foundation model, pretrained model]
 created: 2026-07-26
 modified: 2026-07-26

@@ -1,7 +1,7 @@
 ---
 type: paper
 citekey: oneill2024open
-tags: []
+tags: [foundation-model]
 aliases: []
 created: '2026-07-26'
 modified: '2026-07-26'

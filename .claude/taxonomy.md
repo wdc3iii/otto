@@ -14,6 +14,11 @@ This seed list is intentionally small — it grows deliberately, not organically
 - `planning` — motion/trajectory planning
 - `hardware` — robots & compute (Unitree G1, `talos`, `amberlab`)
 
+## Learning paradigms (foundation-model era)
+- `generative` — generative models & synthesis (diffusion, flow, VAE, autoregressive; incl. generative motion)
+- `foundation-model` — large pretrained models adapted to many tasks (VLMs, VLAs, foundation world models)
+- `imitation` — imitation / learning-from-demonstration / motion imitation
+
 ## Note role (optional, orthogonal to domain)
 - `moc` — map of content
 - `open-question` — unresolved question / research direction

@@ -1,7 +1,7 @@
 ---
 type: paper
 citekey: tessler2024maskedmimic
-tags: []
+tags: [generative, imitation]
 aliases: []
 created: '2026-07-26'
 modified: '2026-07-26'

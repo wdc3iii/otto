@@ -1,7 +1,7 @@
 ---
 type: paper
 citekey: ho2020denoising
-tags: []
+tags: [generative]
 aliases: []
 created: '2026-07-26'
 modified: '2026-07-26'

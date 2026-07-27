@@ -1,6 +1,6 @@
 ---
 type: concept
-tags: [rl, to-revisit]
+tags: [rl, imitation, to-revisit]
 aliases: [Motion imitation, physics-based character control, reference motion tracking]
 created: 2026-07-26
 modified: 2026-07-26

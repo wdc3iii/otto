@@ -1,6 +1,6 @@
 ---
 type: concept
-tags: [rl, method, to-revisit]
+tags: [rl, generative, to-revisit]
 aliases: [World model, learned dynamics model, latent dynamics]
 created: 2026-07-26
 modified: 2026-07-26

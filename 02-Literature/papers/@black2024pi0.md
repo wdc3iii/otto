@@ -1,7 +1,7 @@
 ---
 type: paper
 citekey: black2024pi0
-tags: []
+tags: [generative, foundation-model]
 aliases: []
 created: '2026-07-26'
 modified: '2026-07-26'

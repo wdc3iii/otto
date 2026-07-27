@@ -1,6 +1,6 @@
 ---
 type: concept
-tags: [method, to-revisit]
+tags: [foundation-model, to-revisit]
 aliases: [Transformer, self-attention, attention mechanism]
 created: 2026-07-26
 modified: 2026-07-26

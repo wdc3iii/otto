@@ -1,7 +1,7 @@
 ---
 type: paper
 citekey: brohan2023rt2
-tags: [rl]
+tags: [foundation-model]
 aliases: []
 created: '2026-07-26'
 modified: '2026-07-26'

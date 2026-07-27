@@ -1,6 +1,6 @@
 ---
 type: concept
-tags: [method, to-revisit]
+tags: [generative, to-revisit]
 aliases: [Diffusion model, DDPM, denoising diffusion, score-based generative model]
 created: 2026-07-26
 modified: 2026-07-26

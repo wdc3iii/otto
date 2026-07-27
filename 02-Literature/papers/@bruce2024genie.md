@@ -1,7 +1,7 @@
 ---
 type: paper
 citekey: bruce2024genie
-tags: []
+tags: [generative, foundation-model]
 aliases: []
 created: '2026-07-26'
 modified: '2026-07-26'
