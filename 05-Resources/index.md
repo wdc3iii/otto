@@ -20,3 +20,4 @@ concept and link back.
 ## Current resources
 - [[linkedin]] — LinkedIn profile mirror + pending updates; tracked by `linkedin-check`.
 - [[review-queue]] — ranked brush-up list of topics to review; maintained by `quiz-me`.
+- [[foundational-robotics-reading-list]] — prioritized to-read queue of foundation-model-era robotics papers (transformer → diffusion → world models → VLA → motion imitation), in dependency/canon order.
