@@ -1,0 +1,330 @@
+---
+type: paper
+citekey: oneill2024open
+tags: []
+aliases: []
+created: '2026-07-26'
+modified: '2026-07-26'
+authors:
+- Open X-Embodiment Collaboration
+- O'Neill, Abby
+- Rehman, Abdul
+- Gupta, Abhinav
+- Maddukuri, Abhiram
+- Gupta, Abhishek
+- Padalkar, Abhishek
+- Lee, Abraham
+- Pooley, Acorn
+- Gupta, Agrim
+- Mandlekar, Ajay
+- Jain, Ajinkya
+- Tung, Albert
+- Bewley, Alex
+- Herzog, Alex
+- Irpan, Alex
+- Khazatsky, Alexander
+- Rai, Anant
+- Gupta, Anchit
+- Wang, Andrew
+- Kolobov, Andrey
+- Singh, Anikait
+- Garg, Animesh
+- Kembhavi, Aniruddha
+- Xie, Annie
+- Brohan, Anthony
+- Raffin, Antonin
+- Sharma, Archit
+- Yavary, Arefeh
+- Jain, Arhan
+- Balakrishna, Ashwin
+- Wahid, Ayzaan
+- Burgess-Limerick, Ben
+- Kim, Beomjoon
+- Schölkopf, Bernhard
+- Wulfe, Blake
+- Ichter, Brian
+- Lu, Cewu
+- Xu, Charles
+- Le, Charlotte
+- Finn, Chelsea
+- Wang, Chen
+- Xu, Chenfeng
+- Chi, Cheng
+- Huang, Chenguang
+- Chan, Christine
+- Agia, Christopher
+- Pan, Chuer
+- Fu, Chuyuan
+- Devin, Coline
+- Xu, Danfei
+- Morton, Daniel
+- Driess, Danny
+- Chen, Daphne
+- Pathak, Deepak
+- Shah, Dhruv
+- Büchler, Dieter
+- Jayaraman, Dinesh
+- Kalashnikov, Dmitry
+- Sadigh, Dorsa
+- Johns, Edward
+- Foster, Ethan
+- Liu, Fangchen
+- Ceola, Federico
+- Xia, Fei
+- Zhao, Feiyu
+- Frujeri, Felipe Vieira
+- Stulp, Freek
+- Zhou, Gaoyue
+- Sukhatme, Gaurav S.
+- Salhotra, Gautam
+- Yan, Ge
+- Feng, Gilbert
+- Schiavi, Giulio
+- Berseth, Glen
+- Kahn, Gregory
+- Yang, Guangwen
+- Wang, Guanzhi
+- Su, Hao
+- Fang, Hao-Shu
+- Shi, Haochen
+- Bao, Henghui
+- Amor, Heni Ben
+- Christensen, Henrik I
+- Furuta, Hiroki
+- Bharadhwaj, Homanga
+- Walke, Homer
+- Fang, Hongjie
+- Ha, Huy
+- Mordatch, Igor
+- Radosavovic, Ilija
+- Leal, Isabel
+- Liang, Jacky
+- Abou-Chakra, Jad
+- Kim, Jaehyung
+- Drake, Jaimyn
+- Peters, Jan
+- Schneider, Jan
+- Hsu, Jasmine
+- Vakil, Jay
+- Bohg, Jeannette
+- Bingham, Jeffrey
+- Wu, Jeffrey
+- Gao, Jensen
+- Hu, Jiaheng
+- Wu, Jiajun
+- Wu, Jialin
+- Sun, Jiankai
+- Luo, Jianlan
+- Gu, Jiayuan
+- Tan, Jie
+- Oh, Jihoon
+- Wu, Jimmy
+- Lu, Jingpei
+- Yang, Jingyun
+- Malik, Jitendra
+- Silvério, João
+- Hejna, Joey
+- Booher, Jonathan
+- Tompson, Jonathan
+- Yang, Jonathan
+- Salvador, Jordi
+- Lim, Joseph J.
+- Han, Junhyek
+- Wang, Kaiyuan
+- Rao, Kanishka
+- Pertsch, Karl
+- Hausman, Karol
+- Go, Keegan
+- Gopalakrishnan, Keerthana
+- Goldberg, Ken
+- Byrne, Kendra
+- Oslund, Kenneth
+- Kawaharazuka, Kento
+- Black, Kevin
+- Lin, Kevin
+- Zhang, Kevin
+- Ehsani, Kiana
+- Lekkala, Kiran
+- Ellis, Kirsty
+- Rana, Krishan
+- Srinivasan, Krishnan
+- Fang, Kuan
+- Singh, Kunal Pratap
+- Zeng, Kuo-Hao
+- Hatch, Kyle
+- Hsu, Kyle
+- Itti, Laurent
+- Chen, Lawrence Yunliang
+- Pinto, Lerrel
+- Fei-Fei, Li
+- Tan, Liam
+- Fan, Linxi "Jim"
+- Ott, Lionel
+- Lee, Lisa
+- Weihs, Luca
+- Chen, Magnum
+- Lepert, Marion
+- Memmel, Marius
+- Tomizuka, Masayoshi
+- Itkina, Masha
+- Castro, Mateo Guaman
+- Spero, Max
+- Du, Maximilian
+- Ahn, Michael
+- Yip, Michael C.
+- Zhang, Mingtong
+- Ding, Mingyu
+- Heo, Minho
+- Srirama, Mohan Kumar
+- Sharma, Mohit
+- Kim, Moo Jin
+- Irshad, Muhammad Zubair
+- Kanazawa, Naoaki
+- Hansen, Nicklas
+- Heess, Nicolas
+- Joshi, Nikhil J
+- Suenderhauf, Niko
+- Liu, Ning
+- Palo, Norman Di
+- Shafiullah, Nur Muhammad Mahi
+- Mees, Oier
+- Kroemer, Oliver
+- Bastani, Osbert
+- Sanketi, Pannag R
+- Miller, Patrick "Tree"
+- Yin, Patrick
+- Wohlhart, Paul
+- Xu, Peng
+- Fagan, Peter David
+- Mitrano, Peter
+- Sermanet, Pierre
+- Abbeel, Pieter
+- Sundaresan, Priya
+- Chen, Qiuyu
+- Vuong, Quan
+- Rafailov, Rafael
+- Tian, Ran
+- Doshi, Ria
+- Martín-Martín, Roberto
+- Baijal, Rohan
+- Scalise, Rosario
+- Hendrix, Rose
+- Lin, Roy
+- Qian, Runjia
+- Zhang, Ruohan
+- Mendonca, Russell
+- Shah, Rutav
+- Hoque, Ryan
+- Julian, Ryan
+- Bustamante, Samuel
+- Kirmani, Sean
+- Levine, Sergey
+- Lin, Shan
+- Moore, Sherry
+- Bahl, Shikhar
+- Dass, Shivin
+- Sonawani, Shubham
+- Tulsiani, Shubham
+- Song, Shuran
+- Xu, Sichun
+- Haldar, Siddhant
+- Karamcheti, Siddharth
+- Adebola, Simeon
+- Guist, Simon
+- Nasiriany, Soroush
+- Schaal, Stefan
+- Welker, Stefan
+- Tian, Stephen
+- Ramamoorthy, Subramanian
+- Dasari, Sudeep
+- Belkhale, Suneel
+- Park, Sungjae
+- Nair, Suraj
+- Mirchandani, Suvir
+- Osa, Takayuki
+- Gupta, Tanmay
+- Harada, Tatsuya
+- Matsushima, Tatsuya
+- Xiao, Ted
+- Kollar, Thomas
+- Yu, Tianhe
+- Ding, Tianli
+- Davchev, Todor
+- Zhao, Tony Z.
+- Armstrong, Travis
+- Darrell, Trevor
+- Chung, Trinity
+- Jain, Vidhi
+- Kumar, Vikash
+- Vanhoucke, Vincent
+- Guizilini, Vitor
+- Zhan, Wei
+- Zhou, Wenxuan
+- Burgard, Wolfram
+- Chen, Xi
+- Chen, Xiangyu
+- Wang, Xiaolong
+- Zhu, Xinghao
+- Geng, Xinyang
+- Liu, Xiyuan
+- Liangwei, Xu
+- Li, Xuanlin
+- Pang, Yansong
+- Lu, Yao
+- Ma, Yecheng Jason
+- Kim, Yejin
+- Chebotar, Yevgen
+- Zhou, Yifan
+- Zhu, Yifeng
+- Wu, Yilin
+- Xu, Ying
+- Wang, Yixuan
+- Bisk, Yonatan
+- Dou, Yongqiang
+- Cho, Yoonyoung
+- Lee, Youngwoon
+- Cui, Yuchen
+- Cao, Yue
+- Wu, Yueh-Hua
+- Tang, Yujin
+- Zhu, Yuke
+- Zhang, Yunchu
+- Jiang, Yunfan
+- Li, Yunshuang
+- Li, Yunzhu
+- Iwasawa, Yusuke
+- Matsuo, Yutaka
+- Ma, Zehan
+- Xu, Zhuo
+- Cui, Zichen Jeff
+- Zhang, Zichen
+- Fu, Zipeng
+- Lin, Zipeng
+year: 2024
+venue: ICRA
+doi: 10.48550/arXiv.2310.08864
+arxiv: '2310.08864'
+url: https://arxiv.org/abs/2310.08864
+zotero: null
+status: to-read
+mine: false
+pdf: attachments/@oneill2024open.pdf
+---
+
+# Open X-Embodiment: Robotic Learning Datasets and RT-X Models
+
+> [!info] Open X-Embodiment Collaboration, O'Neill et al. (294 authors) · 2024 · ICRA
+
+> [!todo] metadata-only stub — flesh out from full text when read.
+
+## Concepts
+[[vision-language-action]], [[foundation-model]]
+
+> proposed links — concept notes to be created centrally.
+
+## Abstract (from arXiv)
+Large, high-capacity models trained on diverse datasets have shown remarkable successes on efficiently tackling downstream applications. In domains from NLP to Computer Vision, this has led to a consolidation of pretrained models, with general pretrained backbones serving as a starting point for many applications. Can such a consolidation happen in robotics? Conventionally, robotic learning methods train a separate model for every application, every robot, and even every environment. Can we instead train generalist X-robot policy that can be adapted efficiently to new robots, tasks, and environments? In this paper, we provide datasets in standardized data formats and models to make it possible to explore this possibility in the context of robotic manipulation, alongside experimental results that provide an example of effective X-robot policies. We assemble a dataset from 22 different robots collected through a collaboration between 21 institutions, demonstrating 527 skills (160266 tasks). We show that a high-capacity model trained on this data, which we call RT-X, exhibits positive transfer and improves the capabilities of multiple robots by leveraging experience from other platforms. More details can be found on the project website https://robotics-transformer-x.github.io.
+
+## Source
+- https://arxiv.org/abs/2310.08864
+- DOI: https://doi.org/10.48550/arXiv.2310.08864
