@@ -15,7 +15,7 @@ a *frozen* learned locomotion controller, a mid-level nav policy that commands i
 geometry/semantics-aware safety filter.
 
 ## Concepts
-[[mapless-navigation]] · [[topological-navigation]] · [[social-navigation]] · [[traversability-estimation]] · [[recurrent-navigation-policy]] · [[path-conditioned-rl]] · [[capability-awareness]] · [[poisson-safety-function]] · [[control-barrier-function]] · [[sim-to-real-transfer]] · [[hierarchical-control]] · [[control-lyapunov-function]] · [[forward-dynamics-model]]
+[[mapless-navigation]] · [[topological-navigation]] · [[social-navigation]] · [[traversability-estimation]] · [[recurrent-navigation-policy]] · [[path-conditioned-rl]] · [[capability-awareness]] · [[poisson-safety-function]] · [[control-barrier-function]] · [[sim-to-real-transfer]] · [[hierarchical-control]] · [[control-lyapunov-function]] · [[forward-dynamics-model]] · [[vision-language-action]] · [[foundation-model]]
 
 ## The three-tier stack (my project)
 1. **Low-level controller (frozen CLF-RL):** [[@li2025clf|CLF-RL]] · [[@olkin2025chasing|Chasing Stability (running)]] · [[@olkin2026chasing|Chasing Autonomy]] · [[@terrain2026consistent|terrain-aware]]. See [[rl-for-legged-locomotion]], [[control-lyapunov-function]], [[hierarchical-control]].
@@ -40,10 +40,12 @@ geometry/semantics-aware safety filter.
 
 **Berkeley / Levine — topological navigation** ([[sergey-levine]], [[topological-navigation]])
 - [[@shah2023gnm|GNM]] · [[@shah2023vint|ViNT]] · [[@sridhar2024nomad|NoMaD]] — sparse topological maps / foundation models; candidate novelty = capability-annotated edges + campus prior.
+  - These are navigation [[foundation-model]]s; NoMaD's action head is a [[diffusion-policy]] on the ViNT [[transformer]] (weekly-review 2026-07-26 link).
 
 **Humanoid nav on the G1**
 - [[@zhang2026focusnav|FocusNav]] — the direct contemporary competitor (local nav, G1); distinguish SASG (gates *perception*) from my $V_t$-comfort (penalizes *commands*).
 - [[@wang2026guide]] — goal-initialized end-to-end mapless nav (adjacent).
+- [[@cheng2024navila|NaVILA]] — legged-robot [[vision-language-action|VLA]] emitting *language* waypoints ("move forward 75cm") to a locomotion RL policy; the VLA instance of high-level-over-frozen-LLC, and a **non-SE(2) interface** data point (cf. [[capability-awareness]] §4/§5).
 
 **Method / architecture**
 - [[@wijmans2019ddppo|DD-PPO]] — recurrent-PPO reference · [[@vora2020pointpainting|PointPainting]] — camera→LiDAR semantic fusion.

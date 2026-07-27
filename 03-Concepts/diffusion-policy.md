@@ -19,6 +19,8 @@ Representing actions as a diffusion process handles **multimodal demonstrations*
 ## Grounding
 - [[@chi2023diffusion]] — Diffusion Policy: visuomotor policy learning via action diffusion.
 - Builds on [[diffusion-model]] ([[@ho2020denoising]]).
+- **In navigation (already in otto):** [[@sridhar2024nomad|NoMaD]] attaches a diffusion action head to the ViNT [[transformer]] — a diffusion policy sitting in this vault's nav cluster.
+- **Beyond quasi-static manipulation:** [[@liao2025beyondmimic|BeyondMimic]] uses *guided* diffusion for dynamic humanoid whole-body skills on hardware — the counterexample to the manipulation-only caveat below.
 
 ## Related
 - [[diffusion-model]] · [[motion-imitation]]

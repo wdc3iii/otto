@@ -27,4 +27,10 @@ This lineage (character-animation origins → humanoid robotics) is now the domi
 
 ## Open questions
 - **Sim-to-real** for extremely dynamic skills on real humanoid hardware.
-- **Certifiable stability** of imitation policies — can the CLF-RL stability results ([[@olkin2026stability]]) reach into the imitation setting?
+
+> [!warning] Tension — structure-for-certification vs. scale-for-versatility (weekly-review 2026-07-26, ai-draft)
+> Two opposing bets on humanoid whole-body control now sit side by side in otto:
+> - **My line** — *inject structure* (ROM/CLF/references) into RL: [[@olkin2026stability]] **proves** CLF-guided RL stable, and [[@terrain2026consistent]] exposes a planner-compatible $SE(2)$ interface. Certifiable, but curated behaviors.
+> - **The imitation-scaling line** — [[@liao2025beyondmimic|BeyondMimic]], [[@tessler2024maskedmimic|MaskedMimic]], [[@luo2023perpetual|PHC]], [[@wang2026motionbricks|MotionBricks]] get *versatile* whole-body skills by scaling data-driven imitation, with **no stability certificate**.
+>
+> Open: does the CLF-RL stability result say anything *about* — or *against* — the imitation route, or are these just incompatible bets? [[@liao2025beyondmimic|BeyondMimic]] straddles both (guided diffusion over tracked primitives, run on hardware), so it's the natural place to probe whether structure and scale can be *combined* rather than chosen between.

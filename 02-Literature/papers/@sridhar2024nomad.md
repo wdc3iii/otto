@@ -55,6 +55,8 @@ Navigating an *unfamiliar* environment needs two capabilities that are usually s
 - [[topological-navigation]]
 - [[mapless-navigation]]
 - [[hierarchical-control]]
+- [[diffusion-policy]] — the action head is a conditional diffusion policy over future waypoints
+- [[transformer]] — the ViNT backbone fusing observation history + (masked) goal
 
 ## My notes
 Latest node in the Berkeley/Levine topological visual-navigation line: **GNM → ViNT → NoMaD**. GNM gave a cross-embodiment goal-conditioned policy; ViNT scaled it to a Transformer foundation model with a *separate* subgoal-diffusion module for exploration; NoMaD folds exploration back into the single network via goal masking and swaps the subgoal-image generator for a diffusion *action* head. The key conceptual move is that goal masking lets one policy be both goal-directed and undirected — exploration is just "the same policy with the goal ablated."

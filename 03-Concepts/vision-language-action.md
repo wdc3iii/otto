@@ -20,6 +20,7 @@ VLAs are the **semantic / task layer** — generalization to novel objects and l
 - [[@brohan2022rt1]] (RT-1) → [[@brohan2023rt2]] (RT-2, web knowledge → action).
 - Data/scale: [[@oneill2024open]] (Open X-Embodiment / RT-X, cross-embodiment).
 - Open + efficient: [[@kim2024openvla]] (OpenVLA, 7B). Flow-based: [[@black2024pi0]] (π0).
+- **Navigation instance (in otto):** [[@cheng2024navila|NaVILA]] — a legged-robot VLA that emits *language* waypoints to a locomotion RL policy; plus the topological-nav foundation models [[@shah2023vint|ViNT]] / [[@sridhar2024nomad|NoMaD]]. Ties this concept into [[navigation-autonomy]].
 
 ## Related
 - [[foundation-model]] · [[transformer]]

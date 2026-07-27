@@ -50,7 +50,7 @@ bibkeys:
 A concrete instance of hierarchical high-level (language/planning) over low-level (RL locomotion) control for legged robots — relevant to layered navigation autonomy as in [[@terrain2026consistent]].
 
 ## Concepts
-[[hierarchical-control]]
+[[hierarchical-control]] · [[vision-language-action]] · [[foundation-model]]
 
 ## Source
 - Cited by [[@terrain2026consistent]]

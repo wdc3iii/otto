@@ -14,7 +14,7 @@ modified: 2026-07-07
 A **learned predictor of what the platform will actually do** given a candidate action/command sequence and its current perception: it maps (state history, proprioception, terrain/height scan, commands) → future states (e.g. an $SE(2)$ pose rollout) and, crucially, a **failure/collision risk**. A sampling planner (typically [[sampling-based-optimization|MPPI]]) then optimizes the commands against a goal subject to a risk threshold. The FDM models the *emergent dynamics of a specific deployed controller on specific terrain*, not rigid-body physics.
 
 ## Intuition / why it matters
-The FDM is the **learned** answer to the [[reduced-order-model|RoM↔FoM gap]]: instead of certifying a [[tracking-error-bound]] and planning inside a [[tube-mpc|tube]], you *learn* the achievable set and where the controller fails, and plan against that. It's an alternative, model-predictive route to [[capability-awareness]] — the risk head *is* a learned capability boundary — and it collapses explicit [[traversability-estimation]] into a predictive query. The cost: it is only as good as its training distribution (geometry-bound, controller-bound), with no guarantee — the central tension of [[informed-locomotion-planning]].
+The FDM is the **learned** answer to the [[reduced-order-model|RoM↔FoM gap]]: instead of certifying a [[tracking-error-bound]] and planning inside a [[tube-mpc|tube]], you *learn* the achievable set and where the controller fails, and plan against that. It's an alternative, model-predictive route to [[capability-awareness]] — the risk head *is* a learned capability boundary — and it collapses explicit [[traversability-estimation]] into a predictive query. The cost: it is only as good as its training distribution (geometry-bound, controller-bound), with no guarantee — the central tension of [[informed-locomotion-planning]]. Seen from the other direction, an FDM is the **task-/controller-specific** cousin of a general [[world-model]] ([[@ha2018world]], [[@hafner2023mastering]]): the same learn-the-dynamics move, scoped to one deployed controller on specific terrain and carrying an explicit risk head.
 
 ## Grounding
 - [[@roth2025learned]] — learned perceptive FDM predicting future pose **and** failure risk; the closest prior art to my humanoid FDM line.
@@ -26,7 +26,7 @@ The FDM is the **learned** answer to the [[reduced-order-model|RoM↔FoM gap]]: 
 - [[@kahn2020badgr]] — BADGR: self-supervised learned model of navigation outcomes (collision/bumpiness/position), planned against; the affordance-over-geometry FDM precedent.
 
 ## Related
-[[capability-awareness]] · [[traversability-estimation]] · [[sampling-based-optimization]] · [[tube-mpc]] · [[reduced-order-model]] · [[informed-locomotion-planning]]
+[[capability-awareness]] · [[traversability-estimation]] · [[sampling-based-optimization]] · [[tube-mpc]] · [[reduced-order-model]] · [[informed-locomotion-planning]] · [[world-model]]
 
 ## Open questions
 - Latent vs. explicit environment encoding; carrying history across revisits; and making the risk head *conservative under perceptual uncertainty* — my three intended extensions (see [[@roth2025learned]] notes).

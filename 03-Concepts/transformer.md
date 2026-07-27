@@ -19,6 +19,7 @@ Transformers scale predictably with data and compute, which is why they became t
 ## Grounding
 - Origin: [[@vaswani2017attention]] — attention-only encoder-decoder; SOTA machine translation.
 - Robot policies built on it: [[@brohan2022rt1]] (Robotics Transformer), [[@brohan2023rt2]] (VLA).
+- Navigation transformers already in otto: [[@shah2023vint|ViNT]] · [[@sridhar2024nomad|NoMaD]] (ViNT backbone + a [[diffusion-policy]] head).
 
 ## Related
 - [[foundation-model]] · [[vision-language-action]]

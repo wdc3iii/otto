@@ -75,5 +75,15 @@ G1 running at 3.3 m/s (2 m/s while dodging obstacles) — exactly CAHSOR's "high
 breaks." Does the comfort signal $V_t$ need **SE(3) content** (the humanoid analogues of rollover/slip)
 that an SE(2) command interface hides?
 
+> [!warning] 5. A generative controller as architectural rival — on your exact robot (weekly-review 2026-07-26, ai-draft)
+> [[@wang2026motionbricks|MotionBricks]] deploys a *generative* motion model with modular "smart primitives"
+> as its command interface **directly on the Unitree G1** — a wholesale alternative to this project's stack
+> (mid-level nav policy → **SE(2)** velocity → *frozen* CLF-RL LLC). Its interface is generative primitives, not
+> a velocity command, and its "controller" is one large learned motion model rather than a certified LLC. It
+> compounds tension **#2** (*whose* controller / which $V_t$?) and **#4** (is SE(2) rich enough?). And
+> [[@cheng2024navila|NaVILA]] is a third interface data point — it commands the locomotion policy in **language**
+> ("move forward 75cm"), not SE(2) either. Open: what do the primitive / language interfaces express that an
+> SE(2) command can't — and does that moot the $V_t$-comfort signal, or *motivate* a richer one?
+
 ## See also
 [[control-lyapunov-function]] · [[rl-for-legged-locomotion]] · [[traversability-estimation]] · [[forward-dynamics-model]] · [[informed-locomotion-planning]] · [[capability-aware-navigation]]

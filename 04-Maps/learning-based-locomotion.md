@@ -15,7 +15,7 @@ Lyapunov functions, references) into RL** rather than hand-tuning rewards — fo
 certifiable, planner-compatible locomotion.
 
 ## Concepts
-[[rl-for-legged-locomotion]] · [[control-lyapunov-function]] · [[massively-parallel-simulation]] · [[reduced-order-model]] · [[control-barrier-function]] · [[hierarchical-control]]
+[[rl-for-legged-locomotion]] · [[control-lyapunov-function]] · [[massively-parallel-simulation]] · [[reduced-order-model]] · [[control-barrier-function]] · [[hierarchical-control]] · [[motion-imitation]]
 
 ## My contributions (CLF-guided RL line)
 - [[@dai2025walk|PLANC]] — ROM stepping planner + CLF rewards for constrained footholds.
@@ -34,8 +34,9 @@ certifiable, planner-compatible locomotion.
 - [[@su2025lipm|LIPM-guided RL]] — LIP reference guides a perceptive bipedal policy.
 - [[@lee2024integrating]] · [[@bang2024rl]] — model-based footstep planning fused with model-free RL.
 
-**Reference-guided & imitation** — tracking motion priors / trajectories.
+**Reference-guided & imitation** — tracking motion priors / trajectories. Concept: [[motion-imitation]].
 - [[@liao2025beyondmimic|BeyondMimic]] · [[@wu2026perceptive]] · [[@allshire2025visual]] · [[@liu2025opt2skill|Opt2Skill]] · [[@sleiman2026zest|ZEST]].
+- *Generative motion-imitation lineage (character → humanoid; weekly-review 2026-07-26):* [[@peng2018deepmimic|DeepMimic]] → [[@peng2021amp|AMP]] → [[@peng2022ase|ASE]] → [[@luo2023perpetual|PHC]] → [[@luo2024universal|PULSE]] → [[@tessler2024maskedmimic|MaskedMimic]] → [[@wang2026motionbricks|MotionBricks]] (deploys on the G1). The **scale-driven** counterpoint to this map's **structure-driven** through-line — see the tension in [[motion-imitation]].
 
 **Perceptive / terrain-aware locomotion** — conditioning on terrain geometry.
 - [[@long2025learning]] · [[@he2025attention]] · [[@zhang2026rpl|RPL]] · [[@zhuang2024humanoid]] · [[@wangndbeamdojo|BeamDojo]] · [[@benndgallant|Gallant]] · [[@jenelten2024dtc|DTC]].

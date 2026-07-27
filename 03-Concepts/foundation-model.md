@@ -20,6 +20,7 @@ The bet is that **broad priors transfer**: pretraining on internet-scale (or cro
 - Robot policies: [[@brohan2023rt2]] (RT-2), [[@kim2024openvla]] (OpenVLA).
 - Data substrate: [[@oneill2024open]] (Open X-Embodiment / RT-X).
 - Foundation world model: [[@bruce2024genie]] (Genie).
+- Navigation foundation models (in otto): [[@shah2023gnm|GNM]] · [[@shah2023vint|ViNT]] · [[@sridhar2024nomad|NoMaD]] — cross-embodiment visual nav; see [[navigation-autonomy]].
 
 ## Related
 - [[vision-language-action]] · [[world-model]] · [[transformer]]
