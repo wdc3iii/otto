@@ -3,7 +3,7 @@ type: concept
 tags: [foundation-model, to-revisit]
 aliases: [Foundation model, pretrained model]
 created: 2026-07-26
-modified: 2026-07-26
+modified: 2026-07-29
 ---
 
 # Foundation model
@@ -21,6 +21,7 @@ The bet is that **broad priors transfer**: pretraining on internet-scale (or cro
 - Data substrate: [[@oneill2024open]] (Open X-Embodiment / RT-X).
 - Foundation world model: [[@bruce2024genie]] (Genie).
 - Navigation foundation models (in otto): [[@shah2023gnm|GNM]] · [[@shah2023vint|ViNT]] · [[@sridhar2024nomad|NoMaD]] — cross-embodiment visual nav; see [[navigation-autonomy]].
+- Foundation model as *data generator*, not policy: [[@xie2026grail]] (GRAIL — a video FM supplies the interaction prior and a VLM labels contacts; the controller itself is ordinary RL). A third use pattern alongside the policy play and the data-substrate play.
 
 ## Related
 - [[vision-language-action]] · [[world-model]] · [[transformer]]

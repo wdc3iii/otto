@@ -3,7 +3,7 @@ type: concept
 tags: [rl, imitation, to-revisit]
 aliases: [Motion imitation, physics-based character control, reference motion tracking]
 created: 2026-07-26
-modified: 2026-07-26
+modified: 2026-07-29
 ---
 
 # Motion imitation
@@ -21,6 +21,7 @@ This lineage (character-animation origins → humanoid robotics) is now the domi
 - Adversarial priors: [[@peng2021amp]] (AMP), [[@peng2022ase]] (ASE — reusable skill embeddings).
 - Unified / large-scale: [[@luo2023perpetual]] (PHC), [[@luo2024universal]] (PULSE), [[@tessler2024maskedmimic]] (MaskedMimic), [[@wang2026motionbricks]] (MotionBricks).
 - On real humanoids: [[@liao2025beyondmimic]] (guided diffusion over tracked primitives).
+- Generated references: [[@xie2026grail]] (GRAIL — tracks 4D human–object interaction reconstructed from VFM-generated video, via an adaptor on a frozen pretrained controller; extends the lineage to [[loco-manipulation]]).
 
 ## Related
 - [[rl-for-legged-locomotion]] · [[diffusion-model]]

@@ -3,7 +3,7 @@ type: resource
 tags: [to-revisit]
 aliases: [Foundational Robotics Reading List, Modern Robotics Canon, Foundational Papers]
 created: 2026-07-26
-modified: 2026-07-26
+modified: 2026-07-29
 ---
 
 # Foundational Robotics Reading List
@@ -22,7 +22,8 @@ systems built on them. Within each layer, the root comes first.
 **Legend.** `[ ]` unread · ✅ full reading note in otto · 🟨 metadata+abstract stub (flesh out
 when read) · PDF saved at `attachments/@citekey.pdf` for every entry below unless noted.
 Concept notes drafted for this list: [[transformer]] · [[diffusion-model]] · [[diffusion-policy]]
-· [[world-model]] · [[motion-imitation]] · [[vision-language-action]] · [[foundation-model]].
+· [[world-model]] · [[motion-imitation]] · [[vision-language-action]] · [[foundation-model]]
+· [[loco-manipulation]].
 
 ---
 
@@ -53,6 +54,10 @@ Concept notes drafted for this list: [[transformer]] · [[diffusion-model]] · [
 - [ ] 🟨 [[@luo2024universal]] — **PULSE.** Universal humanoid motion latent for downstream RL.
 - [ ] 🟨 [[@tessler2024maskedmimic]] — **MaskedMimic** (NVIDIA). Unified control as masked motion inpainting.
 - [ ] 🟨 [[@wang2026motionbricks]] — **MotionBricks.** Modular latent generative model + "smart primitives"; **deploys on the Unitree G1** (your hardware).
+
+## Layer 6 — Composing the stack: generated data → loco-manipulation on hardware
+- [ ] ✅ [[@xie2026grail]] — **GRAIL** (NVIDIA/UCLA, added 2026-07-29). Uses a *video* foundation model as an interaction prior inside a fully specified 3D scene, reconstructs metric 4D human-object interaction, retargets to the **Unitree G1**, and trains task-general trackers on a frozen pretrained whole-body controller (SONIC). 20k+ generated sequences → 84% real pick-up, 90% stair-climbing, trained on **generated data only**. → [[loco-manipulation]], [[motion-imitation]], [[foundation-model]], [[sim-to-real-transfer]]
+  - *Why here:* it's the payoff case for this whole list — Layer 4's foundation models supply the behavior prior, Layer 5's imitation machinery converts it to robot actions, and it lands on your hardware. Read after Layer 5's roots (DeepMimic → PHC) so the tracking stack reads as familiar.
 
 ---
 

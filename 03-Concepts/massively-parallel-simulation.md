@@ -3,7 +3,7 @@ type: concept
 tags: [rl, to-revisit]
 aliases: [massively parallel simulation, parallel simulation, GPU simulation]
 created: 2026-07-05
-modified: 2026-07-05
+modified: 2026-07-29
 ---
 
 # Massively parallel simulation
@@ -20,6 +20,7 @@ Throughput is the enabler: it makes data-hungry methods practical on one worksta
 - [[@rudin2021learning]] · [[@makoviychuk2021isaac]] — the recipe and the engine.
 - [[@compton2025dynamic]] — 8192 envs to learn tube dynamics.
 - [[@compton2025learning]] — learns a CBF robustness term via parallel sim + domain randomization.
+- [[@xie2026grail]] — the multi-GPU end of the spectrum: PPO in Isaac Lab across 64 L40s, 1,024 envs/GPU, 30k iterations.
 
 ## Related
 - [[dynamic-tube]]
