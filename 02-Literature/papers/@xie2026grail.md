@@ -105,7 +105,7 @@ is instead *known by construction*.
 
 ### 3. Task-general loco-manipulation tracking (§3.3)
 **GMR** retargets the SMPL-X motion to the G1 (low mismatch *because* the character was robot-proportioned).
-Tracking policies are built on **SONIC**, a pretrained whole-body controller with an FSQ-quantized latent
+Tracking policies are built on **[[@luo2025sonic|SONIC]]**, a pretrained whole-body controller with an FSQ-quantized latent
 token $z_t = \mathcal{E}(\tilde q_t)$ and action decoder $\mathcal{G}$. Crucially, policies are trained
 **per task family over pooled trajectories**, not per sequence or per object:
 - **Object-aware latent adaptor $\pi_\varphi$** — controller (encoder/quantizer/decoder) **frozen**. Observes
@@ -189,7 +189,11 @@ Stated by the authors (§6):
 
 ## Concepts
 - [[motion-imitation]] — GRAIL's stage 3 is reference-motion tracking on a pretrained whole-body controller
-  (SONIC), in the DeepMimic → PHC/PULSE/MaskedMimic lineage; the novelty is *where the references come from*.
+  ([[@luo2025sonic|SONIC]]), in the DeepMimic → PHC/PULSE/MaskedMimic lineage; the novelty is *where the
+  references come from*.
+- [[@luo2025sonic]] — the controller GRAIL is built on. Note the seam: SONIC's dataset **filtered out**
+  stair climbing and seated activities as G1-infeasible, and GRAIL's scene-aware tracker adds exactly
+  those back.
 - [[foundation-model]] — a video foundation model (Kling) used as an **interaction prior**, plus a VLM for
   prompt authoring and contact labelling. Foundation models supply behavior, not control.
 - [[sim-to-real-transfer]] — visual domain randomization + camera alignment; RGB egocentric policies trained

@@ -22,6 +22,7 @@ This lineage (character-animation origins → humanoid robotics) is now the domi
 - Unified / large-scale: [[@luo2023perpetual]] (PHC), [[@luo2024universal]] (PULSE), [[@tessler2024maskedmimic]] (MaskedMimic), [[@wang2026motionbricks]] (MotionBricks).
 - On real humanoids: [[@liao2025beyondmimic]] (guided diffusion over tracked primitives).
 - Generated references: [[@xie2026grail]] (GRAIL — tracks 4D human–object interaction reconstructed from VFM-generated video, via an adaptor on a frozen pretrained controller; extends the lineage to [[loco-manipulation]]).
+- **Scaling evidence:** [[@luo2025sonic]] (SONIC — argues motion tracking *is* the scalable foundational task for humanoid control, because dense per-frame mocap supervision stays informative as data diversifies where an adversarial discriminator does not. 100M+ frames, 42M params, 21k GPU hours → 99.6% success on unseen motion, onboard on a Jetson Orin).
 
 ## Related
 - [[rl-for-legged-locomotion]] · [[diffusion-model]]

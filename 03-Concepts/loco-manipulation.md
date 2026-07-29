@@ -36,6 +36,11 @@ This is the axis along which "humanoid" stops being a locomotion problem. Two co
   interaction reconstructed from VFM-generated video, retargeted to a Unitree G1; object-aware latent adaptor
   for manipulation, height-map-conditioned tracker for terrain).
 - **Hands as contacts for navigation over rubble:** [[@lin2021long]].
+- **VLA-driven, whole kinematic chain:** [[@luo2025sonic]] (SONIC — five real G1 tasks at 75% average;
+  the sharpest instance is opening a trash can by **stepping on the pedal** while balancing on the other
+  leg, i.e. the *foot* is the manipulator. Argues this is hard to realize with action spaces that
+  decouple upper-body control from locomotion — which is precisely the decoupling most manipulation
+  stacks assume).
 
 ## Related
 - [[motion-imitation]] — the dominant route to loco-manipulation policies is tracking whole-body references,
@@ -49,3 +54,8 @@ This is the axis along which "humanoid" stops being a locomotion problem. Two co
   discard filter. Same tension as [[motion-imitation]] §Tension, one level up.
 - Does anything in the CLF/ROM line extend to contact-rich whole-body tasks, where the "reduced order model"
   would have to include the manipulated object? Open — not something otto currently has a note on.
+- **Is the upper-body/lower-body split a real abstraction or a convenience?** [[@luo2025sonic]] argues
+  against it — tasks needing simultaneous hand grasping and precise foot placement can't be expressed
+  in an action space that decouples them. If that's right, it cuts against hierarchical designs that
+  hand locomotion a velocity command and manipulation an end-effector target independently.
+  Cf. [[hierarchical-control]].

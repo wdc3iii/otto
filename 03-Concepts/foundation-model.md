@@ -22,6 +22,7 @@ The bet is that **broad priors transfer**: pretraining on internet-scale (or cro
 - Foundation world model: [[@bruce2024genie]] (Genie).
 - Navigation foundation models (in otto): [[@shah2023gnm|GNM]] · [[@shah2023vint|ViNT]] · [[@sridhar2024nomad|NoMaD]] — cross-embodiment visual nav; see [[navigation-autonomy]].
 - Foundation model as *data generator*, not policy: [[@xie2026grail]] (GRAIL — a video FM supplies the interaction prior and a VLM labels contacts; the controller itself is ordinary RL). A third use pattern alongside the policy play and the data-substrate play.
+- **Foundation model for low-level control:** [[@luo2025sonic]] (SONIC) is the most direct answer yet to the open question below — it imports the parameters/data/compute scaling-axes framing wholesale and shows it holds for *whole-body humanoid control*, with generalization gains largest out-of-distribution.
 
 ## Related
 - [[vision-language-action]] · [[world-model]] · [[transformer]]

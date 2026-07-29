@@ -21,6 +21,7 @@ Throughput is the enabler: it makes data-hungry methods practical on one worksta
 - [[@compton2025dynamic]] — 8192 envs to learn tube dynamics.
 - [[@compton2025learning]] — learns a CBF robustness term via parallel sim + domain randomization.
 - [[@xie2026grail]] — the multi-GPU end of the spectrum: PPO in Isaac Lab across 64 L40s, 1,024 envs/GPU, 30k iterations.
+- [[@luo2025sonic]] — further still: distributed Isaac Lab across **128 GPUs / 21k GPU hours**, and it reports the *scaling curve* — more GPUs give better asymptotic performance at equal iteration count (larger batches stabilize optimization). Also the counterexample: a specialist baseline (OpenHomie) **plateaus past 8 GPUs**, so throughput only pays off if the task absorbs it.
 
 ## Related
 - [[dynamic-tube]]

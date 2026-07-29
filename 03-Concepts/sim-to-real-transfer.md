@@ -21,6 +21,7 @@ Sim gives billions of cheap transitions; the whole bet of RL-for-robots rides on
 - [[@yang2025spatially]] — depth encoder pretrained as a VAE on large-scale synthetic depth (TartanAir) *for* sim-to-real robustness (latent distribution covers real data). · [[@lee2024learning]] · [[@hoeller2021learning]] · [[@roth2025learned]] · [[@zhang2026focusnav]] — sim-trained legged nav deployed on hardware.
 
 - [[@xie2026grail]] — egocentric RGB policies trained on *only* synthetically generated data (visual domain randomization + camera alignment), deployed on a Unitree G1: 84% pick-up, 90% stair-climbing. Tethered 10 Hz inference, not onboard.
+- [[@luo2025sonic]] — 123 real motion sequences: 99.2% success (vs. 100% sim), MPJPE-L 25.7 mm (vs. 22.3 mm), **fully onboard** on a Jetson Orin at 50 Hz. Useful decomposition of *where* the gap lives: upper body 22.2 vs. 21.8 mm, but **feet 53.7 vs. 29.0 mm** — precise foot placement under real contact dynamics is the residual.
 
 - Locomotion side (same bet, via domain randomization): [[massively-parallel-simulation]] powers [[@compton2025dynamic|DTMPC]], [[@compton2025learning|predictive CBFs]], [[@dai2025walk|PLANC]], and [[@terrain2026consistent]] — all sim-trained and transferred by domain randomization.
 
