@@ -3,7 +3,7 @@ type: concept
 tags: [navigation, method, to-revisit]
 aliases: [state estimation, LiDAR-inertial odometry, LIO, localization, sensor fusion]
 created: 2026-07-06
-modified: 2026-07-07
+modified: 2026-07-29
 ---
 
 # State estimation (LiDAR-inertial odometry / localization)
@@ -21,6 +21,7 @@ Perceptive planning is only as good as the frame it runs in: a learned [[forward
 - [[@quenzel2025lio]] — LIO-MARS: non-uniform continuous-time trajectories for LiDAR-inertial odometry.
 - [[@ji2022concurrent]] — a learned proprioceptive estimator (base velocity, foot height, contact probability) trained concurrently with the RL policy — estimation coupled to what the controller needs.
 - [[@frey2025boxi]] — sensor-payload design (sync, calibration, modality) as a first-class determinant of downstream state-estimation/mapping performance.
+- [[@nahrendra2023dreamwaq]] — *added 2026-07-29.* CENet: velocity estimation + VAE context reconstruction as **supervised heads sharing a graph with PPO** — the estimator-as-auxiliary-head variant. See [[auxiliary-task-learning]], [[privileged-information]].
 
 ## Related
 [[mapless-navigation]] · [[traversability-estimation]] · [[forward-dynamics-model]]

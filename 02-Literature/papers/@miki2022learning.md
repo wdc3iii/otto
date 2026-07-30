@@ -4,7 +4,7 @@ citekey: miki2022learning
 tags: []
 aliases: []
 created: '2026-07-05'
-modified: '2026-07-06'
+modified: 2026-07-29
 authors:
 - Miki, Takahiro
 - Lee, Joonho
@@ -49,7 +49,16 @@ bibkeys:
 A flagship result for learned perceptive locomotion; useful contrast to guarantee-driven, model-based hierarchies like [[@hierarchies2025motion]] where reduced-order structure and formal certificates replace end-to-end black-box fusion.
 
 ## Concepts
-<!-- [[03-Concepts]] links added when read -->
+<!-- filled 2026-07-29 (ai-draft) — this section was empty; grounded in your own annotation of this
+     paper in [[auxiliary-prediction-heads]] §8.3, ref [13]. -->
+- [[privileged-information]] — the reference implementation of "reconstruct the privileged signal from a
+  recurrent belief": a 2-layer belief GRU (50 units) with an attention gate on exteroception, decoder
+  reconstructing **noiseless height samples** + contacts/forces/friction. Objective `L_bc + 0.5·L_re`.
+- [[auxiliary-task-learning]] — **the closest existing analogue** of [[auxiliary-prediction-heads]], with
+  a published loss weight. Caveat you flagged: the setting is **distillation**, so the aux loss competes
+  with a BC loss rather than a policy gradient — the main transfer risk to your PPO setting.
+- [[belief-state]] — the gated/reconstructing variant tracks the teacher better under noise (§S9).
+- [[rl-for-legged-locomotion]] · [[traversability-estimation]] · [[sim-to-real-transfer]]
 
 ## Source
 - Cited by [[@compton2024constructive]], [[@csomayshanklin2024robust]], [[@hierarchies2025motion]]

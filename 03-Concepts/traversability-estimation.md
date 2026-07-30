@@ -3,7 +3,7 @@ type: concept
 tags: [navigation, planning, to-revisit]
 aliases: [traversability estimation, traversability]
 created: 2026-07-06
-modified: 2026-07-06
+modified: 2026-07-29
 ---
 
 # Traversability estimation
@@ -18,6 +18,7 @@ The problem frame beneath both the "walkable-path" (semantic: sidewalk vs. grass
 
 ## Grounding
 - [[@roth2025learned]] — learned perceptive forward-dynamics model for platform-aware navigation.
+- *Added 2026-07-29* — terrain/occupancy as an **estimated module** vs. an **auxiliary head**, the architectural fork in [[auxiliary-prediction-heads]]: [[@ren2024topnav]] (TOP-Nav — explicit terrain/obstacle estimator corrected online by proprioception) · [[@shi2026oneocc]] (semantic occupancy for legged robots, single panoramic camera) · [[@miki2022learning]] (reconstructing a noiseless heightmap from a recurrent belief). See [[occupancy-anticipation]].
 
 ## See also
 [[capability-awareness]] · [[mapless-navigation]] · [[social-navigation]]

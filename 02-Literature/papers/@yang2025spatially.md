@@ -4,7 +4,7 @@ citekey: yang2025spatially
 tags: [navigation, rl, method]
 aliases: [SRU, Spatially-Enhanced Recurrent Unit]
 created: 2026-07-06
-modified: 2026-07-06
+modified: 2026-07-29
 authors:
   - Fan Yang
   - Per Frivik
@@ -57,6 +57,10 @@ Simulated in NVIDIA IsaacLab across Maze / Pillars / Stairs / Pits (Fig. 6); suc
 
 ## Concepts
 - [[recurrent-navigation-policy]]
+- [[belief-state]] — *added 2026-07-29.* The sharpest published claim about what recurrent cells fail at:
+  LSTM/GRU/S4/Mamba all handle *temporal* recall but fail at **spatial memorisation across viewpoint
+  change**. Also the **null hypothesis** for [[auxiliary-prediction-heads]] — +23.5% over standard RNNs
+  with *no auxiliary loss at all*, so a win attributed to supervision has to beat this arm first.
 - [[mapless-navigation]]
 - [[sim-to-real-transfer]]
 - [[rl-for-legged-locomotion]]

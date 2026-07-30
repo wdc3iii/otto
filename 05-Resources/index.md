@@ -3,7 +3,7 @@ type: index
 tags: []
 aliases: []
 created: 2026-07-05
-modified: 2026-07-05
+modified: 2026-07-29
 ---
 
 # 05 · Resources
@@ -20,4 +20,5 @@ concept and link back.
 ## Current resources
 - [[linkedin]] — LinkedIn profile mirror + pending updates; tracked by `linkedin-check`.
 - [[review-queue]] — ranked brush-up list of topics to review; maintained by `quiz-me`.
+- [[auxiliary-tasks-and-memory]] — reading list behind [[auxiliary-prediction-heads]]: auxiliary tasks in navigation RL, occupancy/potential-field anticipation, privileged information & POMDP memory, and polar output parameterisation. 28 refs, grouped and annotated in your own words.
 - [[humanoid-motion-tracking]] — reading list for the humanoid motion-tracking line, in dependency/canon order: the generative/foundation-model enablers (transformer → diffusion → world models → VLA), the motion-imitation lineage, and the SONIC/GRAIL loco-manipulation cluster that composes them. *Renamed 2026-07-29 from `foundational-robotics-reading-list`.*

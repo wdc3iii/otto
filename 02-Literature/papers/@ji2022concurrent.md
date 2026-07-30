@@ -4,7 +4,7 @@ citekey: ji2022concurrent
 tags: [locomotion, rl, control]
 aliases: []
 created: '2026-07-06'
-modified: '2026-07-07'
+modified: 2026-07-29
 authors:
 - Ji, Gwanghyeon
 - Mun, Juhyeok
@@ -50,6 +50,7 @@ In this paper, we propose a locomotion training framework where a control policy
 - [[rl-for-legged-locomotion]]
 - [[sim-to-real-transfer]]
 - [[state-estimation]] — a co-headline contribution: a learned proprioceptive estimator (base velocity, foot height, contact probability) trained concurrently with the policy.
+- [[privileged-information]] · [[auxiliary-task-learning]] — *added 2026-07-29.* Ref `[15]` of [[auxiliary-prediction-heads]]: the same concurrent-supervision pattern one layer down, and your evidence that the recipe is robust enough for hardware.
 
 ## Source
 - bibkeys: `jiConcurrentTrainingControl2022`

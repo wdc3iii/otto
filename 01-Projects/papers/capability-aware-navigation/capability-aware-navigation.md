@@ -4,7 +4,7 @@ tags: [navigation, rl, control]
 aliases: [Capability-Aware Navigation, Capability-Aware Navigation RL, CAN]
 status: active
 created: 2026-07-06
-modified: 2026-07-07
+modified: 2026-07-29
 repo: /home/wcompton/repos/legged_locomotion_rl
 target: IEEE conference (Olkin/Bena/Ames; TII support)
 ---
@@ -38,6 +38,7 @@ See [[control-lyapunov-function]].
 
 ## Active workstreams
 - **Nav policy architecture & training.** Recurrent mid-level policy over the frozen LLC, PPO/`rsl_rl`. Open: discount factor ($\gamma\approx0.997$ for dense reward + rare terminal — cf. [[@lee2024learning]] HLC $\gamma=0.991>$ LLC $0.99$), multi-goal episode design, the $V_t$-comfort reward.
+  - **Sub-proposal (2026-07-29): [[auxiliary-prediction-heads]]** — supervise the GRU with post-recurrent aux heads (occupancy masked to *invisible* cells first, visitation second), with the [[@yang2025spatially|SRU]] arm run concurrently as the null hypothesis. Not implemented; probe first. Literature: [[auxiliary-tasks-and-memory]]. Concepts: [[auxiliary-task-learning]] · [[belief-state]] · [[occupancy-anticipation]] · [[privileged-information]].
 - **LiDAR encoder pretraining.** VAE CNN encoder for Livox Mid-360 spherical range images (70×180, 5-channel: log-depth + normals + occlusion-edge mask), latent 256, $\beta=1.0$, free-bits 0.5, no skips, frozen during PPO. Precedent: [[@yang2025spatially]]'s TartanAir VAE encoder (robustness-first, [[sim-to-real-transfer]]).
 - **Walkable-path segmentation.** Sidewalk/path vs. grass from ZED Mini. Candidate teachers: DEVA propagation, geometric depth teacher, foot-projection self-supervision (Wild Visual Navigation), VLM-prompted SAM2, multi-teacher consensus. Fusion into LiDAR via [[@vora2020pointpainting|PointPainting]]-style semantic decoration. "Walkway" definition (binary vs. continuous traversability) not yet locked.
 - **Jetson deployment.** `policy_runner` on Jetson Orin AGX; ROS 2 to minipc; ONNX + CUDA EP. Open: message types, lifecycle node, artifact storage, action validation.

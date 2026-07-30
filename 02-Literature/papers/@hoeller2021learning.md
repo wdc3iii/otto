@@ -4,7 +4,7 @@ citekey: hoeller2021learning
 tags: [navigation, rl, hardware]
 aliases: []
 created: 2026-07-06
-modified: 2026-07-06
+modified: 2026-07-29
 authors:
   - David Hoeller
   - Lorenz Wellhausen
@@ -51,6 +51,7 @@ Two decoupled components:
 - Reward hand-shaping (terminal + lateral/backward velocity + distance penalties) and manual velocity-scaling tuning for the real robot.
 
 ## Concepts
+- [[belief-state]] — *added 2026-07-29.* Ref `[17]` of [[auxiliary-prediction-heads]]: the RSL lineage leading to [[@yang2025spatially|SRU]]; a state representation trained to estimate the hidden state of the world, **separately** from the policy — the decoupled end of the spectrum an aux head sits in the middle of.
 - [[mapless-navigation]]
 - [[sim-to-real-transfer]]
 - [[rl-for-legged-locomotion]]
