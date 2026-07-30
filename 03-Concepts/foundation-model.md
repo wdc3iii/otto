@@ -17,7 +17,7 @@ A **large model pretrained on broad data at scale** that is then adapted (fine-t
 The bet is that **broad priors transfer**: pretraining on internet-scale (or cross-embodiment) data yields generalization that per-task training cannot. Open X-Embodiment is the data play; RT-2 / OpenVLA are the policy play; Genie is a *foundation world model*. The unresolved question for me is whether such priors help **low-level legged control** or only high-level task selection.
 
 ## Grounding
-- Robot policies: [[@brohan2023rt2]] (RT-2), [[@kim2024openvla]] (OpenVLA).
+- Robot policies: [[@brohan2023rt2]] (RT-2), [[@kim2024openvla]] (OpenVLA), [[@bjorck2025gr00t]] (GR00T N1 — the open *humanoid* VLA).
 - Data substrate: [[@oneill2024open]] (Open X-Embodiment / RT-X).
 - Foundation world model: [[@bruce2024genie]] (Genie).
 - Navigation foundation models (in otto): [[@shah2023gnm|GNM]] · [[@shah2023vint|ViNT]] · [[@sridhar2024nomad|NoMaD]] — cross-embodiment visual nav; see [[navigation-autonomy]].

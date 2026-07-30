@@ -36,6 +36,11 @@ This is the axis along which "humanoid" stops being a locomotion problem. Two co
   interaction reconstructed from VFM-generated video, retargeted to a Unitree G1; object-aware latent adaptor
   for manipulation, height-map-conditioned tracker for terrain).
 - **Hands as contacts for navigation over rubble:** [[@lin2021long]].
+- **Rival architectures for converting references into interaction policies** (all on the Unitree G1):
+  [[@zhao2025resmimic]] (ResMimic — task-specific residual in *action* space on a general-motion-tracking
+  base) · [[@weng2025hdmi]] (HDMI — learned straight from monocular RGB video; 67 consecutive door
+  traversals, and its ablation finds the contact reward mostly unnecessary) · [[@ben2025homie]] (HOMIE —
+  the teleoperation route: a $500 exoskeleton cockpit, not autonomy).
 - **VLA-driven, whole kinematic chain:** [[@luo2025sonic]] (SONIC — five real G1 tasks at 75% average;
   the sharpest instance is opening a trash can by **stepping on the pedal** while balancing on the other
   leg, i.e. the *foot* is the manipulator. Argues this is hard to realize with action spaces that

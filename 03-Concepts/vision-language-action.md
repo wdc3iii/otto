@@ -20,6 +20,7 @@ VLAs are the **semantic / task layer** — generalization to novel objects and l
 - [[@brohan2022rt1]] (RT-1) → [[@brohan2023rt2]] (RT-2, web knowledge → action).
 - Data/scale: [[@oneill2024open]] (Open X-Embodiment / RT-X, cross-embodiment).
 - Open + efficient: [[@kim2024openvla]] (OpenVLA, 7B). Flow-based: [[@black2024pi0]] (π0).
+- **Humanoid VLA:** [[@bjorck2025gr00t]] (GR00T N1 — dual-system: vision-language module + diffusion-transformer action head, jointly trained. The reference design for this cluster; its own hardware result is bimanual manipulation on a Fourier GR-1, *not* whole-body).
 - **Navigation instance (in otto):** [[@cheng2024navila|NaVILA]] — a legged-robot VLA that emits *language* waypoints to a locomotion RL policy; plus the topological-nav foundation models [[@shah2023vint|ViNT]] / [[@sridhar2024nomad|NoMaD]]. Ties this concept into [[navigation-autonomy]].
 - **Whole-body instance (in otto):** [[@luo2025sonic]] — GR00T N1.5 drives a G1's *entire kinematic chain* by predicting 78-dim actions (64-dim quantized motion token + 14-dim hands), including using **feet as manipulators** (stepping on a trash-can pedal while balancing on the other leg). 75% average over five real tasks. Also [[@xie2026grail]] for the data side.
 
