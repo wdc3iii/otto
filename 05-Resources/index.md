@@ -20,4 +20,4 @@ concept and link back.
 ## Current resources
 - [[linkedin]] — LinkedIn profile mirror + pending updates; tracked by `linkedin-check`.
 - [[review-queue]] — ranked brush-up list of topics to review; maintained by `quiz-me`.
-- [[foundational-robotics-reading-list]] — prioritized to-read queue of foundation-model-era robotics papers (transformer → diffusion → world models → VLA → motion imitation), in dependency/canon order.
+- [[humanoid-motion-tracking]] — reading list for the humanoid motion-tracking line, in dependency/canon order: the generative/foundation-model enablers (transformer → diffusion → world models → VLA), the motion-imitation lineage, and the SONIC/GRAIL loco-manipulation cluster that composes them. *Renamed 2026-07-29 from `foundational-robotics-reading-list`.*

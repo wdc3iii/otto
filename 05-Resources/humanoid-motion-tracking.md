@@ -1,23 +1,30 @@
 ---
 type: resource
 tags: [to-revisit]
-aliases: [Foundational Robotics Reading List, Modern Robotics Canon, Foundational Papers]
+aliases: [Humanoid Motion Tracking, Humanoid Motion Tracking Reading List, Foundational Robotics Reading List, Modern Robotics Canon]
 created: 2026-07-26
 modified: 2026-07-29
 ---
 
-# Foundational Robotics Reading List
+# Humanoid Motion Tracking
 
 > [!note] AI-drafted, agent-maintained working list — not an authentic synthesis note. Refine
 > the ordering/annotations to taste; when a cluster is read and digested, promote it into a
 > proper MOC in [[04-Maps/index|04 · Maps]].
 
-A prioritized to-read queue of **foundational papers for the modern (foundation-model era) of
-robotics** — the generative / learning spine that complements otto's already-deep
-[[learning-based-locomotion|control + humanoid-RL]] coverage.
+A prioritized to-read queue for the **humanoid motion-tracking** line — the generative / learning
+spine that complements otto's already-deep [[learning-based-locomotion|control + humanoid-RL]]
+coverage.
 
 **Ordering = dependency / canon order** (chosen 2026-07-26): read the *enablers* before the
 systems built on them. Within each layer, the root comes first.
+
+> [!info] Scope (retitled 2026-07-29)
+> The **destination** is humanoid motion tracking — Layer 5 (the imitation lineage) and Layer 6
+> (the SONIC/GRAIL cluster). Layers 1–4 are the **prerequisites**, not motion-tracking papers
+> themselves: they're the sequence/generative primitives, world models, and VLAs that Layers 5–6
+> are built out of and increasingly plug into. If you'd rather the title cover only the destination,
+> Layers 1–4 could split off into their own `foundation-model-primitives` list — say the word.
 
 **Legend.** `[ ]` unread · ✅ full reading note in otto · 🟨 metadata+abstract stub (flesh out
 when read) · PDF saved at `attachments/@citekey.pdf` for every entry below unless noted.
